@@ -1,0 +1,50 @@
+{
+  "_comment": "Curated real English words for Read and Select, grouped by difficulty. Hand-checked: no names, brands or abbreviations.",
+  "easy": [
+    "about", "after", "again", "animal", "answer", "apple", "basket", "beach", "because", "before",
+    "begin", "black", "bottle", "bread", "bridge", "brother", "build", "carry", "chair", "change",
+    "chicken", "children", "city", "clean", "close", "cloud", "color", "country", "dance", "danger",
+    "doctor", "dream", "drink", "early", "earth", "enjoy", "every", "family", "farmer", "father",
+    "field", "finger", "flower", "follow", "forest", "friend", "garden", "glass", "green", "group",
+    "happy", "heart", "heavy", "horse", "house", "hungry", "island", "kitchen", "letter", "light",
+    "listen", "little", "money", "month", "morning", "mother", "mountain", "music", "number", "office",
+    "orange", "paper", "party", "people", "picture", "place", "plant", "player", "pocket", "quiet",
+    "rain", "river", "road", "school", "season", "second", "shirt", "shoulder", "sister", "sleep",
+    "small", "smile", "south", "spring", "start", "station", "story", "street", "student", "summer",
+    "table", "teacher", "thing", "today", "tomorrow", "train", "travel", "under", "visit", "water",
+    "weather", "window", "winter", "woman", "world", "write", "yellow", "young", "wallet", "market"
+  ],
+  "medium": [
+    "absence", "accurate", "achieve", "adequate", "advocate", "affordable", "agenda", "ancient", "anxiety", "apparent",
+    "approach", "arrange", "assume", "attitude", "authority", "barrier", "benefit", "boundary", "budget", "candidate",
+    "capable", "capture", "category", "ceremony", "challenge", "climate", "colleague", "commerce", "commitment", "compare",
+    "complex", "concept", "conclude", "conduct", "confirm", "conflict", "consumer", "contrast", "convince", "crucial",
+    "currency", "decline", "define", "deliver", "density", "deposit", "describe", "despite", "detect", "device",
+    "diverse", "domestic", "dominant", "economy", "efficient", "element", "emerge", "emphasis", "enable", "encounter",
+    "enormous", "estimate", "evidence", "exclude", "expand", "expertise", "explicit", "facility", "factor", "feature",
+    "flexible", "fragile", "frequent", "function", "generate", "genuine", "gradual", "guarantee", "harvest", "hazard",
+    "identify", "impact", "imply", "income", "indicate", "inflation", "initial", "insight", "integrity", "interpret",
+    "journey", "justify", "landscape", "legacy", "maintain", "migrate", "monitor", "motive", "negotiate", "neutral",
+    "obtain", "occupy", "opinion", "outcome", "patience", "perceive", "persuade", "portion", "precise", "predict",
+    "priority", "proceed", "promote", "pursue", "recover", "reduce", "regulate", "reliable", "remote", "require",
+    "resident", "resource", "reveal", "rural", "satisfy", "scarce", "sequence", "shelter", "signal", "similar",
+    "strategy", "struggle", "sufficient", "survey", "sustain", "symbol", "tension", "theory", "tradition", "transfer",
+    "universal", "urban", "valuable", "variety", "vehicle", "visible", "volume", "welfare", "witness", "worthwhile"
+  ],
+  "hard": [
+    "aberration", "abstain", "acquiesce", "adjacent", "alleviate", "ambiguous", "ameliorate", "anomaly", "antithesis", "arbitrary",
+    "ascertain", "assiduous", "attenuate", "austere", "benevolent", "bolster", "brevity", "candor", "capricious", "censure",
+    "circumvent", "coalesce", "cogent", "commensurate", "complacent", "concede", "conducive", "conjecture", "consensus", "contentious",
+    "corroborate", "credulous", "culminate", "cursory", "dearth", "debilitate", "deference", "delineate", "deplete", "deride",
+    "despondent", "deterrent", "didactic", "diligent", "discern", "disparate", "dissipate", "elicit", "eloquent", "emulate",
+    "endemic", "enigma", "ephemeral", "equitable", "erroneous", "esoteric", "exacerbate", "exemplary", "exonerate", "expedite",
+    "extraneous", "facilitate", "fallacy", "fastidious", "fervent", "frugal", "futile", "garrulous", "gregarious", "hamper",
+    "hinder", "hypocrisy", "idiosyncrasy", "immutable", "impartial", "impede", "implicit", "incessant", "incongruous", "indolent",
+    "inevitable", "innate", "innocuous", "insatiable", "intrepid", "inundate", "jeopardize", "juxtapose", "laudable", "lethargic",
+    "lucid", "magnanimous", "meticulous", "mitigate", "mundane", "negligible", "nostalgia", "nuance", "obsolete", "obstinate",
+    "ominous", "opulent", "ostensible", "paradigm", "paramount", "pervasive", "plausible", "pragmatic", "precarious", "precedent",
+    "prevalent", "proficient", "prolific", "propensity", "prudent", "quandary", "ramification", "rebuttal", "reciprocal", "relentless",
+    "replenish", "resilient", "rhetoric", "scrutinize", "skeptical", "sporadic", "stagnant", "substantiate", "superfluous", "tenacious",
+    "tentative", "trepidation", "ubiquitous", "unprecedented", "vehement", "venerable", "vindicate", "volatile", "wary", "zealous"
+  ]
+}

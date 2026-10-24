@@ -1,0 +1,17 @@
+{
+  "_comment": "Prompts for Interactive Writing and the Writing Sample. 'follow_up' is the Part B question of Interactive Writing.",
+  "items": [
+    {"id": "wr-001", "prompt": "Describe a skill you would like to learn in the future. Why is it important to you, and how do you plan to learn it?", "follow_up": "What difficulties might you face while learning this skill, and how would you overcome them?"},
+    {"id": "wr-002", "prompt": "Some people think students should be required to wear uniforms at school. Do you agree or disagree? Explain your reasons.", "follow_up": "How might school uniforms affect students' sense of individuality?"},
+    {"id": "wr-003", "prompt": "Describe a place in your city or town that you think visitors should see. What makes it special?", "follow_up": "How could this place be improved to attract more visitors?"},
+    {"id": "wr-004", "prompt": "Is it better to work for a large company or a small company? Give reasons and examples to support your opinion.", "follow_up": "Which type of company do you think offers better opportunities for young people, and why?"},
+    {"id": "wr-005", "prompt": "Many people now read news on social media instead of newspapers. What are the advantages and disadvantages of this change?", "follow_up": "What can people do to make sure the news they read online is reliable?"},
+    {"id": "wr-006", "prompt": "Describe a time when you had to make a difficult decision. What did you decide, and what did you learn from it?", "follow_up": "Would you make the same decision again today? Why or why not?"},
+    {"id": "wr-007", "prompt": "Should governments spend more money on public transport or on building new roads? Explain your view.", "follow_up": "How would your choice affect the environment in the long term?"},
+    {"id": "wr-008", "prompt": "Some people believe that university education should be free for everyone. What is your opinion?", "follow_up": "If university were free, how should governments pay for it?"},
+    {"id": "wr-009", "prompt": "Describe a person who has had a strong influence on your life. How did this person influence you?", "follow_up": "What qualities of this person would you like to develop in yourself?"},
+    {"id": "wr-010", "prompt": "Do you think technology makes people more or less connected to each other? Explain your answer with examples.", "follow_up": "How do you think communication between people will change in the next twenty years?"},
+    {"id": "wr-011", "prompt": "Is it more important to save money for the future or to enjoy it now? Explain your opinion.", "follow_up": "What advice would you give a young person about managing money?"},
+    {"id": "wr-012", "prompt": "Describe a tradition or celebration from your country. Why is it meaningful to people?", "follow_up": "Do you think traditions like this will still be important in the future? Why?"}
+  ]
+}

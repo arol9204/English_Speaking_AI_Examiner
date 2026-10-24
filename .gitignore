@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Your own practice photos (they may be copyrighted, so they stay on your computer)
+content/photos/*
+!content/photos/README.md
+
+# The official DET guide is copyrighted: keep your copy locally in docs/
+docs/*.pdf

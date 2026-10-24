@@ -1,0 +1,53 @@
+{
+  "_comment": "Academic paragraphs for Read and Complete (C-test). The gaps are created in code: the first and last sentences stay whole, and every second word in between loses its second half.",
+  "items": [
+    {
+      "id": "rc-001", "level": "easy", "title": "Morning routines",
+      "passage": "Many people believe that the first hour of the day is the most important. If you start the morning calmly, you are more likely to feel relaxed and focused later. Some people like to exercise, while others prefer to read or drink a cup of tea in silence. A simple routine can help you avoid stress and make better decisions at work or school. In the end, the best routine is the one that you can follow every day."
+    },
+    {
+      "id": "rc-002", "level": "easy", "title": "City parks",
+      "passage": "Parks are an important part of life in a big city. They give people a place to walk, play sports and meet their friends. Children can run safely on the grass, and older people can sit on benches and enjoy the fresh air. Trees in parks also help to clean the air and keep the city cooler in summer. For these reasons, many cities are trying to build more green spaces for their residents."
+    },
+    {
+      "id": "rc-003", "level": "easy", "title": "Learning a language",
+      "passage": "Learning a new language takes time and patience. At the beginning, even simple sentences can feel very difficult to understand. It helps to practice a little every day instead of studying for many hours only once a week. Listening to songs, watching films and talking with native speakers are also good ways to improve. Slowly, the words begin to make sense and speaking becomes more natural."
+    },
+    {
+      "id": "rc-004", "level": "medium", "title": "Sleep and memory",
+      "passage": "Scientists have long suspected that sleep plays a key role in learning. Recent studies show that the brain replays information from the day while we are sleeping. This process appears to strengthen important memories and remove details that are less useful. Students who sleep well after studying often remember more than those who stay awake all night. These findings suggest that a good night of rest may be one of the most effective study tools available."
+    },
+    {
+      "id": "rc-005", "level": "medium", "title": "Remote work",
+      "passage": "Over the past decade, remote work has changed the way many companies operate. Employees no longer need to travel to an office every day, which saves both time and money. However, working from home also creates new challenges for communication and teamwork. Some workers report feeling isolated because they rarely see their colleagues in person. As a result, many organizations are now experimenting with hybrid models that combine home and office work."
+    },
+    {
+      "id": "rc-006", "level": "medium", "title": "Urban bees",
+      "passage": "Bees are essential for the production of many fruits and vegetables. In recent years, their numbers have fallen in many parts of the world. Interestingly, some cities have become surprisingly good places for bees to live. Gardens, parks and balconies offer a wide variety of flowers throughout the year, and cities often use fewer chemicals than farms. Urban beekeeping is therefore growing in popularity among residents who want to protect the environment."
+    },
+    {
+      "id": "rc-007", "level": "medium", "title": "Plastic waste",
+      "passage": "Plastic is cheap, light and extremely useful, which explains why it is found almost everywhere. Unfortunately, most plastic products are used only once and then thrown away. Because plastic takes hundreds of years to break down, much of it ends up in rivers and oceans. Marine animals can become trapped in plastic or mistake small pieces for food. Reducing single-use plastic is one of the simplest ways individuals can help to protect the planet."
+    },
+    {
+      "id": "rc-008", "level": "hard", "title": "Cognitive biases",
+      "passage": "Human judgment is frequently shaped by mental shortcuts known as cognitive biases. These shortcuts allow people to make quick decisions, but they can also lead to systematic errors. For example, confirmation bias causes individuals to favour information that supports their existing beliefs while ignoring contradictory evidence. Similarly, the anchoring effect means that the first number people encounter can strongly influence their later estimates. Understanding these tendencies is the first step towards making more rational choices."
+    },
+    {
+      "id": "rc-009", "level": "hard", "title": "The history of maps",
+      "passage": "Maps have always reflected the knowledge and priorities of the societies that produced them. Early maps were often decorated with mythical creatures to represent regions that remained unexplored. As navigation techniques improved, cartographers were able to represent coastlines and distances with increasing accuracy. Nevertheless, every map involves choices about what to include, what to omit and where to place the centre. Consequently, historians study old maps not only as geographical records but also as evidence of cultural attitudes."
+    },
+    {
+      "id": "rc-010", "level": "hard", "title": "Microplastics in food",
+      "passage": "Researchers have recently detected microplastics in a remarkable range of everyday foods. These tiny particles originate from the gradual breakdown of larger plastic objects and from synthetic fibres released during washing. Although the long-term health effects remain uncertain, preliminary studies suggest that some particles may accumulate in human tissue. Scientists therefore emphasize the need for standardized methods to measure exposure more reliably. Until such evidence is available, many experts recommend precautionary measures to limit plastic contamination."
+    },
+    {
+      "id": "rc-011", "level": "hard", "title": "Economic inequality",
+      "passage": "Economists have long debated whether inequality is an inevitable consequence of economic growth. Some argue that differences in income encourage innovation by rewarding people who take risks. Others contend that excessive inequality undermines social mobility and weakens trust in public institutions. Empirical research indicates that the relationship varies considerably depending on education, taxation and labour market policies. Ultimately, the question is not only economic but also deeply political."
+    },
+    {
+      "id": "rc-012", "level": "medium", "title": "Volunteering",
+      "passage": "Volunteering is a popular way for people to contribute to their communities. Volunteers may help at food banks, teach children to read or clean public spaces. Besides helping others, volunteering can also benefit the volunteers themselves in many ways. It allows them to develop new skills, meet people from different backgrounds and gain valuable experience for their careers. Many employers consider volunteer work a sign of responsibility and commitment."
+    }
+  ]
+}

@@ -1,60 +1,46 @@
 # Duolingo English Test (DET): Research & Practice-Tool Brainstorm
 
-> Status: research and brainstorm draft (October 2026). Figures come from public prep guides that
-> describe the format as of the July 2025 update. Those guides disagree on a few timings (marked ⚠️).
-> Before anything ships, check them against Duolingo's official *Questions Guide 2026*:
-> https://englishtest-static.duolingo.com/media/resources/Questions%20Guide%202026.pdf
+> Status: updated with the official **DET Question Guide (2026)**, which overrides the third-party
+> prep guides used in the first draft. Keep your copy of the PDF locally in `docs/` (it is
+> copyrighted, so git ignores it).
 
 ---
 
 ## 1. The test at a glance
 
-| Aspect | Detail |
+| Aspect | Detail (official guide) |
 |---|---|
-| Length | About 1 hour: ~5 min setup, ~45 min **adaptive** graded section, ~10 min Writing + Speaking Samples |
-| Delivery | Online, at home, AI and human proctoring, taken on your own computer |
-| Adaptive | Each answer changes the difficulty of the next question, so the number of questions varies by person |
-| Score scale | **10–160** overall |
-| Subscores | **Individual:** Reading, Listening, Writing, Speaking. **Integrated:** Literacy (R+W), Comprehension (R+L), Conversation (S+L), Production (W+S) |
-| Grading | Objective items are scored by rules. Speaking and writing are scored by AI models trained on expert ratings |
-| Production criteria | **Content** (relevant, developed) · **Coherence** (organized) · **Vocabulary & grammar** (range, accuracy) · **Fluency & pronunciation** (speaking only) |
-| July 2025 change | **Interactive Speaking** was added. **Read Aloud** and **Listen, Then Speak** were removed |
+| Delivery | Online, any time, anywhere. Costs $70; results within two days |
+| Adaptive | Most question types: questions get easier or harder based on your answers. The photo, Interactive Writing, Read Then Speak and Sample tasks are **not** adaptive |
+| Score scale | Overall **10–160** |
+| Subscores | **Listening, Speaking, Reading, Writing**, each 10–160. The overall score is their average, rounded up to the next score ending in 0 or 5 |
+| Weighting | No fixed percentage per question type; because the test is adaptive, the score is not just the number of right answers |
+| Writing criteria | Content, discourse coherence, grammar, lexis |
+| Speaking criteria | Content, discourse coherence, fluency, grammar, lexis, pronunciation |
+| July 2025 change | **Interactive Speaking** was added; Read Aloud and Listen, Then Speak were removed |
 
-The DET does **not** have separate fixed sections the way IELTS and TOEFL do. Question types are mixed
-together, and most of them count toward **two** subscores.
+The older "integrated" subscores (Literacy, Comprehension, Conversation, Production) are no
+longer mentioned in the 2026 guide.
 
 ---
 
-## 2. All 13 question types
+## 2. All 13 question types (official timings)
 
-### Reading-heavy
-| # | Type | What you do | Time | Count | Feeds |
-|---|---|---|---|---|---|
-| 1 | **Read and Select** | Pick the real English words from a grid of real and fake words | ~5 s/word (one shared timer) | 15–18 words | Reading, Literacy, Comprehension |
-| 2 | **Fill in the Blanks** | Complete one missing word in a sentence (first letters are given) | ~20 s | 6–9 | Reading, Writing |
-| 3 | **Read and Complete** (C-test) | Type the missing letters of words in an academic paragraph | 3 min | 3–6 | Reading, Writing, Literacy |
-| 4 | **Interactive Reading** | One passage, six sub-tasks: *Complete the Sentences* (MCQ cloze), *Complete the Passage* (choose the missing sentence), *Highlight the Answer*, *Identify the Idea*, *Title the Passage* | ~7–8 min per set, shared ⚠️ | 2 sets × 6 | Reading, Comprehension |
-
-### Listening-heavy
-| # | Type | What you do | Time | Count | Feeds |
-|---|---|---|---|---|---|
-| 5 | **Listen and Type** (dictation) | Hear a sentence and type it exactly | ~1 min | 6–9 | Listening, Writing |
-| 6 | **Interactive Listening** | Campus scenario (student↔student or student↔professor): *Listen and Complete*, then *Listen and Respond* (choose the best next line in the conversation, each turn plays once ⚠️), then *Summarize the Conversation* (written) | 6:30 shared + 75 s summary | 2 sets | Listening, Comprehension, Conversation |
-
-### Writing
-| # | Type | What you do | Time | Count | Feeds |
-|---|---|---|---|---|---|
-| 7 | **Write About the Photo** | Describe a picture (aim for 30–50+ words) | 1 min | 3 | Writing, Production |
-| 8 | **Interactive Writing** | Part A: answer a prompt. Part B: answer a follow-up on the same topic | 30 s prep + 5 min, then ~3 min ⚠️ | 1 set | Writing, Production |
-| 9 | **Writing Sample** | Same format as Interactive Writing Part A. Sent to institutions with your score | 30 s + 5 min | 1 | Writing |
-
-### Speaking
-| # | Type | What you do | Time | Count | Feeds |
-|---|---|---|---|---|---|
-| 10 | **Speak About the Photo** | Describe a picture out loud | ~20 s prep, 30–90 s speaking ⚠️ | 1 | Speaking, Production |
-| 11 | **Read, Then Speak** | Read a prompt (with bullet guidance), then speak | 20 s prep, 30–90 s | 1 | Speaking, Production |
-| 12 | **Interactive Speaking** (new) | An AI character (Bea / Oscar) asks 6–8 connected questions. Each one plays once | ~35 s per answer | 1 set | Speaking, Conversation |
-| 13 | **Speaking Sample** | Speak on a prompt. Sent to institutions with your score | 30 s prep, 1–3 min | 1 | Speaking |
+| # | Type | What you do | Time | Count | Subscore | Adaptive |
+|---|---|---|---|---|---|---|
+| 1 | **Read and Select** | One word at a time: click Yes if it is a real English word, No if not | 5 s per word (no answer = wrong) | 15–18 | Reading | Yes |
+| 2 | **Fill in the Blanks** | A sentence with one unfinished word (second half missing): type the ending. Spelling must be right | 20 s | 6–9 | Reading | Yes |
+| 3 | **Read and Complete** | A paragraph with unfinished words: type the endings. Title, first and last sentences are whole; gaps are never next to each other; no proper nouns or acronyms | 3 min | 3–6 | Reading | Yes |
+| 4 | **Listen and Type** | Type exactly what you hear, up to 3 plays. Partial credit; words, spelling and punctuation count | 1 min | 6–9 | Listening | Yes |
+| 5 | **Interactive Reading** | One passage, six questions in order: Complete the Sentences (3–10 multiple-choice blanks), Complete the Passage (missing sentence), Highlight the Answer ×2 (partial credit), Identify the Idea, Title the Passage. At least one narrative and one expository text per test | 7 or 8 min per set (shared) | 2–3 sets | Reading | Yes |
+| 6 | **Interactive Listening** | Campus scenario (student↔student, student↔professor). Listen and Complete (3–4 sentences, replay as often as you want, spelling not important), Listen and Respond (5–6 turns, each clip plays once, right answer shown after each), Summarize the Conversation (writing criteria) | 6:30 shared + 75 s summary | 2–3 sets | Listening (+ Writing for the summary) | Yes |
+| 7 | **Write About the Photo** | Describe a real photo | 1 min | 3 | Writing | No |
+| 8 | **Interactive Writing** | Part 1 answer, then a follow-up asking about an idea you didn't cover. Both scored together | 30 s prep + 5 min + 3 min | 1 | Writing | No |
+| 9 | **Speak About the Photo** | Describe a real photo out loud. One recording only | 20 s prep + 90 s | 1 | Speaking | No |
+| 10 | **Read, Then Speak** | Speak about an experience or opinion, with bullet points shown | 20 s prep + 90 s | 1 | Speaking | No |
+| 11 | **Interactive Speaking** | A Duolingo character asks 3–4 questions on each of two topics. Each question plays once; the timer starts when it ends | 35 s per answer | 6–8 | Speaking | Yes |
+| 12 | **Writing Sample** | Write about an experience or opinion. Sent to schools | 30 s prep + 5 min | 1 | Writing | No |
+| 13 | **Speaking Sample** | Speak about an experience or opinion. Video sent to schools | 30 s prep + 3 min | 1 | Speaking | No |
 
 ---
 
@@ -113,7 +99,16 @@ The current notebook only grades the *text*. DET speaking also grades *how* you 
 - A word-count meter and a "keep talking" meter so you use the full time.
 - Simulated test conditions: full-screen mode, a warning when you look away from the screen (optional, for realism).
 
-### 4.7 Suggested architecture
+### 4.7 Architecture (decided)
+Built in this repo, $0 budget, runs locally in Chrome/Edge on a PC:
+- **Backend:** Python FastAPI (`backend/`). **Frontend:** React + TypeScript + Vite (`frontend/`).
+- **LLM:** Ollama with `gemma3:4b` by default. It is free and local, and it can read images for the photo tasks.
+- **Speech-to-text:** faster-whisper (local), with word timings for fluency.
+- **Text-to-speech:** the browser's built-in voices.
+- **Content:** a question bank written by Claude in `content/`, plus generated fake words and C-test gaps.
+- **"Copy for Claude":** sends any answer to claude.ai for a free second opinion.
+
+Original brainstorm notes:
 - **Front end:** web app (React/Next.js) or, for a quick start, **Gradio/Streamlit** (closest to the current notebook).
 - **Back end:** Python (FastAPI). Item generators, scorers, and adaptive engine are separate modules.
 - **AI services:** STT (Whisper / faster-whisper, word timestamps), LLM for item generation and rubric grading (structured JSON output), TTS for listening items and the Interactive Speaking examiner, a vision model for photo tasks.
@@ -130,11 +125,11 @@ The current notebook only grades the *text*. DET speaking also grades *how* you 
 
 ---
 
-## 5. Open questions for the project owner
-- Platform: keep it in Colab/Gradio for now, or move to a real web app?
-- LLM / STT / TTS provider and budget (hosted APIs or local models)?
-- Target DET score and deadline? This decides the order of the roadmap.
-- Can you share your official DET practice-test results (and the official Questions Guide PDF) for calibration?
+## 5. Decisions from the project owner
+- Budget: $0, so only free local models.
+- Platform: a local web app for PC/laptop browsers, which can be published later.
+- AI: Claude writes the content while the app is being built. Local models grade at runtime, and a Copy-for-Claude button gives a second opinion.
+- Goal: build the app. There is no exam date.
 
 ## Sources
 - Duolingo, *Questions Guide 2026* (PDF): https://englishtest-static.duolingo.com/media/resources/Questions%20Guide%202026.pdf

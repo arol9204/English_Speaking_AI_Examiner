@@ -1,0 +1,17 @@
+{
+  "_comment": "Prompts for Read, Then Speak and the Speaking Sample. 'bullets' are the guiding points shown with the prompt.",
+  "items": [
+    {"id": "sp-001", "prompt": "Talk about a book, film or series that you enjoyed recently.", "bullets": ["What it was about", "Why you enjoyed it", "Who you would recommend it to"]},
+    {"id": "sp-002", "prompt": "Describe a holiday or trip that you remember well.", "bullets": ["Where you went and who you went with", "What you did there", "Why it was memorable"]},
+    {"id": "sp-003", "prompt": "Talk about a job you would like to have in the future.", "bullets": ["What the job involves", "Why it interests you", "What you need to do to get it"]},
+    {"id": "sp-004", "prompt": "Describe a time when you helped someone.", "bullets": ["Who you helped", "What the problem was", "How you felt afterwards"]},
+    {"id": "sp-005", "prompt": "Talk about how technology has changed the way people study.", "bullets": ["Examples of technology used for studying", "Advantages", "Disadvantages"]},
+    {"id": "sp-006", "prompt": "Describe your favourite way to spend a weekend.", "bullets": ["What you usually do", "Who you spend it with", "Why you enjoy it"]},
+    {"id": "sp-007", "prompt": "Talk about an environmental problem in your country.", "bullets": ["What the problem is", "What causes it", "What could be done to solve it"]},
+    {"id": "sp-008", "prompt": "Describe a teacher who made a difference in your education.", "bullets": ["What subject they taught", "What made them special", "What you learned from them"]},
+    {"id": "sp-009", "prompt": "Talk about whether people should live in the city or in the countryside.", "bullets": ["Benefits of city life", "Benefits of country life", "Which you prefer and why"]},
+    {"id": "sp-010", "prompt": "Describe a goal you have achieved and are proud of.", "bullets": ["What the goal was", "How you achieved it", "Why it was important to you"]},
+    {"id": "sp-011", "prompt": "Talk about the advantages and disadvantages of working from home.", "bullets": ["Advantages for workers", "Disadvantages for workers", "Your own opinion"]},
+    {"id": "sp-012", "prompt": "Describe a food that is popular in your country.", "bullets": ["What it is and how it is made", "When people eat it", "Why people like it"]}
+  ]
+}

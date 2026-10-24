@@ -1,0 +1,10 @@
+# Core (required)
+fastapi>=0.115
+uvicorn[standard]>=0.30
+httpx>=0.27
+python-multipart>=0.0.9
+wordfreq>=3.1
+
+# Speech-to-text for the speaking tasks (optional but recommended).
+# Downloads a Whisper model (~500 MB for "small") the first time you record.
+faster-whisper>=1.1
