@@ -20,8 +20,9 @@ public **DET Question Guide (2026)**.
 | Speaking | Speak About the Photo | Speech-to-text + fluency measures + AI feedback* |
 | Speaking | Read, Then Speak | Speech-to-text + fluency measures + AI feedback* |
 | Speaking | Speaking Sample | Speech-to-text + fluency measures + AI feedback* |
+| Speaking | Interactive Speaking | Spoken conversation with an examiner (6–8 questions on 2 topics, harder or easier depending on your answers) + AI feedback* |
 
-Coming next: Interactive Reading, Interactive Listening, Interactive Speaking, and a full mock test.
+Coming next: Interactive Reading, Interactive Listening, and a full mock test.
 
 \* AI feedback rates each official criterion (content, coherence, grammar, lexis, plus fluency
 and pronunciation for speaking) on the CEFR scale, lists corrections, and writes an improved
@@ -29,6 +30,8 @@ answer. It runs on a **free local model** through Ollama. Every answer also has 
 **Copy for Claude** button: paste it into a chat at claude.ai for a second opinion.
 
 ## Set up (Windows, macOS or Linux)
+
+**Windows users: follow the step-by-step [setup guide](docs/SETUP_GUIDE.md).** Short version:
 
 You need [Python 3.10+](https://www.python.org/downloads/) and [Node.js 18+](https://nodejs.org).
 Everything is free.

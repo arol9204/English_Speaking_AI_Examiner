@@ -81,6 +81,13 @@ def get_item(task: str, level: str | None = None, exclude: str = ""):
         if task != "interactive_writing":
             item = {k: v for k, v in item.items() if k != "follow_up"}
         return item
+    if task == "interactive_speaking":
+        # Two topics with 3-4 questions each (6-8 in total), as on the real test.
+        topics = content.load("interactive_speaking")["topics"]
+        fresh = [t for t in topics if t["id"] not in seen]
+        chosen = random.sample(fresh if len(fresh) >= 2 else topics, 2)
+        chosen = [{**t, "questions": t["questions"][:random.choice((3, 4))]} for t in chosen]
+        return {"id": ",".join(t["id"] for t in chosen), "topics": chosen}
     if task in PHOTO_TASKS:
         photos = content.list_photos()
         if not photos:
@@ -171,6 +178,7 @@ async def transcribe(task: str = Form(...), audio: UploadFile = File(...)):
         path.write_bytes(await audio.read())
         result = await run_in_threadpool(stt.transcribe, str(path))
     result["fluency"] = fluency.fluency_metrics(result["words"], TASKS_BY_KEY[task]["time_seconds"])
+    result["strength"] = fluency.answer_strength(result["fluency"])
     return result
 
 
@@ -195,6 +203,32 @@ async def speaking_feedback(body: SpeakingFeedbackRequest):
     metrics = {"speech": body.fluency, "text": text_metrics(body.transcript)}
     return await run_in_threadpool(rubric.get_feedback, body.task, question, body.transcript,
                                    metrics, photo)
+
+
+class Turn(BaseModel):
+    question: str
+    transcript: str
+    fluency: dict
+
+
+class ConversationFeedbackRequest(BaseModel):
+    turns: list[Turn]
+
+
+@app.post("/api/feedback/interactive_speaking")
+async def conversation_feedback(body: ConversationFeedbackRequest):
+    if not body.turns:
+        raise HTTPException(400, "No answers to grade")
+    question = (f"A conversation of {len(body.turns)} questions on two topics. "
+                "The candidate had 35 seconds to answer each question.")
+    answer = "\n\n".join(f"Question {i}: {t.question}\nAnswer {i}: {t.transcript.strip() or '(no answer)'}"
+                          for i, t in enumerate(body.turns, 1))
+    metrics = {
+        "per_answer": [t.fluency for t in body.turns],
+        "text": text_metrics(" ".join(t.transcript for t in body.turns)),
+    }
+    return await run_in_threadpool(rubric.get_feedback, "interactive_speaking", question, answer,
+                                   metrics)
 
 
 if FRONTEND_DIST.is_dir():

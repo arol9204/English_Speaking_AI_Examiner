@@ -41,6 +41,7 @@ export interface AIFeedback {
   improvements: string[];
   corrections: { original: string; corrected: string; explanation: string }[];
   improved_answer: string;
+  per_answer?: string[];
 }
 
 export interface Feedback {

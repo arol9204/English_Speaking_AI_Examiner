@@ -91,7 +91,7 @@ export default function SpeakingTask({ task, onDone }: TaskProps) {
     return (
       <div className="center-stack">
         {recording ? (
-          <Timer left={rec.left} total={task.time_seconds} label="● Recording" />
+          <Timer left={rec.left} total={task.time_seconds} label="● Recording" recording />
         ) : (
           <Timer left={prep.left} total={task.prep_seconds} label="Preparation" />
         )}

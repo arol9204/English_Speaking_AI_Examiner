@@ -24,8 +24,17 @@ def build_frontend():
     subprocess.run([npm, "run", "build"], cwd=FRONTEND, check=True)
 
 
+def frontend_is_stale() -> bool:
+    """True when the web page was never built or its source changed since the last build."""
+    built = FRONTEND / "dist" / "index.html"
+    if not built.exists():
+        return True
+    sources = [FRONTEND / "index.html", FRONTEND / "package.json", *(FRONTEND / "src").rglob("*")]
+    return max(p.stat().st_mtime for p in sources if p.is_file()) > built.stat().st_mtime
+
+
 def main():
-    if "--build" in sys.argv or not (FRONTEND / "dist").is_dir():
+    if "--build" in sys.argv or frontend_is_stale():
         build_frontend()
     sys.path.insert(0, str(ROOT / "backend"))
     import uvicorn

@@ -37,3 +37,11 @@ def test_fluency_metrics():
     assert m["word_count"] == 3 and m["fillers"] == 1
     assert m["long_pauses"] == 1 and m["unclear_words"] == ["think"]
     assert m["silence_before_start"] == 1.0
+
+
+def test_answer_strength():
+    from app.ai.fluency import answer_strength
+
+    assert answer_strength({"word_count": 60, "words_per_minute": 120}) == "strong"
+    assert answer_strength({"word_count": 60, "words_per_minute": 60}) == "ok"
+    assert answer_strength({"word_count": 5, "words_per_minute": 100}) == "weak"

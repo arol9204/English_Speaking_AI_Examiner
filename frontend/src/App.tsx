@@ -9,6 +9,7 @@ import ReadAndComplete from "./tasks/ReadAndComplete";
 import ListenAndType from "./tasks/ListenAndType";
 import WritingTask from "./tasks/WritingTask";
 import SpeakingTask from "./tasks/SpeakingTask";
+import InteractiveSpeaking from "./tasks/InteractiveSpeaking";
 
 const COMPONENTS: Record<string, ComponentType<TaskProps>> = {
   read_and_select: ReadAndSelect,
@@ -21,6 +22,7 @@ const COMPONENTS: Record<string, ComponentType<TaskProps>> = {
   speak_about_the_photo: SpeakingTask,
   read_then_speak: SpeakingTask,
   speaking_sample: SpeakingTask,
+  interactive_speaking: InteractiveSpeaking,
 };
 
 // Tasks whose difficulty adapts on the real test; in practice the user picks the level.

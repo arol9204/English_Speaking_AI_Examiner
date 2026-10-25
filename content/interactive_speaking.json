@@ -1,0 +1,95 @@
+{
+  "_comment": "Interactive Speaking topics. Each topic has 4 questions in order; each question has an easier and a harder version. The app switches version based on how well the previous answer went, like the adaptive real test.",
+  "topics": [
+    {
+      "id": "is-01", "topic": "Your hometown",
+      "questions": [
+        {"easy": "Where are you from? Tell me a little about your hometown.", "hard": "Tell me about the place where you grew up and what makes it different from other places."},
+        {"easy": "What do people usually do there in their free time?", "hard": "How do people in your hometown usually spend their free time, and has that changed in recent years?"},
+        {"easy": "Do you like living there? Why or why not?", "hard": "What are the main advantages and disadvantages of living in your hometown?"},
+        {"easy": "What would you change about your hometown?", "hard": "If you were the mayor of your hometown, what is one change you would make, and why would it matter?"}
+      ]
+    },
+    {
+      "id": "is-02", "topic": "Studying",
+      "questions": [
+        {"easy": "What do you study, or what would you like to study?", "hard": "Tell me about the subject you study or want to study, and why you chose it."},
+        {"easy": "Where do you like to study? Why?", "hard": "Describe the environment where you study best, and explain why it works for you."},
+        {"easy": "Do you prefer studying alone or with other people?", "hard": "Some people say studying in groups is more effective than studying alone. What is your view?"},
+        {"easy": "What is the most difficult part of studying for you?", "hard": "What is the biggest challenge students face today, and how could schools help them with it?"}
+      ]
+    },
+    {
+      "id": "is-03", "topic": "Technology",
+      "questions": [
+        {"easy": "How often do you use your phone? What do you use it for?", "hard": "Describe how technology fits into your daily routine, from morning to night."},
+        {"easy": "What is your favorite app? Why do you like it?", "hard": "Tell me about a piece of technology that has changed the way you live or work."},
+        {"easy": "Do you think people use their phones too much?", "hard": "Some people believe smartphones are making us less social. Do you agree or disagree, and why?"},
+        {"easy": "What new technology would you like to have in the future?", "hard": "How do you think artificial intelligence will change education or work in the next ten years?"}
+      ]
+    },
+    {
+      "id": "is-04", "topic": "Food",
+      "questions": [
+        {"easy": "What is your favorite food? Why do you like it?", "hard": "Tell me about a dish that is important to you or your family, and why it matters."},
+        {"easy": "Do you like cooking? What can you cook?", "hard": "How did you learn to cook, or why have you not learned yet?"},
+        {"easy": "Do you prefer eating at home or in restaurants?", "hard": "What are the advantages and disadvantages of eating out compared to cooking at home?"},
+        {"easy": "Do you think people eat healthy food today?", "hard": "Whose responsibility is it to make sure people eat healthily: individuals, families, or governments?"}
+      ]
+    },
+    {
+      "id": "is-05", "topic": "Travel",
+      "questions": [
+        {"easy": "Do you like to travel? Where have you been?", "hard": "Tell me about the most interesting place you have ever visited."},
+        {"easy": "What do you like to do when you visit a new place?", "hard": "When you visit a new place, how do you prefer to explore it, and why?"},
+        {"easy": "Do you prefer to travel alone or with friends?", "hard": "What can people learn from travelling that they cannot learn at home?"},
+        {"easy": "Where would you like to travel in the future?", "hard": "Some people say tourism harms the places people visit. What do you think, and what could be done about it?"}
+      ]
+    },
+    {
+      "id": "is-06", "topic": "Work and careers",
+      "questions": [
+        {"easy": "What job do you have, or what job would you like to have?", "hard": "Tell me about the career you are hoping to build and how you became interested in it."},
+        {"easy": "What makes a job a good job?", "hard": "Which matters more when choosing a job: the salary or job satisfaction? Explain your view."},
+        {"easy": "Would you like to work from home? Why?", "hard": "How has the way people work changed in recent years, and is this change positive?"},
+        {"easy": "What skills are important for your future job?", "hard": "What skills do you think young people need most to succeed in tomorrow's job market?"}
+      ]
+    },
+    {
+      "id": "is-07", "topic": "Free time",
+      "questions": [
+        {"easy": "What do you like to do in your free time?", "hard": "Tell me about a hobby that you are passionate about and how you got started."},
+        {"easy": "Do you prefer to spend free time indoors or outdoors?", "hard": "How do you balance your free time with your responsibilities?"},
+        {"easy": "Did you have the same hobbies when you were a child?", "hard": "How have your interests changed since you were a child, and why do you think that happened?"},
+        {"easy": "Is there a new hobby you want to try?", "hard": "Do you think hobbies are important for people's mental health? Why or why not?"}
+      ]
+    },
+    {
+      "id": "is-08", "topic": "The environment",
+      "questions": [
+        {"easy": "Do you think about the environment in your daily life?", "hard": "What do you personally do to reduce your impact on the environment?"},
+        {"easy": "Is there a lot of pollution where you live?", "hard": "What is the most serious environmental problem in your country, and what causes it?"},
+        {"easy": "Do you recycle? Why or why not?", "hard": "Should governments force people to recycle, or should it be a personal choice?"},
+        {"easy": "What can young people do to help the planet?", "hard": "Are individual actions enough to solve climate change, or do we need bigger changes? Explain."}
+      ]
+    },
+    {
+      "id": "is-09", "topic": "Friends and family",
+      "questions": [
+        {"easy": "Tell me about your family.", "hard": "Tell me about a family member who has influenced you, and how."},
+        {"easy": "What do you like to do with your friends?", "hard": "What qualities do you think make someone a good friend?"},
+        {"easy": "Do you prefer having many friends or a few close friends?", "hard": "Is it easier or harder to make friends as an adult than as a child? Why?"},
+        {"easy": "How do you keep in touch with friends who live far away?", "hard": "How has social media changed friendships, for better or for worse?"}
+      ]
+    },
+    {
+      "id": "is-10", "topic": "Books, films and music",
+      "questions": [
+        {"easy": "What kind of music do you like?", "hard": "Tell me about a song, book, or film that means something special to you."},
+        {"easy": "Do you prefer watching films at home or at the cinema?", "hard": "How has the way people watch films and series changed in the last few years?"},
+        {"easy": "Do you like reading? What do you read?", "hard": "Do you think reading books is still important now that we have so much video content? Why?"},
+        {"easy": "Would you like to learn to play an instrument?", "hard": "Should music and art be as important as maths and science in schools? Explain your opinion."}
+      ]
+    }
+  ]
+}

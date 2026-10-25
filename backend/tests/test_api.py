@@ -108,3 +108,42 @@ def test_transcribe_rejects_writing_task():
     response = client.post("/api/transcribe", data={"task": "writing_sample"},
                            files={"audio": ("a.webm", b"x", "audio/webm")})
     assert response.status_code == 400
+
+
+def test_interactive_speaking_item_has_two_topics_and_6_to_8_questions():
+    for _ in range(10):
+        item = client.get("/api/items/interactive_speaking").json()
+        assert len(item["topics"]) == 2
+        assert len({t["id"] for t in item["topics"]}) == 2
+        total = sum(len(t["questions"]) for t in item["topics"])
+        assert 6 <= total <= 8
+        assert all({"easy", "hard"} <= q.keys() for t in item["topics"] for q in t["questions"])
+
+
+def test_transcribe_reports_answer_strength(monkeypatch):
+    from app.ai import stt
+
+    words = [{"word": f"w{i}", "start": i * 0.5, "end": i * 0.5 + 0.4, "probability": 0.9}
+             for i in range(50)]
+    monkeypatch.setattr(stt, "installed", lambda: True)
+    monkeypatch.setattr(stt, "transcribe", lambda path: {"text": "", "duration": 30, "words": words})
+    response = client.post("/api/transcribe", data={"task": "interactive_speaking"},
+                           files={"audio": ("a.webm", b"x", "audio/webm")})
+    assert response.json()["strength"] == "strong"
+
+
+def test_conversation_feedback_asks_for_per_answer_comments(monkeypatch):
+    captured = {}
+
+    def fake_chat(prompt, schema, images=None):
+        captured["prompt"], captured["schema"] = prompt, schema
+        return {"overall_level": "B1", "per_answer": ["ok", "short"]}
+
+    monkeypatch.setattr(llm, "chat_json", fake_chat)
+    result = client.post("/api/feedback/interactive_speaking", json={"turns": [
+        {"question": "Where are you from?", "transcript": "I am from Lima.", "fluency": {}},
+        {"question": "Do you like it?", "transcript": "", "fluency": {}},
+    ]}).json()
+    assert result["ai"]["per_answer"] == ["ok", "short"]
+    assert "per_answer" in captured["schema"]["required"]
+    assert "Answer 2: (no answer)" in captured["prompt"]

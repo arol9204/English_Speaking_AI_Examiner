@@ -24,13 +24,13 @@ CRITERIA_DESCRIPTIONS = {
 }
 
 
-def feedback_schema(criteria: list[str]) -> dict:
+def feedback_schema(criteria: list[str], per_answer: bool = False) -> dict:
     criterion = {
         "type": "object",
         "properties": {"level": {"type": "string", "enum": LEVELS}, "comment": {"type": "string"}},
         "required": ["level", "comment"],
     }
-    return {
+    schema = {
         "type": "object",
         "properties": {
             "criteria": {
@@ -58,6 +58,10 @@ def feedback_schema(criteria: list[str]) -> dict:
         "required": ["criteria", "overall_level", "strengths", "improvements", "corrections",
                      "improved_answer"],
     }
+    if per_answer:
+        schema["properties"]["per_answer"] = {"type": "array", "items": {"type": "string"}}
+        schema["required"].append("per_answer")
+    return schema
 
 
 def build_prompt(task_key: str, question: str, answer: str, metrics: dict,
@@ -95,6 +99,10 @@ def build_prompt(task_key: str, question: str, answer: str, metrics: dict,
     ]
     if spoken:
         lines.append("Ignore missing punctuation and capitals: the transcript was made by a machine.")
+    if task_key == "interactive_speaking":
+        lines.append("This was a conversation. Judge all answers together. Give one short comment per "
+                     "answer, in order (per_answer), and make the improved answer a better version of "
+                     "the weakest answer, saying which question it answers.")
     if for_claude:
         lines.append("Format the feedback with clear headings so it is easy to read.")
     return "\n".join(lines)
@@ -111,7 +119,8 @@ def get_feedback(task_key: str, question: str, answer: str, metrics: dict,
         result["ai_error"] = "No answer to grade."
         return result
     try:
-        result["ai"] = llm.chat_json(prompt, feedback_schema(criteria),
+        schema = feedback_schema(criteria, per_answer=task_key == "interactive_speaking")
+        result["ai"] = llm.chat_json(prompt, schema,
                                      images=[photo_b64] if photo_b64 else None)
     except llm.LLMUnavailable as exc:
         result["ai_error"] = str(exc)

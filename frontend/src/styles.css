@@ -212,3 +212,24 @@ audio { height: 36px; }
 
 .spinner { width: 36px; height: 36px; border: 4px solid var(--surface-2); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.9s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+.examiner { display: flex; flex-direction: column; align-items: center; gap: 6px; margin: 8px 0 12px; }
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-text);
+  display: grid;
+  place-items: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.avatar.talking { animation: talk 1s ease-in-out infinite; }
+@keyframes talk {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 45%, transparent); }
+  50% { box-shadow: 0 0 0 14px color-mix(in srgb, var(--accent) 0%, transparent); }
+}
+.turn { border-bottom: 1px solid var(--border); padding: 8px 0 14px; }
+.turn audio { display: block; margin: 6px 0; }
+.timer-label.rec { color: var(--bad); font-weight: 600; }

@@ -36,3 +36,16 @@ def fluency_metrics(words: list[dict], allowed_seconds: float) -> dict:
         if allowed_seconds else 0,
         "unclear_words": [t["clean"] for t in content if t["probability"] < LOW_CONFIDENCE],
     }
+
+
+def answer_strength(metrics: dict) -> str:
+    """Rough signal used to make Interactive Speaking adaptive: 'strong', 'ok' or 'weak'.
+
+    The real test makes questions harder after good answers and easier after weak ones.
+    Here a long, steady answer counts as strong and a very short one as weak.
+    """
+    if metrics["word_count"] >= 40 and metrics["words_per_minute"] >= 90:
+        return "strong"
+    if metrics["word_count"] < 15:
+        return "weak"
+    return "ok"
