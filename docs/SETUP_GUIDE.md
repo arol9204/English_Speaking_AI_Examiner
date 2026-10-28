@@ -120,12 +120,20 @@ At the top of the home page there are three status lights:
 
 ## Every day after that
 
-Only step 8:
+**Double-click `Start DET Practice.bat`** in the project folder. A black window opens and your
+browser opens the app. Keep the window open while you practice; **close it to stop the app**.
+
+For a desktop shortcut: right-click `Start DET Practice.bat` → **Show more options** →
+**Send to** → **Desktop (create shortcut)**.
+
+Or, in PowerShell:
 
 ```powershell
 cd C:\Users\alero\Documents\GitHub\English_Speaking_AI_Examiner
 .venv\Scripts\python run.py
 ```
+
+To stop it from PowerShell, press **Ctrl + C** in that window.
 
 ## When there's a new version
 
