@@ -1,0 +1,15 @@
+{
+  "_comment": "CELPIP Speaking Task 7: Expressing Opinions.",
+  "items": [
+    {"id": "s7-01", "prompt": "Should high school students be required to do volunteer work in their community before they graduate? Why or why not?"},
+    {"id": "s7-02", "prompt": "Is it better to live in a big city or in a small town? Explain your opinion."},
+    {"id": "s7-03", "prompt": "Should companies allow employees to work from home permanently if their job can be done remotely? Why or why not?"},
+    {"id": "s7-04", "prompt": "Should children under the age of 13 have their own smartphones? Explain your opinion."},
+    {"id": "s7-05", "prompt": "Should public transit be free for everyone in large cities? Why or why not?"},
+    {"id": "s7-06", "prompt": "Is it more important to have a job you enjoy or a job that pays well? Explain your opinion."},
+    {"id": "s7-07", "prompt": "Should stores stop giving out plastic bags completely? Why or why not?"},
+    {"id": "s7-08", "prompt": "Do people depend too much on technology in their daily lives? Explain your opinion."},
+    {"id": "s7-09", "prompt": "Should college and university education be free for all students? Why or why not?"},
+    {"id": "s7-10", "prompt": "Is it better to rent a home or to buy one? Explain your opinion."}
+  ]
+}

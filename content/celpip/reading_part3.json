@@ -1,0 +1,107 @@
+{
+  "_comment": "CELPIP Reading Part 3: Reading for Information. Four paragraphs (A-D); each statement matches one paragraph, or E if none. 'answer' is the index in the task's options (A=0 ... E=4).",
+  "items": [
+    {
+      "id": "r3-01",
+      "title": "Community gardens in Canadian cities",
+      "instructions": "Read the following article.",
+      "passage": {
+        "type": "labeled",
+        "title": "Community Gardens in Canadian Cities",
+        "paragraphs": [
+          {"label": "A", "text": "Community gardens have become a familiar sight in many Canadian cities. In a community garden, a piece of land is divided into small plots, and local residents rent a plot for the growing season, usually for a small yearly fee. Toronto alone has more than 80 community gardens, many of them on land owned by the city. Most gardens have long waiting lists, and in some neighbourhoods people wait three or four years before a plot becomes available."},
+          {"label": "B", "text": "The benefits go beyond fresh vegetables. Researchers have found that people with community plots report lower stress levels and spend more time outdoors than people without gardens. Community gardens also bring together neighbours who might otherwise never meet. Many gardens organize shared work days, seed exchanges and harvest dinners, and some donate part of their harvest to local food banks."},
+          {"label": "C", "text": "Starting a new garden is not always easy. Groups must find suitable land, which is difficult in crowded downtown areas, and the soil must be tested, since old industrial sites can contain harmful chemicals. Water is another challenge: gardens need a reliable water supply, and installing pipes can cost thousands of dollars. Some cities now offer small grants to help new garden groups with these costs."},
+          {"label": "D", "text": "To make the most of limited space, some gardeners are moving up. Rooftop gardens on schools, hospitals and apartment buildings are becoming more common, and in one Montreal neighbourhood, a large rooftop farm supplies vegetables to nearby grocery stores. Other groups use raised beds, which are easier for older gardeners and people in wheelchairs to reach. These new designs allow more people to garden, even where there is little open land."}
+        ]
+      },
+      "tasks": [
+        {
+          "type": "match",
+          "intro": "Decide which paragraph, A to D, contains each piece of information. If none of the paragraphs contains it, choose E.",
+          "options": ["A", "B", "C", "D", "E"],
+          "option_labels": {"E": "Not given in any of the paragraphs"},
+          "questions": [
+            {"id": "1", "prompt": "Gardeners usually pay to use a plot.", "answer": 0, "explanation": "A: residents rent a plot 'usually for a small yearly fee'."},
+            {"id": "2", "prompt": "Some gardens give food to people in need.", "answer": 1, "explanation": "B: some gardens donate part of their harvest to food banks."},
+            {"id": "3", "prompt": "It can be hard to find land in city centres.", "answer": 2, "explanation": "C: finding suitable land 'is difficult in crowded downtown areas'."},
+            {"id": "4", "prompt": "Some garden designs help people with limited mobility.", "answer": 3, "explanation": "D: raised beds are easier for people in wheelchairs to reach."},
+            {"id": "5", "prompt": "Gardening in a community plot may reduce stress.", "answer": 1, "explanation": "B: gardeners report lower stress levels."},
+            {"id": "6", "prompt": "The number of community gardens in Canada has doubled in the last ten years.", "answer": 4, "explanation": "No paragraph gives this information."},
+            {"id": "7", "prompt": "Some vegetables grown on roofs are sold in stores.", "answer": 3, "explanation": "D: a rooftop farm supplies vegetables to grocery stores."},
+            {"id": "8", "prompt": "The ground may need to be checked for pollution before planting.", "answer": 2, "explanation": "C: the soil must be tested for harmful chemicals."},
+            {"id": "9", "prompt": "People sometimes wait years to get a plot.", "answer": 0, "explanation": "A: in some neighbourhoods people wait three or four years."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r3-02",
+      "title": "Working the night shift",
+      "instructions": "Read the following article.",
+      "passage": {
+        "type": "labeled",
+        "title": "Working the Night Shift",
+        "paragraphs": [
+          {"label": "A", "text": "About one in eight Canadian workers works outside regular daytime hours. Nurses, factory workers, truck drivers and security guards are among the many people whose jobs require them to work through the night. As more businesses offer services twenty-four hours a day, the number of night-shift jobs has been growing, particularly in warehouses that ship online orders."},
+          {"label": "B", "text": "Working at night goes against the body's natural clock, which tells us to sleep when it is dark. Night-shift workers often sleep less than six hours during the day, because daylight, traffic and family activities make it hard to rest. Over time, this lack of sleep can affect mood and concentration. Some studies have also linked many years of night work to a higher risk of heart disease."},
+          {"label": "C", "text": "Experts recommend several ways to sleep better during the day. Blackout curtains keep the bedroom dark, and earplugs or a fan can block outside noise. Workers are advised to avoid caffeine in the last few hours of their shift and to keep the same sleep schedule on their days off, even though this can make it harder to spend time with friends and family."},
+          {"label": "D", "text": "Employers can also help. Some companies schedule shifts that rotate forward, from day to evening to night, which is easier for the body than rotating backward. Others provide quiet rooms where workers can take short naps during breaks. One Ontario hospital that introduced nap rooms for night nurses reported fewer mistakes and higher job satisfaction within a year."}
+        ]
+      },
+      "tasks": [
+        {
+          "type": "match",
+          "intro": "Decide which paragraph, A to D, contains each piece of information. If none of the paragraphs contains it, choose E.",
+          "options": ["A", "B", "C", "D", "E"],
+          "option_labels": {"E": "Not given in any of the paragraphs"},
+          "questions": [
+            {"id": "1", "prompt": "Online shopping has created more night-shift jobs.", "answer": 0, "explanation": "A: night-shift jobs are growing 'particularly in warehouses that ship online orders'."},
+            {"id": "2", "prompt": "Many night workers get fewer than six hours of sleep.", "answer": 1, "explanation": "B: night-shift workers often sleep less than six hours."},
+            {"id": "3", "prompt": "Night work over many years may be bad for the heart.", "answer": 1, "explanation": "B: many years of night work are linked to a higher risk of heart disease."},
+            {"id": "4", "prompt": "Keeping the bedroom dark can help workers sleep.", "answer": 2, "explanation": "C: blackout curtains keep the bedroom dark."},
+            {"id": "5", "prompt": "The order in which shifts change can make a difference.", "answer": 3, "explanation": "D: shifts that rotate forward are easier for the body."},
+            {"id": "6", "prompt": "Short sleeps at work reduced errors at one workplace.", "answer": 3, "explanation": "D: a hospital with nap rooms reported fewer mistakes."},
+            {"id": "7", "prompt": "Night workers earn more than day workers in most jobs.", "answer": 4, "explanation": "No paragraph mentions pay."},
+            {"id": "8", "prompt": "Workers should avoid coffee near the end of a shift.", "answer": 2, "explanation": "C: workers are advised to avoid caffeine in the last few hours of their shift."},
+            {"id": "9", "prompt": "Roughly one out of every eight workers in Canada works unusual hours.", "answer": 0, "explanation": "A: 'About one in eight Canadian workers works outside regular daytime hours.'"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r3-03",
+      "title": "Libraries lending more than books",
+      "instructions": "Read the following article.",
+      "passage": {
+        "type": "labeled",
+        "title": "Libraries Lending More Than Books",
+        "paragraphs": [
+          {"label": "A", "text": "Public libraries across Canada are lending far more than books. In some cities, library members can borrow laptops and Wi-Fi hotspots for up to three weeks. Other libraries lend musical instruments, from ukuleles to keyboards. These programs are especially popular with students and with families who cannot afford to buy expensive items they will only use occasionally."},
+          {"label": "B", "text": "One of the most unusual collections is a 'library of things', where members can borrow tools such as drills, ladders and sewing machines. Organizers say the idea saves money and reduces waste, since many tools are used for only a few minutes in their whole lifetime. Borrowers must watch a short safety video before they can take power tools home."},
+          {"label": "C", "text": "Libraries have also started lending passes to local attractions. With a library card, families in many cities can borrow a free pass to museums, art galleries or the zoo. In one large city, the passes are so popular that they are usually all reserved within an hour of becoming available each week, and the library has asked attractions to provide more."},
+          {"label": "D", "text": "Not everyone is enthusiastic about these changes. Some residents worry that libraries are spending too much on items that break or are never returned, money that could be used to buy more books. Library managers respond that the new items attract people who would not otherwise visit, and that many of these new visitors also start borrowing books."}
+        ]
+      },
+      "tasks": [
+        {
+          "type": "match",
+          "intro": "Decide which paragraph, A to D, contains each piece of information. If none of the paragraphs contains it, choose E.",
+          "options": ["A", "B", "C", "D", "E"],
+          "option_labels": {"E": "Not given in any of the paragraphs"},
+          "questions": [
+            {"id": "1", "prompt": "Some borrowed items must be returned within three weeks.", "answer": 0, "explanation": "A: laptops and hotspots can be borrowed for up to three weeks."},
+            {"id": "2", "prompt": "Users must learn about safety before borrowing some items.", "answer": 1, "explanation": "B: borrowers must watch a safety video before taking power tools home."},
+            {"id": "3", "prompt": "Passes to attractions are reserved very quickly in one city.", "answer": 2, "explanation": "C: passes are usually reserved within an hour."},
+            {"id": "4", "prompt": "Some people think the money should be spent on books.", "answer": 3, "explanation": "D: some residents say the money could be used to buy more books."},
+            {"id": "5", "prompt": "Many tools are hardly ever used.", "answer": 1, "explanation": "B: many tools are used for only a few minutes in their lifetime."},
+            {"id": "6", "prompt": "Libraries plan to start lending cars next year.", "answer": 4, "explanation": "No paragraph mentions cars."},
+            {"id": "7", "prompt": "New visitors often start borrowing books as well.", "answer": 3, "explanation": "D: many new visitors also start borrowing books."},
+            {"id": "8", "prompt": "Lending expensive items helps families with less money.", "answer": 0, "explanation": "A: popular with families who cannot afford to buy expensive items."},
+            {"id": "9", "prompt": "A library has asked attractions for more passes.", "answer": 2, "explanation": "C: the library has asked attractions to provide more."}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import { useCountdown } from "../hooks";
 import { Recorder } from "../recorder";
 import { speak, ttsSupported } from "../speech";
 import { Timer } from "../components/Timer";
-import { FeedbackView } from "../components/Feedback";
+import { FeedbackView, feedbackScore } from "../components/Feedback";
 import type { Feedback, TaskProps } from "../types";
 
 type Difficulty = "easy" | "hard";
@@ -32,7 +32,6 @@ interface TurnRecord {
 }
 
 const EXAMINER = "Alex";
-const LEVEL_SCORE: Record<string, number> = { A1: 0, A2: 0.2, B1: 0.4, B2: 0.6, C1: 0.8, C2: 1 };
 // How long to wait for a transcript before choosing the next question anyway.
 const ADAPT_WAIT_MS = 10000;
 
@@ -135,7 +134,7 @@ export default function InteractiveSpeaking({ task, onDone }: TaskProps) {
     }).then((f) => {
       setFeedback(f);
       setPhase("done");
-      onDone(f.ai ? LEVEL_SCORE[f.ai.overall_level] ?? null : null);
+      onDone(feedbackScore(f));
     }, (e) => setError(e.message));
   };
 

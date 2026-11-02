@@ -1,0 +1,65 @@
+{
+  "_comment": "CELPIP Writing Task 2: Responding to Survey Questions. The user chooses Option A or B and explains why.",
+  "items": [
+    {
+      "id": "w2-01",
+      "context": "Your city has some extra money in its budget this year and is asking residents how to spend it.",
+      "question": "Which project do you prefer?",
+      "options": [{"key": "A", "text": "Build a new public swimming pool."}, {"key": "B", "text": "Add more buses so that they come more often."}]
+    },
+    {
+      "id": "w2-02",
+      "context": "Your employer is thinking about changing the work schedule for all employees.",
+      "question": "Which schedule do you prefer?",
+      "options": [{"key": "A", "text": "Work four ten-hour days each week."}, {"key": "B", "text": "Keep working five eight-hour days each week."}]
+    },
+    {
+      "id": "w2-03",
+      "context": "A local high school has a large empty room and is asking parents and neighbours how to use it.",
+      "question": "What should the room become?",
+      "options": [{"key": "A", "text": "A computer lab with new equipment."}, {"key": "B", "text": "A quiet library and study space."}]
+    },
+    {
+      "id": "w2-04",
+      "context": "The management of your apartment building wants to add one shared facility for residents.",
+      "question": "Which facility do you prefer?",
+      "options": [{"key": "A", "text": "A small gym in the basement."}, {"key": "B", "text": "A shared vegetable garden on the roof."}]
+    },
+    {
+      "id": "w2-05",
+      "context": "Your city is considering a change to its busiest downtown street.",
+      "question": "Which plan do you support?",
+      "options": [{"key": "A", "text": "Close the street to cars on weekends so that people can walk and shop."}, {"key": "B", "text": "Keep the street open to cars and build a new parking garage."}]
+    },
+    {
+      "id": "w2-06",
+      "context": "Your company wants to thank its employees after a successful year.",
+      "question": "Which reward do you prefer?",
+      "options": [{"key": "A", "text": "A one-time bonus of $1,000."}, {"key": "B", "text": "Three extra days of paid vacation."}]
+    },
+    {
+      "id": "w2-07",
+      "context": "Your community is planning one large event for next summer.",
+      "question": "Which event should it organize?",
+      "options": [{"key": "A", "text": "An outdoor music festival with local bands."}, {"key": "B", "text": "A food fair with dishes from local restaurants."}]
+    },
+    {
+      "id": "w2-08",
+      "context": "The public library in your area can afford to open for more hours, but only at one end of the day.",
+      "question": "Which change do you prefer?",
+      "options": [{"key": "A", "text": "Open two hours earlier in the morning."}, {"key": "B", "text": "Stay open two hours later in the evening."}]
+    },
+    {
+      "id": "w2-09",
+      "context": "The provincial government wants to add one required course for all high school students.",
+      "question": "Which course should be required?",
+      "options": [{"key": "A", "text": "A course on personal finance and budgeting."}, {"key": "B", "text": "A course in a second language."}]
+    },
+    {
+      "id": "w2-10",
+      "context": "Your neighbourhood association is deciding what to build on an empty piece of land.",
+      "question": "What should be built there?",
+      "options": [{"key": "A", "text": "A fenced park for dogs."}, {"key": "B", "text": "A playground for children."}]
+    }
+  ]
+}

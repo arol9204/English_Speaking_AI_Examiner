@@ -1,0 +1,15 @@
+{
+  "_comment": "CELPIP Speaking Task 1: Giving Advice.",
+  "items": [
+    {"id": "s1-01", "prompt": "Your friend has just moved to Canada and wants to find a job quickly. Give your friend advice about how to find work."},
+    {"id": "s1-02", "prompt": "Your coworker feels stressed because they have too much work and never finish on time. Give your coworker advice about managing their workload."},
+    {"id": "s1-03", "prompt": "Your neighbour wants to start exercising but has never been very active. Give your neighbour advice about how to begin."},
+    {"id": "s1-04", "prompt": "Your cousin wants to save enough money to buy a car next year. Give your cousin advice about how to save."},
+    {"id": "s1-05", "prompt": "Your friend has a job interview next week and feels very nervous about it. Give your friend advice about how to prepare."},
+    {"id": "s1-06", "prompt": "A family member wants to eat more healthily but says they do not know how to cook. Give them advice."},
+    {"id": "s1-07", "prompt": "Your friend spends hours on their phone every night and is not sleeping well. Give your friend advice."},
+    {"id": "s1-08", "prompt": "Your younger brother is finishing high school and cannot decide what to study at college. Give him advice about making the decision."},
+    {"id": "s1-09", "prompt": "Your friend is about to spend their first winter in Canada. Give your friend advice about preparing for the cold weather."},
+    {"id": "s1-10", "prompt": "Your colleague wants to improve their English speaking skills but has little free time. Give your colleague advice."}
+  ]
+}

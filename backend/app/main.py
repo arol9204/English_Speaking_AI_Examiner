@@ -1,7 +1,5 @@
-"""DET Practice API. Run with: uvicorn app.main:app --reload (from the backend/ folder)."""
+"""AI English Examiner API. Run with: uvicorn app.main:app --reload (from the backend/ folder)."""
 
-import base64
-import random
 import tempfile
 from pathlib import Path
 
@@ -13,35 +11,17 @@ from pydantic import BaseModel
 
 from . import content
 from .ai import fluency, llm, rubric, stt
-from .config import FRONTEND_DIST, PHOTOS_DIR
-from .generators import c_test, read_and_select
-from .scoring.dictation import score_dictation
+from .config import CELPIP_IMAGES_DIR, FRONTEND_DIST
+from .exams import EXAMS, EXAMS_BY_KEY, HANDLERS, TASKS_BY_KEY, exam_summary
 from .scoring.text_metrics import text_metrics
-from .tasks import TASKS, TASKS_BY_KEY
 
-app = FastAPI(title="DET Practice")
-
-PROMPT_FILES = {
-    "interactive_writing": "writing_prompts",
-    "writing_sample": "writing_prompts",
-    "read_then_speak": "speaking_prompts",
-    "speaking_sample": "speaking_prompts",
-}
-PHOTO_TASKS = {"write_about_the_photo", "speak_about_the_photo"}
+app = FastAPI(title="AI English Examiner")
 
 
-def _level(level: str | None) -> str:
-    if level is None:
-        return random.choice(content.LEVELS)
-    if level not in content.LEVELS:
-        raise HTTPException(400, f"level must be one of {content.LEVELS}")
-    return level
-
-
-def _photo_path(name: str) -> Path:
-    if name not in content.list_photos():
-        raise HTTPException(404, f"Unknown photo {name!r}")
-    return PHOTOS_DIR / name
+def _task(key: str) -> dict:
+    if key not in TASKS_BY_KEY:
+        raise HTTPException(404, f"Unknown task {key!r}")
+    return TASKS_BY_KEY[key]
 
 
 @app.get("/api/status")
@@ -49,92 +29,55 @@ def get_status():
     return {"llm": llm.status(), "stt": stt.status(), "photos": len(content.list_photos())}
 
 
+@app.get("/api/exams")
+def get_exams():
+    return [exam_summary(exam) for exam in EXAMS]
+
+
+@app.get("/api/exams/{key}")
+def get_exam(key: str):
+    if key not in EXAMS_BY_KEY:
+        raise HTTPException(404, f"Unknown exam {key!r}")
+    exam = EXAMS_BY_KEY[key]
+    return {**exam, "tasks": [TASKS_BY_KEY[t["key"]] for t in exam.get("tasks", [])]}
+
+
 @app.get("/api/tasks")
 def get_tasks():
-    return TASKS
+    return list(TASKS_BY_KEY.values())
 
 
 @app.get("/api/items/{task}")
 def get_item(task: str, level: str | None = None, exclude: str = ""):
+    t = _task(task)
+    if not t["available"]:
+        raise HTTPException(404, f"{t['name']} is not available yet")
     seen = set(filter(None, exclude.split(",")))
-    if task == "read_and_select":
-        lvl = _level(level)
-        seed = random.randint(0, 10**9)
-        words = read_and_select.make_set(lvl, seed)
-        return {"id": f"{lvl}:{seed}", "level": lvl, "words": [w["word"] for w in words]}
-    if task == "fill_in_the_blanks":
-        item = content.random_item("fill_in_the_blanks", level, seen)
-        blank = c_test.make_blank(item["sentence"])
-        blank.pop("answer")
-        return {"id": item["id"], "level": item["level"], **blank}
-    if task == "read_and_complete":
-        item = content.random_item("read_and_complete", level, seen)
-        test = c_test.make_c_test(item["passage"])
-        return {"id": item["id"], "level": item["level"], "title": item["title"],
-                "segments": test["segments"]}
-    if task == "listen_and_type":
-        # The browser reads the sentence aloud, so the text has to be sent to it.
-        item = content.random_item("listen_and_type", level, seen)
-        return {"id": item["id"], "level": item["level"], "text": item["text"]}
-    if task in PROMPT_FILES:
-        item = content.random_item(PROMPT_FILES[task], None, seen)
-        if task != "interactive_writing":
-            item = {k: v for k, v in item.items() if k != "follow_up"}
-        return item
-    if task == "interactive_speaking":
-        # Two topics with 3-4 questions each (6-8 in total), as on the real test.
-        topics = content.load("interactive_speaking")["topics"]
-        fresh = [t for t in topics if t["id"] not in seen]
-        chosen = random.sample(fresh if len(fresh) >= 2 else topics, 2)
-        chosen = [{**t, "questions": t["questions"][:random.choice((3, 4))]} for t in chosen]
-        return {"id": ",".join(t["id"] for t in chosen), "topics": chosen}
-    if task in PHOTO_TASKS:
-        photos = content.list_photos()
-        if not photos:
-            raise HTTPException(404, "No photos yet. Add .jpg/.png files to content/photos/.")
-        fresh = [p for p in photos if p not in seen] or photos
-        name = random.choice(fresh)
-        return {"id": name, "url": f"/api/photos/{name}"}
-    raise HTTPException(404, f"Unknown or unavailable task {task!r}")
+    return HANDLERS[t["exam"]].get_item(t, level, seen)
 
 
 @app.get("/api/photos/{name}")
 def get_photo(name: str):
-    return FileResponse(_photo_path(name))
+    return FileResponse(content.photo_path(name))
+
+
+@app.get("/api/celpip/images/{name}")
+def get_celpip_image(name: str):
+    images = {p.name for p in CELPIP_IMAGES_DIR.glob("*.svg")}
+    if name not in images:
+        raise HTTPException(404, f"Unknown image {name!r}")
+    return FileResponse(CELPIP_IMAGES_DIR / name, media_type="image/svg+xml")
 
 
 class CheckRequest(BaseModel):
     item_id: str
-    answers: list[bool | None] | list[str] | str
+    answers: dict[str, int | None] | list[bool | None] | list[str] | str
 
 
 @app.post("/api/check/{task}")
 def check(task: str, body: CheckRequest):
-    if task == "read_and_select":
-        level, _, seed = body.item_id.partition(":")
-        words = read_and_select.make_set(_level(level), int(seed))
-        answers = list(body.answers) + [None] * (len(words) - len(body.answers))
-        results = [{"word": w["word"], "real": w["real"], "answer": a, "correct": a == w["real"]}
-                   for w, a in zip(words, answers)]
-        return {"score": sum(r["correct"] for r in results) / len(results), "results": results}
-    if task == "fill_in_the_blanks":
-        item = content.get_item("fill_in_the_blanks", body.item_id)
-        blank = c_test.make_blank(item["sentence"])
-        typed = str(body.answers).strip().lower()
-        correct = typed == blank["answer"].lower()
-        return {"score": float(correct), "correct": correct, "answer": blank["answer"],
-                "word": blank["prefix"] + blank["answer"]}
-    if task == "read_and_complete":
-        item = content.get_item("read_and_complete", body.item_id)
-        answers = c_test.make_c_test(item["passage"])["answers"]
-        typed = list(body.answers) + [""] * (len(answers) - len(body.answers))
-        results = [{"answer": a, "typed": t or "", "correct": (t or "").strip().lower() == a.lower()}
-                   for a, t in zip(answers, typed)]
-        return {"score": sum(r["correct"] for r in results) / len(results), "results": results}
-    if task == "listen_and_type":
-        item = content.get_item("listen_and_type", body.item_id)
-        return score_dictation(item["text"], str(body.answers))
-    raise HTTPException(404, f"No automatic checking for {task!r}")
+    t = _task(task)
+    return HANDLERS[t["exam"]].check(t, body.item_id, body.answers)
 
 
 class WritingFeedbackRequest(BaseModel):
@@ -142,33 +85,21 @@ class WritingFeedbackRequest(BaseModel):
     item_id: str
     answer: str
     answer_part2: str | None = None
+    choice: str | None = None
 
 
 @app.post("/api/feedback/writing")
 async def writing_feedback(body: WritingFeedbackRequest):
-    if body.task not in ("interactive_writing", "writing_sample", "write_about_the_photo"):
+    t = _task(body.task)
+    if t["kind"] != "writing":
         raise HTTPException(400, f"{body.task!r} is not a writing task")
-    photo = None
-    if body.task == "write_about_the_photo":
-        question = "Write a description of the photo."
-        photo = base64.b64encode(_photo_path(body.item_id).read_bytes()).decode()
-        answer = body.answer
-        metrics = text_metrics(answer)
-    elif body.task == "interactive_writing":
-        item = content.get_item("writing_prompts", body.item_id)
-        question = f"Part 1: {item['prompt']}\nPart 2 (follow-up): {item['follow_up']}"
-        answer = f"Part 1:\n{body.answer}\n\nPart 2:\n{body.answer_part2 or ''}"
-        metrics = {"part1": text_metrics(body.answer), "part2": text_metrics(body.answer_part2 or "")}
-    else:
-        question = content.get_item("writing_prompts", body.item_id)["prompt"]
-        answer = body.answer
-        metrics = text_metrics(answer)
+    question, answer, metrics, photo = HANDLERS[t["exam"]].writing_question(t, body)
     return await run_in_threadpool(rubric.get_feedback, body.task, question, answer, metrics, photo)
 
 
 @app.post("/api/transcribe")
 async def transcribe(task: str = Form(...), audio: UploadFile = File(...)):
-    if task not in TASKS_BY_KEY or "fluency" not in TASKS_BY_KEY[task].get("criteria", []):
+    if TASKS_BY_KEY.get(task, {}).get("kind") not in ("speaking", "conversation"):
         raise HTTPException(400, f"{task!r} is not a speaking task")
     if not stt.installed():
         raise HTTPException(503, "Speech-to-text is not installed. Run: pip install faster-whisper")
@@ -187,19 +118,15 @@ class SpeakingFeedbackRequest(BaseModel):
     item_id: str
     transcript: str
     fluency: dict
+    choice: str | None = None
 
 
 @app.post("/api/feedback/speaking")
 async def speaking_feedback(body: SpeakingFeedbackRequest):
-    photo = None
-    if body.task == "speak_about_the_photo":
-        question = "Describe the photo out loud."
-        photo = base64.b64encode(_photo_path(body.item_id).read_bytes()).decode()
-    elif body.task in ("read_then_speak", "speaking_sample"):
-        item = content.get_item("speaking_prompts", body.item_id)
-        question = item["prompt"] + " Points to cover: " + "; ".join(item["bullets"])
-    else:
+    t = _task(body.task)
+    if t["kind"] != "speaking":
         raise HTTPException(400, f"{body.task!r} is not a speaking task")
+    question, photo = HANDLERS[t["exam"]].speaking_question(t, body)
     metrics = {"speech": body.fluency, "text": text_metrics(body.transcript)}
     return await run_in_threadpool(rubric.get_feedback, body.task, question, body.transcript,
                                    metrics, photo)

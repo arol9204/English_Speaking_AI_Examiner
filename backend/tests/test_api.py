@@ -6,10 +6,25 @@ from app.main import app
 client = TestClient(app)
 
 
-def test_tasks_catalog():
-    tasks = client.get("/api/tasks").json()
-    assert len(tasks) == 13
+def test_exams_list_has_det_and_celpip_first():
+    exams = client.get("/api/exams").json()
+    assert [e["key"] for e in exams[:2]] == ["det", "celpip"]
+    assert all(e["available"] for e in exams[:2])
+    assert not any(e["available"] for e in exams[2:])
+    assert "tasks" not in exams[0] and exams[0]["task_count"] == 13
+
+
+def test_det_catalog():
+    exam = client.get("/api/exams/det").json()
+    tasks = exam["tasks"]
+    assert len(tasks) == 13 and all(t["exam"] == "det" for t in tasks)
     assert {t["key"] for t in tasks if t["available"]} >= {"read_and_select", "listen_and_type"}
+    assert exam["scale"]["levels"][0] == "A1"
+
+
+def test_unknown_exam_and_task():
+    assert client.get("/api/exams/nope").status_code == 404
+    assert client.get("/api/items/nope").status_code == 404
 
 
 def test_read_and_select_round_trip():

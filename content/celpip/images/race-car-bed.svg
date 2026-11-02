@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="t">
+  <title id="t">A child's bed shaped like a red race car</title>
+  <rect width="480" height="320" fill="#f1eff4"/>
+  <rect y="270" width="480" height="50" fill="#d6d1dd"/>
+  <rect x="50" y="104" width="58" height="12" rx="3" fill="#2f3337"/>
+  <rect x="62" y="114" width="8" height="30" fill="#2f3337"/>
+  <rect x="90" y="114" width="8" height="30" fill="#2f3337"/>
+  <path d="M60 246 L60 150 Q60 136 76 136 L360 136 Q384 136 396 156 L424 196 Q432 210 428 228 L424 246 Z" fill="#d93a3a"/>
+  <rect x="112" y="140" width="250" height="34" rx="8" fill="#ffffff"/>
+  <rect x="120" y="150" width="185" height="26" rx="6" fill="#4f7fd6"/>
+  <ellipse cx="335" cy="152" rx="26" ry="11" fill="#cfe0f7"/>
+  <path d="M70 200 H420" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="240" cy="214" r="24" fill="#ffffff"/>
+  <text x="240" y="225" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#d93a3a">7</text>
+  <circle cx="414" cy="212" r="9" fill="#f2c14e"/>
+  <g>
+    <circle cx="130" cy="248" r="34" fill="#2f3337"/><circle cx="130" cy="248" r="14" fill="#9aa1a8"/>
+    <circle cx="350" cy="248" r="34" fill="#2f3337"/><circle cx="350" cy="248" r="14" fill="#9aa1a8"/>
+  </g>
+</svg>

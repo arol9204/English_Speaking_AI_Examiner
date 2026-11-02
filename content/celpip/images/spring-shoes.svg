@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="t">
+  <title id="t">A pair of sneakers with large springs under the soles</title>
+  <rect width="480" height="320" fill="#eef1f6"/>
+  <rect y="266" width="480" height="54" fill="#cdd3dd"/>
+  <g id="shoe">
+    <path d="M70 176 L70 140 Q74 118 108 118 L148 120 Q174 122 194 140 Q220 150 222 166 L222 176 Z" fill="#3b6fd6"/>
+    <rect x="66" y="174" width="160" height="12" rx="5" fill="#ffffff" stroke="#b9c2d0" stroke-width="2"/>
+    <path d="M118 124 L132 140 M128 122 L142 138 M138 122 L152 136" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M78 160 Q120 150 170 160" fill="none" stroke="#f2c14e" stroke-width="5" stroke-linecap="round"/>
+    <polyline points="110,186 160,196 110,206 160,216 110,226 160,236 110,246 160,256" fill="none" stroke="#8b9096" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="96" y="256" width="78" height="10" rx="3" fill="#4a4f55"/>
+  </g>
+  <use href="#shoe" x="190"/>
+</svg>

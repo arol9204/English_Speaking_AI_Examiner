@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="t">
+  <title id="t">A bicycle with square wheels</title>
+  <rect width="480" height="320" fill="#eef3f7"/>
+  <rect y="260" width="480" height="60" fill="#d5dbe3"/>
+  <g fill="none" stroke="#2f3337" stroke-width="10" stroke-linejoin="round">
+    <rect x="75" y="150" width="110" height="110" rx="6"/>
+    <rect x="295" y="150" width="110" height="110" rx="6"/>
+  </g>
+  <g stroke="#7a8188" stroke-width="3">
+    <path d="M130 205 L80 155 M130 205 L180 155 M130 205 L80 255 M130 205 L180 255 M130 205 V155 M130 205 V255 M130 205 H80 M130 205 H180"/>
+    <path d="M350 205 L300 155 M350 205 L400 155 M350 205 L300 255 M350 205 L400 255 M350 205 V155 M350 205 V255 M350 205 H300 M350 205 H400"/>
+  </g>
+  <g fill="none" stroke="#d64545" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M130 205 L215 205 L195 118 L320 116 L326 140 L215 205"/>
+    <path d="M130 205 L198 126"/>
+    <path d="M326 140 L350 205"/>
+    <path d="M320 116 L318 94"/>
+  </g>
+  <path d="M296 94 Q318 84 346 90" fill="none" stroke="#2f3337" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="300" cy="88" r="6" fill="#f2c14e"/>
+  <ellipse cx="192" cy="110" rx="27" ry="8" fill="#2f3337"/>
+  <circle cx="215" cy="205" r="12" fill="#555c63"/>
+  <path d="M215 205 L232 226" stroke="#2f3337" stroke-width="6" stroke-linecap="round"/>
+  <rect x="226" y="223" width="18" height="6" rx="2" fill="#2f3337"/>
+  <circle cx="130" cy="205" r="8" fill="#2f3337"/>
+  <circle cx="350" cy="205" r="8" fill="#2f3337"/>
+  <g>
+    <rect x="340" y="96" width="62" height="40" rx="5" fill="#c8964f"/>
+    <path d="M340 109 H402 M340 122 H402 M352 96 V136 M365 96 V136 M378 96 V136 M391 96 V136" stroke="#8a6230" stroke-width="2"/>
+  </g>
+</svg>

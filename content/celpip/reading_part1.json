@@ -1,0 +1,141 @@
+{
+  "_comment": "CELPIP Reading Part 1: Reading Correspondence. 6 multiple-choice questions about a message, then 5 blanks in a reply ({{id}} marks each blank). 'answer' is the index of the right option.",
+  "items": [
+    {
+      "id": "r1-01",
+      "title": "A message from a friend",
+      "instructions": "Read the following message.",
+      "passage": {
+        "type": "text",
+        "meta": ["From: Maya Chen", "To: Sam Torres", "Subject: Settling in!"],
+        "paragraphs": [
+          "Hi Sam,",
+          "I'm sorry it has taken me so long to write. The last month has been a whirlwind! As you know, I started my new job at the aquarium on the first of June. I was hired to give tours to school groups, but the manager has already asked me to help train the summer volunteers as well. It's more work than I expected, but I'm really enjoying it. I spend every day explaining why sea turtles are so amazing, and I actually get paid for it!",
+          "Finding an apartment was harder than I thought it would be. Rents here have gone up a lot, and the first two places I liked were already taken by the time I called back. In the end, I found a small one-bedroom near the harbour. It's on the third floor of an old building with no elevator, so carrying my furniture up the stairs was quite an adventure. The good news is that I can walk to work in fifteen minutes, so I've sold my car.",
+          "Speaking of furniture, I need your advice. You always know where to find good deals. My living room is completely empty except for a few boxes. Should I buy a new sofa or look for a second-hand one online? I'd like something comfortable, but I don't want to spend more than about four hundred dollars.",
+          "Finally, I have a favour to ask. My cousin is getting married in Toronto on August 12, and I'll be away for five days. Would you be able to take care of my cat, Pepper, while I'm gone? I know you live a long way from here, but my brother could drive her to your place before I leave. Of course, I'll pay for her food and anything else she needs.",
+          "I hope you can come and visit me soon. The ocean views are worth the trip!",
+          "Take care,\nMaya"
+        ]
+      },
+      "tasks": [
+        {
+          "type": "mcq",
+          "intro": "Choose the best option for each question.",
+          "questions": [
+            {"id": "1", "prompt": "Why has Maya not written sooner?", "options": ["She has been very busy with her new job and home.", "She lost Sam's email address.", "She was travelling to Toronto.", "She was sick for several weeks."], "answer": 0, "explanation": "She says the last month has been a whirlwind: a new job and finding an apartment."},
+            {"id": "2", "prompt": "What has the aquarium manager asked Maya to do?", "options": ["Give tours to adult visitors", "Take care of the sea turtles", "Help train the summer volunteers", "Work longer hours on weekends"], "answer": 2, "explanation": "'The manager has already asked me to help train the summer volunteers as well.'"},
+            {"id": "3", "prompt": "Why was it hard for Maya to find an apartment?", "options": ["Most buildings had no elevator.", "She could not visit apartments without a car.", "Landlords did not accept cats.", "Places she liked were rented before she called back."], "answer": 3, "explanation": "'The first two places I liked were already taken by the time I called back.'"},
+            {"id": "4", "prompt": "What did Maya do after she moved into her apartment?", "options": ["She bought a new sofa.", "She moved to a bigger building.", "She hired movers.", "She sold her car."], "answer": 3, "explanation": "'I can walk to work in fifteen minutes, so I've sold my car.'"},
+            {"id": "5", "prompt": "Why does Maya ask Sam for advice about furniture?", "options": ["Sam is good at finding good deals.", "Sam sells second-hand furniture.", "Sam has a sofa he does not need.", "Sam works in a furniture store."], "answer": 0, "explanation": "'You always know where to find good deals.'"},
+            {"id": "6", "prompt": "What does Maya offer if Sam takes care of Pepper?", "options": ["To drive Pepper to Sam's home herself", "To bring Sam a gift from Toronto", "To pay for Pepper's food and needs", "To pay for Sam's trip to visit her"], "answer": 2, "explanation": "'I'll pay for her food and anything else she needs.' Her brother, not Maya, would drive Pepper."}
+          ]
+        },
+        {
+          "type": "cloze",
+          "intro": "Here is Sam's reply to Maya. Complete the reply by choosing the best option for each blank.",
+          "meta": ["From: Sam Torres", "To: Maya Chen", "Subject: RE: Settling in!"],
+          "text": "Hi Maya,\n\nIt was great to hear from you! Your new job sounds perfect for you, and I'm not surprised the manager wants you to {{7}}. You've always been a great teacher.\n\nAbout the sofa: since your budget is around {{8}}, I'd look online first. People often sell good sofas cheaply when they move. Just remember that your apartment is on the {{9}}, so ask the seller to help you carry it up!\n\nOf course I can look after Pepper while you're at the wedding. I'll be home that week, so it's no problem to keep her for {{10}}. Tell your brother {{11}}.\n\nI can't wait to visit and see that ocean view!\n\nSam",
+          "questions": [
+            {"id": "7", "options": ["help train the summer volunteers", "give tours to adult groups", "work in the gift shop", "feed the sea turtles"], "answer": 0, "explanation": "The manager asked Maya to help train the summer volunteers."},
+            {"id": "8", "options": ["$1,000", "$200", "$40", "$400"], "answer": 3, "explanation": "Maya does not want to spend more than about four hundred dollars."},
+            {"id": "9", "options": ["third floor", "ground floor", "second floor", "top floor of a new building"], "answer": 0, "explanation": "Her apartment is on the third floor of an old building with no elevator."},
+            {"id": "10", "options": ["one weekend", "two weeks", "five days", "a month"], "answer": 2, "explanation": "Maya will be away for five days."},
+            {"id": "11", "options": ["to send her on the train", "to keep her at his apartment", "to call me from Toronto", "to drive her to my place before you leave"], "answer": 3, "explanation": "Maya says her brother could drive Pepper to Sam's place before she leaves."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r1-02",
+      "title": "A notice from the building manager",
+      "instructions": "Read the following message.",
+      "passage": {
+        "type": "text",
+        "meta": ["From: Patricia Gomez, Building Manager, Maple Court Apartments", "To: All residents", "Subject: Elevator replacement and parking changes"],
+        "paragraphs": [
+          "Dear Residents,",
+          "I am writing to let you know about important work that will take place in our building this fall. After more than thirty years of service, our elevator will be replaced with a new, faster model. The work will begin on Monday, October 6, and is expected to take four weeks.",
+          "While the elevator is out of service, residents will need to use the stairs. We understand that this will be difficult for some of you, especially residents on the upper floors. If you have a medical condition or a disability that makes using the stairs difficult, please contact the office by September 26. We will arrange help with carrying groceries and other items, and we can provide a list of nearby buildings that offer short-term rentals at reduced rates.",
+          "The contractor will need space to park two trucks and store equipment. For this reason, the six visitor parking spaces at the front of the building will be closed during the work. Visitors may park on Elm Street, where parking is free after 6 p.m. and on weekends. Residents' underground parking will not be affected.",
+          "The workers will be on site from 8 a.m. to 5 p.m., Monday to Friday. Some noise is expected, especially during the first week, when the old elevator is removed. We apologize for the inconvenience.",
+          "Finally, we are looking for two volunteers to join a small committee that will help choose the design of the new elevator's interior. If you are interested, please reply to this email.",
+          "Thank you for your patience and understanding.",
+          "Sincerely,\nPatricia Gomez"
+        ]
+      },
+      "tasks": [
+        {
+          "type": "mcq",
+          "intro": "Choose the best option for each question.",
+          "questions": [
+            {"id": "1", "prompt": "What is the main purpose of this message?", "options": ["To inform residents about building work and the changes it will bring", "To ask residents to vote on a new elevator", "To announce an increase in rent", "To apologize because the elevator is broken"], "answer": 0, "explanation": "The message explains the elevator replacement and how it will affect residents."},
+            {"id": "2", "prompt": "How long will the elevator replacement take?", "options": ["One week", "Six days", "Four weeks", "Two months"], "answer": 2, "explanation": "'The work ... is expected to take four weeks.'"},
+            {"id": "3", "prompt": "What should residents who have trouble using the stairs do?", "options": ["Contact the office before a certain date", "Move out of the building in October", "Use the underground parking entrance", "Ask the contractor for help"], "answer": 0, "explanation": "They should contact the office by September 26."},
+            {"id": "4", "prompt": "Why will the visitor parking spaces be closed?", "options": ["They will be repaved.", "Residents will use them during the work.", "The city has new parking rules.", "The contractor needs them for trucks and equipment."], "answer": 3, "explanation": "'The contractor will need space to park two trucks and store equipment.'"},
+            {"id": "5", "prompt": "When is the work expected to be noisiest?", "options": ["During the first week", "On weekends", "After 6 p.m.", "During the last week"], "answer": 0, "explanation": "Noise is expected especially during the first week, when the old elevator is removed."},
+            {"id": "6", "prompt": "What does Patricia invite residents to do?", "options": ["Help carry groceries for neighbours", "Suggest a different contractor", "Attend a meeting with the contractor", "Help choose the design of the new elevator's interior"], "answer": 3, "explanation": "She is looking for two volunteers for a committee to choose the interior design."}
+          ]
+        },
+        {
+          "type": "cloze",
+          "intro": "Here is a resident's reply to the message. Complete the reply by choosing the best option for each blank.",
+          "meta": ["From: Daniel Okafor, Apartment 902", "To: Patricia Gomez", "Subject: RE: Elevator replacement and parking changes"],
+          "text": "Dear Ms. Gomez,\n\nThank you for letting us know about the elevator replacement. I live on the ninth floor and recently had knee surgery, so climbing the stairs will be very hard for me. I'm writing before {{7}}, as you asked.\n\nI would be grateful for help with my groceries. I would also like to see the list of {{8}}, as staying somewhere else for part of the month might be easier.\n\nMy daughter usually visits on Saturdays. I'll tell her to park on {{9}}, since the visitor spaces will be closed. Because parking there is {{10}} on weekends, it shouldn't be a problem for her.\n\nLastly, I would be happy to join the {{11}}. I worked as an interior designer for many years.\n\nBest regards,\nDaniel Okafor",
+          "questions": [
+            {"id": "7", "options": ["October 6", "September 26", "the end of October", "next Monday"], "answer": 1, "explanation": "Residents who have trouble with stairs should contact the office by September 26."},
+            {"id": "8", "options": ["nearby buildings with short-term rentals", "contractors in the area", "volunteers who can help", "elevator designs"], "answer": 0, "explanation": "The office can provide a list of nearby buildings offering short-term rentals."},
+            {"id": "9", "options": ["the underground parking", "Maple Street", "Elm Street", "the front of the building"], "answer": 2, "explanation": "Visitors may park on Elm Street."},
+            {"id": "10", "options": ["limited to one hour", "half price", "not allowed", "free"], "answer": 3, "explanation": "Parking on Elm Street is free after 6 p.m. and on weekends."},
+            {"id": "11", "options": ["design committee", "safety committee", "volunteer moving team", "parking committee"], "answer": 0, "explanation": "The committee will help choose the design of the elevator's interior."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r1-03",
+      "title": "A handover from a coworker",
+      "instructions": "Read the following message.",
+      "passage": {
+        "type": "text",
+        "meta": ["From: Jordan Reyes", "To: Priya Nair", "Subject: Handover before my leave"],
+        "paragraphs": [
+          "Hi Priya,",
+          "As you know, my last day before parental leave is this Friday, and I'm very grateful that you've agreed to take over the Riverside Library project while I'm away. I wanted to put everything in one email so you have it in writing.",
+          "The most urgent task is the community survey. We've received about 300 responses so far, and the deadline is March 15. Please send a reminder to the mailing list next Monday; the message is already written and saved in the shared folder. Once the survey closes, the results need to go to Kenji in the data team, who has promised to prepare a summary by the end of March.",
+          "The second task is the reading-room renovation. The architect, Laura Kim, will send updated drawings next week. Our budget is $85,000, and her first estimate was about $10,000 over that. I suggested replacing the custom bookshelves with standard ones, which should close most of the gap. If she still can't get under budget, please talk to Martin before agreeing to anything, as he has to approve any extra spending.",
+          "You'll also be invited to the monthly meetings with the library board. They're usually on the first Thursday of the month at 4 p.m. The board members are friendly, but they like short presentations with clear numbers, so I'd keep your updates to five minutes.",
+          "I'll be checking my email occasionally, but please only contact me if something is really urgent. Martin knows the project well and can answer most questions.",
+          "Thanks again, and good luck!\nJordan"
+        ]
+      },
+      "tasks": [
+        {
+          "type": "mcq",
+          "intro": "Choose the best option for each question.",
+          "questions": [
+            {"id": "1", "prompt": "Why is Jordan writing to Priya?", "options": ["To explain the work she will take over while he is away", "To invite her to a library board meeting", "To ask her to write a survey", "To complain about the architect"], "answer": 0, "explanation": "He wants to put everything about the project she is taking over in writing."},
+            {"id": "2", "prompt": "What should Priya do next Monday?", "options": ["Close the survey", "Write a new message to the mailing list", "Send a reminder that Jordan has already written", "Call Kenji in the data team"], "answer": 2, "explanation": "'Please send a reminder ... the message is already written and saved in the shared folder.'"},
+            {"id": "3", "prompt": "What was the problem with the architect's first estimate?", "options": ["It arrived late.", "The board did not approve it.", "It did not include bookshelves.", "It was higher than the budget."], "answer": 3, "explanation": "Her first estimate was about $10,000 over the $85,000 budget."},
+            {"id": "4", "prompt": "What did Jordan suggest to reduce the cost?", "options": ["Using standard bookshelves", "Hiring a different architect", "Asking the board for $10,000", "Making the reading room smaller"], "answer": 0, "explanation": "He suggested replacing the custom bookshelves with standard ones."},
+            {"id": "5", "prompt": "What kind of presentations does the library board prefer?", "options": ["Long reports sent by email", "Short updates with clear numbers", "Presentations given by the architect", "Meetings held in the morning"], "answer": 1, "explanation": "'They like short presentations with clear numbers.'"},
+            {"id": "6", "prompt": "Who should Priya contact with most questions?", "options": ["Jordan", "Laura Kim", "Kenji", "Martin"], "answer": 3, "explanation": "'Martin knows the project well and can answer most questions.'"}
+          ]
+        },
+        {
+          "type": "cloze",
+          "intro": "Here is Priya's reply to Jordan. Complete the reply by choosing the best option for each blank.",
+          "meta": ["From: Priya Nair", "To: Jordan Reyes", "Subject: RE: Handover before my leave"],
+          "text": "Hi Jordan,\n\nThanks for such a clear summary. Congratulations again, and enjoy this special time with your family!\n\nI've put a note in my calendar to send the survey reminder on {{7}}. After the survey closes on March 15, I'll pass the responses to {{8}} so the summary is ready by the end of the month.\n\nFor the renovation, I'll review Laura's new drawings when they arrive. If the cost is still over {{9}}, I'll speak to Martin before making any decisions.\n\nI'll also prepare for the board meeting on the first {{10}} of next month. Thanks for the tip: I'll keep my update to {{11}} and focus on the numbers.\n\nAll the best,\nPriya",
+          "questions": [
+            {"id": "7", "options": ["Friday", "Monday", "March 15", "the first Thursday"], "answer": 1, "explanation": "Jordan asks her to send the reminder next Monday."},
+            {"id": "8", "options": ["Martin", "Laura", "Kenji", "the board"], "answer": 2, "explanation": "The results go to Kenji in the data team."},
+            {"id": "9", "options": ["$85,000", "$10,000", "$95,000", "$300"], "answer": 0, "explanation": "The budget is $85,000."},
+            {"id": "10", "options": ["Monday", "Friday", "Wednesday", "Thursday"], "answer": 3, "explanation": "Board meetings are usually on the first Thursday of the month."},
+            {"id": "11", "options": ["an hour", "five minutes", "ten slides", "two pages"], "answer": 1, "explanation": "Jordan suggests keeping updates to five minutes."}
+          ]
+        }
+      ]
+    }
+  ]
+}

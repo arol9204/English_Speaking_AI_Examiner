@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="t">
+  <title id="t">An armchair on wheels with a lamp and a cup holder</title>
+  <rect width="480" height="320" fill="#eff1ec"/>
+  <rect y="278" width="480" height="42" fill="#cfd5c8"/>
+  <path d="M190 52 L225 148 L255 148 L215 52 Z" fill="#fbe7a1" opacity="0.7"/>
+  <path d="M128 150 L112 62 Q114 46 132 44 L178 44" fill="none" stroke="#8b9096" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M166 34 L208 34 L220 62 L154 62 Z" fill="#f2c14e"/>
+  <rect x="150" y="80" width="180" height="125" rx="30" fill="#4f9a6b"/>
+  <rect x="140" y="188" width="200" height="48" rx="18" fill="#5fae7c"/>
+  <rect x="108" y="148" width="54" height="94" rx="18" fill="#3f8458"/>
+  <rect x="318" y="148" width="54" height="94" rx="18" fill="#3f8458"/>
+  <rect x="128" y="236" width="224" height="20" rx="6" fill="#356f4a"/>
+  <g fill="#2f3337">
+    <circle cx="148" cy="266" r="12"/><circle cx="218" cy="268" r="12"/>
+    <circle cx="288" cy="268" r="12"/><circle cx="334" cy="266" r="12"/>
+  </g>
+  <g fill="#9aa1a8">
+    <circle cx="148" cy="266" r="4"/><circle cx="218" cy="268" r="4"/>
+    <circle cx="288" cy="268" r="4"/><circle cx="334" cy="266" r="4"/>
+  </g>
+  <rect x="362" y="138" width="34" height="14" rx="4" fill="#2f3337"/>
+  <rect x="366" y="112" width="26" height="28" rx="4" fill="#d64545"/>
+  <path d="M392 118 Q404 126 392 134" fill="none" stroke="#d64545" stroke-width="4"/>
+</svg>

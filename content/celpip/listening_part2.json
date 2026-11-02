@@ -1,0 +1,97 @@
+{
+  "_comment": "CELPIP Listening Part 2: Listening to a Daily Life Conversation. One conversation, heard once, then 5 questions.",
+  "items": [
+    {
+      "id": "l2-01",
+      "title": "At the pharmacy",
+      "context": "You will hear a conversation between a pharmacist and a customer.",
+      "speakers": {"A": {"name": "Pharmacist", "gender": "female"}, "B": {"name": "Mr. Singh", "gender": "male"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Hi there. How can I help you?"},
+            {"speaker": "B", "text": "Hi. I'm here to pick up a prescription for my daughter. The last name is Singh."},
+            {"speaker": "A", "text": "Let me check. Yes, I have it here. It's an antibiotic for an ear infection, is that right?"},
+            {"speaker": "B", "text": "That's right. The doctor said she should start it today."},
+            {"speaker": "A", "text": "Okay. She needs to take it twice a day, in the morning and in the evening, for ten days. It's important to finish the whole bottle, even if she feels better after a few days."},
+            {"speaker": "B", "text": "Ten days. Got it. Does she need to take it with food?"},
+            {"speaker": "A", "text": "Yes, it can upset her stomach, so give it to her with breakfast and dinner. Also, keep the bottle in the fridge. It's a liquid, and it lasts longer when it's cold."},
+            {"speaker": "B", "text": "Okay. And how much is it? Our insurance usually covers most of it."},
+            {"speaker": "A", "text": "Your insurance covers eighty percent, so your part is twelve dollars and fifty cents."},
+            {"speaker": "B", "text": "That's fine. Oh, one more thing. She has a school trip on Thursday and will be away all day. Is it okay if she takes the morning dose a little later?"},
+            {"speaker": "A", "text": "That's fine, as long as the two doses are at least eight hours apart. If you like, I can give you a small travel bottle so she can take it with her lunch."},
+            {"speaker": "B", "text": "That would be great, thanks."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "Why is the man at the pharmacy?", "options": ["To pick up medicine for his daughter", "To buy vitamins", "To see a doctor", "To return a bottle"], "answer": 0, "explanation": "He is picking up a prescription for his daughter."},
+            {"id": "2", "prompt": "For how long should the daughter take the medicine?", "options": ["Two days", "Eight days", "Ten days", "Until she feels better"], "answer": 2, "explanation": "Twice a day for ten days, and she must finish the whole bottle."},
+            {"id": "3", "prompt": "Where should the medicine be kept?", "options": ["In the fridge", "In a dark cupboard", "At school", "In the bathroom"], "answer": 0, "explanation": "'Keep the bottle in the fridge.'"},
+            {"id": "4", "prompt": "How much will the man pay?", "options": ["$8.00", "$20.00", "$62.50", "$12.50"], "answer": 3, "explanation": "Insurance covers 80%, so his part is twelve dollars and fifty cents."},
+            {"id": "5", "prompt": "What does the pharmacist offer to do?", "options": ["Call the school", "Change the medicine", "Give him a small travel bottle", "Lower the price"], "answer": 2, "explanation": "She offers a small travel bottle for the school trip."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-02",
+      "title": "Planning a garage sale",
+      "context": "You will hear a conversation between two neighbours.",
+      "speakers": {"A": {"name": "Linda", "gender": "female"}, "B": {"name": "Raj", "gender": "male"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Morning, Raj! Have you got a minute?"},
+            {"speaker": "B", "text": "Sure, Linda. What's up?"},
+            {"speaker": "A", "text": "A few of us on the street are planning a group garage sale on the last Saturday of the month. I wondered if you'd like to join."},
+            {"speaker": "B", "text": "Oh, that sounds fun. Actually, we've got a lot of things in the basement since our kids moved out. Old toys, a desk, even a bicycle."},
+            {"speaker": "A", "text": "Perfect. The more houses that take part, the more people will come. We're going to put an ad online and some signs at the end of the street."},
+            {"speaker": "B", "text": "What time would it start?"},
+            {"speaker": "A", "text": "Eight in the morning until about two. The early morning is when the serious buyers come."},
+            {"speaker": "B", "text": "Eight? That's early for a Saturday, but okay. What happens to the things that don't sell?"},
+            {"speaker": "A", "text": "There's a charity truck coming at three to collect anything left over, so you don't have to put it all back in the basement."},
+            {"speaker": "B", "text": "That's great. My wife will be happy about that. Is there anything I can do to help?"},
+            {"speaker": "A", "text": "If you could make a couple of the signs, that would be a big help. I've got the cardboard and markers; I just don't have much time this week."},
+            {"speaker": "B", "text": "No problem. I'll pick them up from you tomorrow."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "What is Linda organizing?", "options": ["A group garage sale", "A street party", "A charity race", "A meeting about parking"], "answer": 0, "explanation": "A group garage sale on the last Saturday of the month."},
+            {"id": "2", "prompt": "Why does Raj have things to sell?", "options": ["He is moving to a new house.", "His basement flooded.", "He bought too many things.", "His children have moved out."], "answer": 3, "explanation": "They have many things in the basement since their kids moved out."},
+            {"id": "3", "prompt": "Why will the sale start early?", "options": ["The charity truck comes early.", "It will be very hot later.", "Serious buyers come early in the morning.", "The street will close at noon."], "answer": 2, "explanation": "'The early morning is when the serious buyers come.'"},
+            {"id": "4", "prompt": "What will happen to the things that are not sold?", "options": ["They will be thrown away.", "They will be sold online.", "Linda will keep them.", "A charity will collect them."], "answer": 3, "explanation": "A charity truck will collect anything left over."},
+            {"id": "5", "prompt": "What will Raj do to help?", "options": ["Make some signs", "Post the ad online", "Buy cardboard and markers", "Drive the charity truck"], "answer": 0, "explanation": "He will make a couple of the signs with Linda's materials."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l2-03",
+      "title": "Returning a jacket",
+      "context": "You will hear a conversation between a customer and a store employee.",
+      "speakers": {"A": {"name": "Store employee", "gender": "male"}, "B": {"name": "Customer", "gender": "female"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Good afternoon. How can I help you?"},
+            {"speaker": "B", "text": "Hi. I bought this winter jacket here two weeks ago, and I'd like to return it."},
+            {"speaker": "A", "text": "Sure. Is there something wrong with it?"},
+            {"speaker": "B", "text": "Well, the zipper broke the second time I wore it. And it's not as warm as I expected. I walk to work, and I was freezing yesterday."},
+            {"speaker": "A", "text": "I'm sorry to hear that. Do you have your receipt?"},
+            {"speaker": "B", "text": "Yes, here it is. I paid with my credit card."},
+            {"speaker": "A", "text": "Thanks. Since it's within thirty days, I can give you a full refund to your card. Or, if you like, you could exchange it for a warmer one. We just got a new line of jackets that are rated for minus thirty degrees."},
+            {"speaker": "B", "text": "Oh, really? How much are they?"},
+            {"speaker": "A", "text": "They're two hundred and forty dollars. Your jacket was one ninety, so you'd pay the difference of fifty dollars. But they're on sale until Sunday, fifteen percent off."},
+            {"speaker": "B", "text": "Hmm. Let me think. Can I try one on?"},
+            {"speaker": "A", "text": "Of course. The fitting rooms are at the back, next to the shoe section."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "What is wrong with the jacket?", "options": ["It is the wrong size.", "It was too expensive.", "It is the wrong colour.", "The zipper broke, and it is not warm enough."], "answer": 3, "explanation": "The zipper broke and it is not as warm as she expected."},
+            {"id": "2", "prompt": "How does the woman get to work?", "options": ["She drives.", "She takes the bus.", "She walks.", "She cycles."], "answer": 2, "explanation": "'I walk to work.'"},
+            {"id": "3", "prompt": "Why can she get a full refund?", "options": ["She is returning it within thirty days.", "The store is having a sale.", "She is a regular customer.", "She paid in cash."], "answer": 0, "explanation": "'Since it's within thirty days, I can give you a full refund.'"},
+            {"id": "4", "prompt": "How much did the original jacket cost?", "options": ["$50", "$240", "$290", "$190"], "answer": 3, "explanation": "'Your jacket was one ninety.'"},
+            {"id": "5", "prompt": "What will the woman probably do next?", "options": ["Leave the store", "Try on a new jacket", "Buy some shoes", "Ask for a manager"], "answer": 1, "explanation": "She asks to try one on, and the employee points her to the fitting rooms."}
+          ]
+        }
+      ]
+    }
+  ]
+}

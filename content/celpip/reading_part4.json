@@ -1,0 +1,128 @@
+{
+  "_comment": "CELPIP Reading Part 4: Reading for Viewpoints. An article with different opinions, 5 multiple-choice questions, then a reader's comment with 5 blanks.",
+  "items": [
+    {
+      "id": "r4-01",
+      "title": "A phone ban in high schools",
+      "instructions": "Read the following article from a local newspaper.",
+      "passage": {
+        "type": "text",
+        "title": "School Board Considers Phone Ban",
+        "paragraphs": [
+          "The Westbrook School Board will vote next month on a proposal to ban cellphones in all of its high schools during the school day. If the proposal passes, students would have to keep their phones in their lockers from the first bell until the end of classes, including at lunch.",
+          "Supporters say the ban would help students concentrate. Maria Lopez, a math teacher at Westbrook Central, says she spends the first ten minutes of many classes asking students to put their phones away. \"Even when the phones are face down on the desk, students are thinking about them,\" she says. \"I've seen grades improve in classes where phones are collected at the door.\" Supporters also point to a survey of local parents, in which 64 percent said they would welcome a ban, mainly because they believe it would reduce online bullying during school hours.",
+          "Others think the proposal goes too far. Student council president Jacob Martin argues that phones are useful learning tools. \"We use them to look up information, take photos of the whiteboard and check our schedules,\" he says. Jacob suggests a compromise: phones could be banned during class time but allowed at lunch and between classes. Some parents are also worried about safety. They want to be able to contact their children in an emergency, especially those who take public transit to school.",
+          "School principal Diane Wong understands both sides. Her school tried a classroom-only ban last year, and teachers reported fewer distractions. However, she believes that students need to learn how to manage their phone use, not simply have their phones taken away. \"In a few years, they'll be at university or at work, and no one will be collecting their phones,\" she says. She would prefer to combine classroom rules with lessons about healthy technology habits.",
+          "The board will hold a public meeting on May 14, where students, parents and teachers can share their views before the vote."
+        ]
+      },
+      "tasks": [
+        {
+          "type": "mcq",
+          "intro": "Choose the best option for each question.",
+          "questions": [
+            {"id": "1", "prompt": "What would the proposed ban require students to do?", "options": ["Leave their phones at home", "Keep their phones in their lockers during the school day", "Turn off their phones only during tests", "Give their phones to teachers at lunch"], "answer": 1, "explanation": "Students would keep phones in lockers from the first bell until the end of classes."},
+            {"id": "2", "prompt": "According to Maria Lopez, what happens when phones are face down on desks?", "options": ["Students forget about them.", "Grades improve.", "Teachers collect them.", "Students still think about them."], "answer": 3, "explanation": "'Even when the phones are face down on the desk, students are thinking about them.'"},
+            {"id": "3", "prompt": "Why do most parents in the survey support a ban?", "options": ["To improve grades", "To reduce online bullying", "To save money", "To improve safety on public transit"], "answer": 1, "explanation": "Parents believe it would reduce online bullying during school hours."},
+            {"id": "4", "prompt": "What does Jacob Martin propose?", "options": ["Banning phones only at lunch", "Using phones during tests", "Allowing phones only outside class time", "Letting each teacher decide"], "answer": 2, "explanation": "Phones could be banned during class but allowed at lunch and between classes."},
+            {"id": "5", "prompt": "What is Diane Wong's opinion?", "options": ["Students should learn to manage their own phone use.", "Phones should be banned completely.", "The ban should start immediately.", "Teachers should collect phones at the door."], "answer": 0, "explanation": "She believes students need to learn to manage their phone use, combined with classroom rules."}
+          ]
+        },
+        {
+          "type": "cloze",
+          "intro": "Here is a comment a reader wrote about the article. Complete the comment by choosing the best option for each blank.",
+          "text": "As a parent of two teenagers at Westbrook Central, I've followed this debate closely. I agree with {{6}}, the student council president, that phones can be useful for learning, but I also understand why teachers are frustrated. Ms. Lopez says she loses {{7}} of many classes just asking students to put their phones away.\n\nIn my opinion, the principal's idea makes the most sense: keep phones out of {{8}}, but also teach students healthy habits, since no one will take their phones away when they {{9}}. I plan to share my view at the public meeting on {{10}}, and I hope other parents will too.\n\nAnne T.",
+          "questions": [
+            {"id": "6", "options": ["Diane Wong", "Jacob Martin", "Maria Lopez", "the board chair"], "answer": 1, "explanation": "Jacob Martin is the student council president."},
+            {"id": "7", "options": ["the first ten minutes", "the last ten minutes", "half", "the whole lunch hour"], "answer": 0, "explanation": "She spends the first ten minutes of many classes asking students to put phones away."},
+            {"id": "8", "options": ["lockers", "buses", "classrooms", "lunchrooms"], "answer": 2, "explanation": "The principal's school tried a classroom-only ban."},
+            {"id": "9", "options": ["take public transit", "join the student council", "move to another school", "go to university or work"], "answer": 3, "explanation": "'In a few years, they'll be at university or at work.'"},
+            {"id": "10", "options": ["May 14", "May 4", "April 14", "the day of the vote"], "answer": 0, "explanation": "The public meeting is on May 14."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r4-02",
+      "title": "A four-day work week",
+      "instructions": "Read the following article from a business magazine.",
+      "passage": {
+        "type": "text",
+        "title": "A Shorter Week: Success or Illusion?",
+        "paragraphs": [
+          "Last year, Clearwater Insurance, a company with 400 employees in Edmonton, tried something unusual. For six months, most staff worked four days a week instead of five, for the same pay. Employees worked eight hours a day, which meant a total of 32 hours a week instead of 40.",
+          "The company's chief executive, Sandra Patel, calls the trial a clear success. \"We expected productivity to drop, but it actually rose by about five percent,\" she says. According to Patel, employees took fewer sick days, and the company received twice as many job applications as before. \"People want to work here now. That alone saves us a lot of money in hiring costs.\"",
+          "Employees were mostly positive, but not all of them. Customer service manager Tom Becker says his team found the change difficult. \"Our customers expect us to answer the phone five days a week,\" he explains. His team had to create a complicated schedule so that someone was always available, and some employees ended up working longer days during busy periods. \"For office staff, the four-day week works. For people who deal with the public, it's not so simple.\"",
+          "Economist Rachel Nguyen, who studies working hours, is cautious about the results. She points out that the trial lasted only six months, and that employees may have worked harder because they wanted the program to continue. \"The real question is whether these gains last after two or three years,\" she says. She also notes that the trial took place during a quiet period for the insurance industry.",
+          "Clearwater has decided to continue the four-day week for another year, with one change. Customer service staff will be able to choose between a four-day week and a five-day week with shorter days."
+        ]
+      },
+      "tasks": [
+        {
+          "type": "mcq",
+          "intro": "Choose the best option for each question.",
+          "questions": [
+            {"id": "1", "prompt": "How many hours a week did most employees work during the trial?", "options": ["40", "36", "32", "30"], "answer": 2, "explanation": "Four eight-hour days: a total of 32 hours a week."},
+            {"id": "2", "prompt": "According to Sandra Patel, how did the trial affect hiring?", "options": ["The company received more job applications.", "The company hired fewer people.", "Hiring became more expensive.", "Employees left for other jobs."], "answer": 0, "explanation": "The company received twice as many job applications."},
+            {"id": "3", "prompt": "What problem does Tom Becker describe?", "options": ["His team took more sick days.", "It was hard to be available to customers five days a week.", "His team was paid less.", "Customers complained about prices."], "answer": 1, "explanation": "Customers expect calls answered five days a week, so his team needed a complicated schedule."},
+            {"id": "4", "prompt": "Why is Rachel Nguyen cautious about the results?", "options": ["The company is too small.", "Productivity went down.", "Employees did not like the change.", "The trial was short and employees wanted it to continue."], "answer": 3, "explanation": "The trial lasted only six months, and employees may have worked harder to keep the program."},
+            {"id": "5", "prompt": "What change will Clearwater make?", "options": ["End the four-day week", "Increase working hours for everyone", "Let customer service staff choose their schedule", "Close the office on Fridays"], "answer": 2, "explanation": "Customer service staff can choose a four-day week or a five-day week with shorter days."}
+          ]
+        },
+        {
+          "type": "cloze",
+          "intro": "Here is a comment a reader wrote about the article. Complete the comment by choosing the best option for each blank.",
+          "text": "I work in an office where we have had a four-day week for a year, and I can say that it works. Like the employees at Clearwater, we took fewer {{6}}, and our managers say we get just as much done. However, I agree with {{7}} that the results of a six-month trial do not prove much. People might simply work harder at first because they want to {{8}}.\n\nI also think Mr. Becker raises an important point. Jobs that involve {{9}} are harder to fit into four days. That's why I like Clearwater's new plan to let these employees {{10}}.\n\nKevin R., Calgary",
+          "questions": [
+            {"id": "6", "options": ["vacations", "sick days", "breaks", "customer calls"], "answer": 1, "explanation": "Clearwater employees took fewer sick days."},
+            {"id": "7", "options": ["Sandra Patel", "Tom Becker", "the economist", "the customers"], "answer": 2, "explanation": "The economist, Rachel Nguyen, says six months is too short to judge."},
+            {"id": "8", "options": ["keep the program", "earn more money", "find new jobs", "work from home"], "answer": 0, "explanation": "Employees may have worked harder because they wanted the program to continue."},
+            {"id": "9", "options": ["writing reports", "working overtime", "managing teams", "serving the public"], "answer": 3, "explanation": "Becker says it is not simple for people who deal with the public."},
+            {"id": "10", "options": ["work from home", "choose their schedule", "take longer vacations", "earn a bonus"], "answer": 1, "explanation": "Customer service staff can choose between two schedules."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r4-03",
+      "title": "Bike lanes or parking?",
+      "instructions": "Read the following article from a local newspaper.",
+      "passage": {
+        "type": "text",
+        "title": "Bike Lanes or Parking? Downtown Debate Heats Up",
+        "paragraphs": [
+          "The city of Lakeshore is planning to remove 120 parking spaces on Queen Street to build a protected bike lane. The plan, which would cost about $2 million, is part of the city's goal of doubling the number of people who cycle to work by 2032.",
+          "Cycling groups are delighted. \"Right now, Queen Street is one of the most dangerous streets in the city for cyclists,\" says Priya Desai of Lakeshore Bikes. She notes that three cyclists were seriously injured on the street last year. Desai believes a protected lane, separated from traffic by a concrete curb, would encourage many people who are currently afraid to ride. \"Lots of people would cycle if they felt safe. Paint on the road isn't enough.\"",
+          "Many business owners are worried. Luc Tremblay, who has owned a hardware store on Queen Street for 22 years, says most of his customers drive. \"You can't carry a ladder or ten litres of paint on a bicycle,\" he says. Tremblay fears that customers will go to the big stores at the edge of the city, where parking is free. The local business association has asked the city to delay the project and study its effect on sales.",
+          "City planner Grace Liu says the city has considered these concerns. Studies from other cities, she explains, show that people who arrive on foot or by bike visit shops more often and spend more money over a month than drivers do. The city also plans to add 60 new parking spaces in a lot one block away and to create short-term loading zones for deliveries and for customers picking up large items.",
+          "City council will make a final decision in September. If the plan is approved, construction would begin next spring."
+        ]
+      },
+      "tasks": [
+        {
+          "type": "mcq",
+          "intro": "Choose the best option for each question.",
+          "questions": [
+            {"id": "1", "prompt": "Why is the city planning the bike lane?", "options": ["To reduce the city's costs", "To repair Queen Street", "To help delivery trucks", "To increase the number of people who cycle to work"], "answer": 3, "explanation": "It is part of the goal of doubling the number of people who cycle to work."},
+            {"id": "2", "prompt": "According to Priya Desai, what would encourage more people to cycle?", "options": ["A lane separated from traffic", "Painted lanes", "Free bicycles", "Lower speed limits"], "answer": 0, "explanation": "A protected lane separated by a concrete curb; 'paint on the road isn't enough'."},
+            {"id": "3", "prompt": "What is Luc Tremblay's main concern?", "options": ["Cyclists will damage his store.", "Construction will be noisy.", "His customers need to drive to his store.", "His rent will increase."], "answer": 2, "explanation": "Most of his customers drive and buy items too large for a bicycle."},
+            {"id": "4", "prompt": "What has the business association asked for?", "options": ["More bike lanes", "A delay and a study of the effect on sales", "Free parking downtown", "Lower taxes for stores"], "answer": 1, "explanation": "It asked the city to delay the project and study its effect on sales."},
+            {"id": "5", "prompt": "According to Grace Liu, what do studies show?", "options": ["Cyclists never buy large items.", "Cyclists prefer big stores.", "Cyclists only shop on weekends.", "Cyclists and pedestrians spend more per month than drivers."], "answer": 3, "explanation": "They visit more often and spend more money over a month than drivers."}
+          ]
+        },
+        {
+          "type": "cloze",
+          "intro": "Here is a comment a reader wrote about the article. Complete the comment by choosing the best option for each blank.",
+          "text": "I cycle to work on Queen Street every day, and I agree with Ms. Desai that painted lines are not enough. The {{6}} serious injuries last year show how dangerous the street is.\n\nThat said, I understand Mr. Tremblay's worry. It's true that you can't carry {{7}} on a bike. I think the city's plan answers this concern with {{8}} for customers picking up large items, as well as 60 new parking spaces {{9}}.\n\nI hope council approves the plan in {{10}} so that construction can start next spring.\n\nMei L.",
+          "questions": [
+            {"id": "6", "options": ["two", "three", "five", "ten"], "answer": 1, "explanation": "Three cyclists were seriously injured last year."},
+            {"id": "7", "options": ["groceries", "a laptop", "a ladder", "flowers"], "answer": 2, "explanation": "Tremblay says you can't carry a ladder on a bicycle."},
+            {"id": "8", "options": ["free bicycles", "loading zones", "lower prices", "delivery trucks"], "answer": 1, "explanation": "The city plans short-term loading zones."},
+            {"id": "9", "options": ["on Queen Street", "at the edge of the city", "underground", "one block away"], "answer": 3, "explanation": "The new parking lot is one block away."},
+            {"id": "10", "options": ["September", "the spring", "2032", "December"], "answer": 0, "explanation": "Council will decide in September."}
+          ]
+        }
+      ]
+    }
+  ]
+}

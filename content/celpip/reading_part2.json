@@ -1,0 +1,129 @@
+{
+  "_comment": "CELPIP Reading Part 2: Reading to Apply a Diagram. The diagram is a table; an email with 5 blanks must be completed from it, then 3 questions about the email.",
+  "items": [
+    {
+      "id": "r2-01",
+      "title": "Fall fitness classes",
+      "instructions": "Read the following schedule and the email that refers to it.",
+      "passage": {
+        "type": "diagram",
+        "title": "Lakeview Community Centre: Fall Fitness Classes",
+        "columns": ["Class", "Day and time", "Level", "Cost (10 weeks)", "Notes"],
+        "rows": [
+          ["Aqua Fit", "Mon & Wed, 7:00–8:00 p.m.", "All levels", "$90", "In the pool; bring a swimsuit"],
+          ["Yoga Basics", "Tue, 6:00–7:00 p.m.", "Beginner", "$75", "Mats provided"],
+          ["Power Yoga", "Thu, 7:30–8:30 p.m.", "Advanced", "$85", "Bring your own mat"],
+          ["Spin Class", "Sat, 9:00–10:00 a.m.", "Intermediate", "$110", "Maximum 12 people"],
+          ["Walking Club", "Mon–Fri, 10:00–11:00 a.m.", "All levels", "Free", "For seniors 60+"]
+        ],
+        "notes": ["Lakeview residents get 15% off all paid classes.", "Register at the front desk or online by September 5."]
+      },
+      "tasks": [
+        {
+          "type": "cloze",
+          "intro": "Read the email. Complete it by choosing the best option for each blank, using the schedule.",
+          "meta": ["From: Leila", "To: Rosa", "Subject: Fitness classes"],
+          "text": "Hi Rosa,\n\nI just looked at the fall class schedule at the community centre, and I think I've found the right classes for us. Since you've never done yoga before, I think you should try {{1}}. It's on Tuesday evenings, so it won't interfere with your Saturday shifts at the bakery. And you won't need to buy anything because {{2}}.\n\nI'm going to sign up for Aqua Fit. It costs {{3}} for ten weeks, which is a little more than your class, but I like that it meets twice a week. I'd love to try the spin class too, but it's on {{4}} mornings, and I usually visit my mother then.\n\nDon't forget that we both live in Lakeview, so we'll get {{5}} off. We need to register by September 5, so let's go to the front desk together this weekend.\n\nTalk soon,\nLeila",
+          "questions": [
+            {"id": "1", "options": ["Power Yoga", "Yoga Basics", "the Walking Club", "Spin Class"], "answer": 1, "explanation": "Yoga Basics is the beginner yoga class on Tuesdays."},
+            {"id": "2", "options": ["mats are provided", "the class is free", "the pool lends swimsuits", "the class is online"], "answer": 0, "explanation": "The notes for Yoga Basics say mats are provided."},
+            {"id": "3", "options": ["$75", "$85", "$90", "$110"], "answer": 2, "explanation": "Aqua Fit costs $90 for 10 weeks."},
+            {"id": "4", "options": ["Monday", "Thursday", "Saturday", "Sunday"], "answer": 2, "explanation": "Spin Class is on Saturday at 9:00 a.m."},
+            {"id": "5", "options": ["10%", "15%", "20%", "$15"], "answer": 1, "explanation": "Lakeview residents get 15% off all paid classes."}
+          ]
+        },
+        {
+          "type": "mcq",
+          "intro": "Choose the best option for each question about the email.",
+          "questions": [
+            {"id": "6", "prompt": "Why does Leila think Yoga Basics is right for Rosa?", "options": ["Rosa has done yoga for years.", "Rosa is a beginner and works on Saturdays.", "Rosa wants a free class.", "Rosa prefers morning classes."], "answer": 1, "explanation": "Rosa has never done yoga, and the Tuesday class does not conflict with her Saturday shifts."},
+            {"id": "7", "prompt": "Why will Leila not take the spin class?", "options": ["It is too expensive.", "It is already full.", "It is at a time when she visits her mother.", "It is only for advanced students."], "answer": 2, "explanation": "'It's on Saturday mornings, and I usually visit my mother then.'"},
+            {"id": "8", "prompt": "What does Leila suggest they do this weekend?", "options": ["Visit Leila's mother", "Try a free class", "Buy yoga mats", "Register together at the front desk"], "answer": 3, "explanation": "'Let's go to the front desk together this weekend.'"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r2-02",
+      "title": "Choosing a moving company",
+      "instructions": "Read the following comparison and the email that refers to it.",
+      "passage": {
+        "type": "diagram",
+        "title": "Moving company quotes: two-bedroom apartment, 40 km",
+        "columns": ["Company", "Price", "Packing service", "Insurance", "Earliest date", "Customer rating"],
+        "rows": [
+          ["QuickMove", "$1,250", "Not available", "Up to $5,000", "June 28", "3.4 / 5"],
+          ["Maple Movers", "$1,600", "Included", "Up to $20,000", "July 3", "4.8 / 5"],
+          ["Two Guys & a Van", "$950", "Not available", "None", "June 30", "4.1 / 5"],
+          ["Northern Relocation", "$1,450", "Extra $300", "Up to $10,000", "June 29", "4.3 / 5"]
+        ],
+        "notes": ["All prices include tax.", "Moves on Saturdays and Sundays cost 10% more."]
+      },
+      "tasks": [
+        {
+          "type": "cloze",
+          "intro": "Read the email. Complete it by choosing the best option for each blank, using the comparison.",
+          "meta": ["From: Ana", "To: Marco", "Subject: Movers for June 30"],
+          "text": "Hi Marco,\n\nI've been comparing quotes from moving companies for our move on June 30. Since we have to be out of the apartment that day, we can't use {{1}}, because they can't come until July 3, even though they have the best reviews.\n\nTwo Guys & a Van is the cheapest, but they don't offer {{2}}, and I'm worried about your piano. QuickMove's insurance only goes up to {{3}}, which isn't enough for all our things.\n\nI think Northern Relocation is the best choice. Their price is $1,450, and we can pack everything ourselves to avoid paying {{4}} for packing. The only problem is that June 30 is a Sunday, so the price will be {{5}} higher.\n\nLet me know what you think, and I'll call them tomorrow.\n\nAna",
+          "questions": [
+            {"id": "1", "options": ["QuickMove", "Maple Movers", "Northern Relocation", "Two Guys & a Van"], "answer": 1, "explanation": "Maple Movers' earliest date is July 3, and it has the best rating (4.8)."},
+            {"id": "2", "options": ["any insurance", "evening moves", "moves over 40 km", "a discount"], "answer": 0, "explanation": "Two Guys & a Van has no insurance, which matters for an expensive piano."},
+            {"id": "3", "options": ["$10,000", "$5,000", "$20,000", "$1,250"], "answer": 1, "explanation": "QuickMove's insurance covers up to $5,000."},
+            {"id": "4", "options": ["10%", "$1,450", "$300", "$10,000"], "answer": 2, "explanation": "Northern Relocation charges an extra $300 for packing."},
+            {"id": "5", "options": ["$300", "5%", "15%", "10%"], "answer": 3, "explanation": "Moves on weekends cost 10% more."}
+          ]
+        },
+        {
+          "type": "mcq",
+          "intro": "Choose the best option for each question about the email.",
+          "questions": [
+            {"id": "6", "prompt": "Why is Ana writing to Marco?", "options": ["To recommend a moving company", "To ask him to pack the piano", "To change the date of their move", "To complain about a company"], "answer": 0, "explanation": "She compares the companies and recommends Northern Relocation."},
+            {"id": "7", "prompt": "What worries Ana about Two Guys & a Van?", "options": ["Their customer rating", "Their earliest date", "Protecting the piano", "Their high price"], "answer": 2, "explanation": "They offer no insurance, and she is worried about the piano."},
+            {"id": "8", "prompt": "What will Ana probably do tomorrow?", "options": ["Start packing", "Call Northern Relocation", "Visit Maple Movers", "Sell the piano"], "answer": 1, "explanation": "'I'll call them tomorrow', meaning Northern Relocation."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r2-03",
+      "title": "Summer day camps",
+      "instructions": "Read the following list of camps and the email that refers to it.",
+      "passage": {
+        "type": "diagram",
+        "title": "Riverside Parks and Recreation: Summer Day Camps",
+        "columns": ["Camp", "Ages", "Dates", "Hours", "Cost per week", "Notes"],
+        "rows": [
+          ["Nature Explorers", "6–9", "July 7 – Aug 15", "9 a.m. – 3 p.m.", "$180", "Outdoors in Riverside Park; bring a lunch"],
+          ["Junior Chefs", "8–12", "July 14 – Aug 8", "9 a.m. – 12 p.m.", "$150", "All ingredients provided; snack included"],
+          ["Sports Mix", "7–12", "July 7 – Aug 22", "9 a.m. – 4 p.m.", "$200", "Before-care from 8 a.m. for $25 a week"],
+          ["Art Studio", "5–8", "July 21 – Aug 22", "1 p.m. – 4 p.m.", "$130", "Wear old clothes"]
+        ],
+        "notes": ["Families registering two or more children save $20 per child per week."]
+      },
+      "tasks": [
+        {
+          "type": "cloze",
+          "intro": "Read the email. Complete it by choosing the best option for each blank, using the list of camps.",
+          "meta": ["From: Mira", "To: Tom", "Subject: Summer camps for the kids"],
+          "text": "Hi Tom,\n\nI've been looking at summer camps for the kids. Ella is turning 10 in June, so she's too old for Nature Explorers, but she'd love {{1}}. She's always asking to help in the kitchen. It's only in the mornings, though, so we'd need a plan for the afternoons.\n\nFor Noah, I think Sports Mix is perfect. He's 7, and the camp runs until {{2}}, which works with my schedule. Since I start work at 8:30, we'd also need to pay {{3}} a week for before-care.\n\nIf we register both kids, we'll save {{4}} per child each week. Both camps run from July 14 to {{5}}, so let's choose weeks in that period.\n\nWhat do you think?\nMira",
+          "questions": [
+            {"id": "1", "options": ["Art Studio", "Junior Chefs", "Sports Mix", "Nature Explorers"], "answer": 1, "explanation": "Junior Chefs is a cooking camp for ages 8–12."},
+            {"id": "2", "options": ["noon", "3 p.m.", "4 p.m.", "5 p.m."], "answer": 2, "explanation": "Sports Mix runs from 9 a.m. to 4 p.m."},
+            {"id": "3", "options": ["$20", "$25", "$150", "$200"], "answer": 1, "explanation": "Before-care costs $25 a week."},
+            {"id": "4", "options": ["$20", "$25", "$10", "10%"], "answer": 0, "explanation": "Families with two or more children save $20 per child per week."},
+            {"id": "5", "options": ["August 22", "August 15", "August 8", "July 21"], "answer": 2, "explanation": "Junior Chefs ends on August 8, so both camps overlap from July 14 to August 8."}
+          ]
+        },
+        {
+          "type": "mcq",
+          "intro": "Choose the best option for each question about the email.",
+          "questions": [
+            {"id": "6", "prompt": "Why does Mira think Ella would enjoy Junior Chefs?", "options": ["Ella likes helping with cooking.", "Ella is good at art.", "Ella prefers outdoor activities.", "Ella wants to be with Noah."], "answer": 0, "explanation": "'She's always asking to help in the kitchen.'"},
+            {"id": "7", "prompt": "What problem does Mira mention about Junior Chefs?", "options": ["It is too expensive.", "It does not cover the afternoons.", "Ella is too young for it.", "It starts too late in July."], "answer": 1, "explanation": "'It's only in the mornings, though, so we'd need a plan for the afternoons.'"},
+            {"id": "8", "prompt": "Why do they need before-care for Noah?", "options": ["Noah wants to play more sports.", "The camp is far from their home.", "Tom works in the evenings.", "Mira starts work before the camp begins."], "answer": 3, "explanation": "Mira starts work at 8:30, but the camp starts at 9 a.m."}
+          ]
+        }
+      ]
+    }
+  ]
+}

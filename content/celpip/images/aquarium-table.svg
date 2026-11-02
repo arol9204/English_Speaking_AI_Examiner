@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="t">
+  <title id="t">A coffee table with a fish tank inside</title>
+  <rect width="480" height="320" fill="#f2f0eb"/>
+  <rect y="272" width="480" height="48" fill="#c9bfae"/>
+  <g fill="#8a5a33">
+    <rect x="108" y="212" width="16" height="62"/><rect x="356" y="212" width="16" height="62"/>
+  </g>
+  <rect x="95" y="122" width="290" height="94" fill="#a8d8ee" stroke="#5a7d8c" stroke-width="4"/>
+  <rect x="97" y="196" width="286" height="18" fill="#e8d49a"/>
+  <g fill="none" stroke="#3f9a5c" stroke-width="5" stroke-linecap="round">
+    <path d="M130 196 Q122 176 132 160 Q140 146 132 132"/>
+    <path d="M150 196 Q158 178 150 164"/>
+    <path d="M340 196 Q332 172 344 152"/>
+  </g>
+  <g fill="#f08a3c">
+    <ellipse cx="200" cy="152" rx="18" ry="10"/><path d="M182 152 L168 142 L168 162 Z"/>
+    <ellipse cx="268" cy="178" rx="16" ry="9"/><path d="M284 178 L298 169 L298 187 Z"/>
+    <ellipse cx="318" cy="140" rx="12" ry="7"/><path d="M306 140 L296 133 L296 147 Z"/>
+  </g>
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="214" cy="138" r="3"/><circle cx="220" cy="128" r="2"/><circle cx="254" cy="164" r="3"/>
+  </g>
+  <rect x="86" y="112" width="308" height="12" rx="3" fill="#8a5a33"/>
+  <rect x="150" y="96" width="70" height="16" rx="2" fill="#4f7fd6" transform="rotate(-6 185 104)"/>
+  <rect x="300" y="88" width="24" height="24" rx="4" fill="#ffffff" stroke="#9aa1a8" stroke-width="2"/>
+</svg>

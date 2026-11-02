@@ -2,14 +2,49 @@
 
 Timings, counts, subscores and criteria come from the official DET Question Guide (2026).
 The frontend reads this catalog, so it is the single source of truth for timers.
+
+Each task has a `screen` (which page component shows it) and a `kind`: "auto" (scored by code),
+"writing", "speaking" or "conversation" (graded by the AI examiner).
 """
 
 WRITING_CRITERIA = ["content", "coherence", "grammar", "lexis"]
 SPEAKING_CRITERIA = ["content", "coherence", "fluency", "grammar", "lexis", "pronunciation"]
 
+CRITERIA = {
+    "content": {
+        "name": "Content",
+        "description": "Does the answer respond to the task fully and develop ideas with details and examples?",
+    },
+    "coherence": {
+        "name": "Discourse coherence",
+        "description": "Is it well organized, with ideas clearly linked (connectors, paragraphing or "
+        "signposting)?",
+    },
+    "grammar": {
+        "name": "Grammar",
+        "description": "Range and accuracy of grammar: variety of structures and how many errors.",
+    },
+    "lexis": {
+        "name": "Lexis (vocabulary)",
+        "description": "Range and precision of vocabulary, including less common words and collocations.",
+    },
+    "fluency": {
+        "name": "Fluency",
+        "description": "Speaking speed, smoothness, and how much the speaker pauses, hesitates or uses "
+        "fillers. Judge from the speech measurements below, not only the text.",
+    },
+    "pronunciation": {
+        "name": "Pronunciation",
+        "description": "How clear the speech is. Only an approximation is available: the list of words "
+        "the speech recognizer was unsure about. Few unclear words suggests clear speech.",
+    },
+}
+
 TASKS = [
     {
         "key": "read_and_select",
+        "screen": "read_and_select",
+        "kind": "auto",
         "name": "Read and Select",
         "subscore": "Reading",
         "time_seconds": 5,
@@ -26,6 +61,8 @@ TASKS = [
     },
     {
         "key": "fill_in_the_blanks",
+        "screen": "fill_in_the_blanks",
+        "kind": "auto",
         "name": "Fill in the Blanks",
         "subscore": "Reading",
         "time_seconds": 20,
@@ -41,6 +78,8 @@ TASKS = [
     },
     {
         "key": "read_and_complete",
+        "screen": "read_and_complete",
+        "kind": "auto",
         "name": "Read and Complete",
         "subscore": "Reading",
         "time_seconds": 180,
@@ -56,6 +95,8 @@ TASKS = [
     },
     {
         "key": "listen_and_type",
+        "screen": "listen_and_type",
+        "kind": "auto",
         "name": "Listen and Type",
         "subscore": "Listening",
         "time_seconds": 60,
@@ -71,6 +112,8 @@ TASKS = [
     },
     {
         "key": "interactive_reading",
+        "screen": "interactive_reading",
+        "kind": "auto",
         "name": "Interactive Reading",
         "subscore": "Reading",
         "time_seconds": 480,
@@ -84,6 +127,8 @@ TASKS = [
     },
     {
         "key": "interactive_listening",
+        "screen": "interactive_listening",
+        "kind": "auto",
         "name": "Interactive Listening",
         "subscore": "Listening",
         "time_seconds": 390,
@@ -96,6 +141,8 @@ TASKS = [
     },
     {
         "key": "write_about_the_photo",
+        "screen": "writing",
+        "kind": "writing",
         "name": "Write About the Photo",
         "subscore": "Writing",
         "time_seconds": 60,
@@ -113,6 +160,8 @@ TASKS = [
     },
     {
         "key": "interactive_writing",
+        "screen": "writing",
+        "kind": "writing",
         "name": "Interactive Writing",
         "subscore": "Writing",
         "time_seconds": 300,
@@ -129,6 +178,8 @@ TASKS = [
     },
     {
         "key": "speak_about_the_photo",
+        "screen": "speaking",
+        "kind": "speaking",
         "name": "Speak About the Photo",
         "subscore": "Speaking",
         "time_seconds": 90,
@@ -146,6 +197,8 @@ TASKS = [
     },
     {
         "key": "read_then_speak",
+        "screen": "speaking",
+        "kind": "speaking",
         "name": "Read, Then Speak",
         "subscore": "Speaking",
         "time_seconds": 90,
@@ -161,6 +214,8 @@ TASKS = [
     },
     {
         "key": "interactive_speaking",
+        "screen": "interactive_speaking",
+        "kind": "conversation",
         "name": "Interactive Speaking",
         "subscore": "Speaking",
         "time_seconds": 35,
@@ -179,6 +234,8 @@ TASKS = [
     },
     {
         "key": "writing_sample",
+        "screen": "writing",
+        "kind": "writing",
         "name": "Writing Sample",
         "subscore": "Writing",
         "time_seconds": 300,
@@ -194,6 +251,8 @@ TASKS = [
     },
     {
         "key": "speaking_sample",
+        "screen": "speaking",
+        "kind": "speaking",
         "name": "Speaking Sample",
         "subscore": "Speaking",
         "time_seconds": 180,
@@ -206,4 +265,24 @@ TASKS = [
     },
 ]
 
-TASKS_BY_KEY = {t["key"]: t for t in TASKS}
+EXAM = {
+    "key": "det",
+    "name": "Duolingo English Test",
+    "short_name": "DET",
+    "summary": "An online test you take at home. Short, adaptive questions mix the four skills.",
+    "facts": [
+        {"label": "Length", "value": "About 1 hour"},
+        {"label": "Format", "value": "Online, adaptive"},
+        {"label": "Scores", "value": "10–160 overall, plus 4 subscores"},
+    ],
+    "skills": ["Reading", "Listening", "Writing", "Speaking"],
+    "source": "Duolingo's DET Question Guide (2026)",
+    "scale": {
+        "name": "CEFR scale",
+        "levels": ["A1", "A2", "B1", "B2", "C1", "C2"],
+        "descriptions": {},
+    },
+    "criteria": CRITERIA,
+    "available": True,
+    "tasks": TASKS,
+}

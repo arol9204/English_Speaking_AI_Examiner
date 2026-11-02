@@ -1,0 +1,55 @@
+{
+  "_comment": "CELPIP Writing Task 1: Writing an Email. Each item is a situation and the three things the email must do.",
+  "items": [
+    {
+      "id": "w1-01",
+      "prompt": "You recently ordered a laptop from an online store. When it arrived, the screen was cracked. Write an email to the store's customer service department.",
+      "bullets": ["Describe what you ordered and when it arrived", "Explain what is wrong with it", "Say what you would like the store to do"]
+    },
+    {
+      "id": "w1-02",
+      "prompt": "Your new neighbour often plays loud music late at night, and it keeps you awake. Write an email to your neighbour.",
+      "bullets": ["Introduce yourself", "Explain the problem and how it affects you", "Suggest a solution that would work for both of you"]
+    },
+    {
+      "id": "w1-03",
+      "prompt": "A friend from another country is going to visit your city for one week next month. Write an email to your friend.",
+      "bullets": ["Recommend two or three places to visit", "Explain what kind of weather to expect and what to pack", "Offer to help with something during the visit"]
+    },
+    {
+      "id": "w1-04",
+      "prompt": "You need to take a week off work next month for a family reason. Write an email to your manager.",
+      "bullets": ["Explain why you need the time off", "Suggest how your work could be covered while you are away", "Ask when you can expect an answer"]
+    },
+    {
+      "id": "w1-05",
+      "prompt": "Your local community centre is asking residents to suggest a new free program. Write an email to the centre's director.",
+      "bullets": ["Describe the program you would like to see", "Explain who would benefit from it and why", "Say what the centre would need to run it"]
+    },
+    {
+      "id": "w1-06",
+      "prompt": "The heating in your apartment stopped working three days ago, and the weather is very cold. Write an email to your landlord.",
+      "bullets": ["Describe the problem and when it started", "Explain how it is affecting you and your family", "Ask for a repair and say when you are available"]
+    },
+    {
+      "id": "w1-07",
+      "prompt": "A coworker finished an important project for you while you were sick last week. Write an email to your coworker.",
+      "bullets": ["Thank them for their help", "Explain how their help made a difference", "Suggest a way to show your appreciation"]
+    },
+    {
+      "id": "w1-08",
+      "prompt": "The park near your home is in poor condition: the paths are broken and the playground equipment is old. Write an email to your city councillor.",
+      "bullets": ["Describe the problems in the park", "Explain why the park is important to the neighbourhood", "Suggest improvements the city could make"]
+    },
+    {
+      "id": "w1-09",
+      "prompt": "You registered and paid for an evening course at a local college, but you can no longer attend because your work schedule has changed. Write an email to the college's registration office.",
+      "bullets": ["Give the details of the course you registered for", "Explain why you cannot attend", "Ask about a refund or moving to a later course"]
+    },
+    {
+      "id": "w1-10",
+      "prompt": "A close friend has invited you to their wedding, but you will be out of the country on that date. Write an email to your friend.",
+      "bullets": ["Congratulate your friend", "Explain why you cannot attend", "Suggest another way to celebrate with them"]
+    }
+  ]
+}

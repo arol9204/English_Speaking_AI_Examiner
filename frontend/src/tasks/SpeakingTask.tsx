@@ -3,27 +3,59 @@ import { api, fetchItem } from "../api";
 import { useCountdown } from "../hooks";
 import { Recorder } from "../recorder";
 import { Timer } from "../components/Timer";
-import { FeedbackView } from "../components/Feedback";
+import { FeedbackView, feedbackScore } from "../components/Feedback";
 import type { Feedback, TaskProps } from "../types";
+
+interface OptionCard {
+  key?: string;
+  title: string;
+  details: string[];
+}
 
 interface Item {
   id: string;
   prompt?: string;
   bullets?: string[];
   url?: string;
+  image_url?: string;
+  scenario?: string;
+  options?: OptionCard[];
+  other?: OptionCard;
+  other_person?: string;
+  choices?: { key: string; text: string }[];
 }
 interface Transcript {
   text: string;
   fluency: Record<string, unknown>;
 }
 
-type Phase = "prep" | "recording" | "transcribing" | "manual" | "grading" | "done";
+type Phase = "choose" | "prep" | "recording" | "transcribing" | "manual" | "grading" | "done";
 
-const LEVEL_SCORE: Record<string, number> = { A1: 0, A2: 0.2, B1: 0.4, B2: 0.6, C1: 0.8, C2: 1 };
+function Card({ option, label, selected, onClick }: {
+  option: OptionCard;
+  label?: string;
+  selected?: boolean;
+  onClick?: () => void;
+}) {
+  const body = (
+    <>
+      {label && <div className="option-label">{label}</div>}
+      <div className="option-title">{option.title}</div>
+      <ul>{option.details.map((d) => <li key={d}>{d}</li>)}</ul>
+    </>
+  );
+  return onClick ? (
+    <button type="button" className={`option-card ${selected ? "chosen" : ""}`} onClick={onClick}
+      aria-pressed={selected}>{body}</button>
+  ) : (
+    <div className={`option-card ${selected ? "chosen" : ""}`}>{body}</div>
+  );
+}
 
 export default function SpeakingTask({ task, onDone }: TaskProps) {
   const [item, setItem] = useState<Item>();
-  const [phase, setPhase] = useState<Phase>("prep");
+  const [phase, setPhase] = useState<Phase>(task.choose_seconds ? "choose" : "prep");
+  const [choice, setChoice] = useState<string>();
   const [audioUrl, setAudioUrl] = useState<string>();
   const [transcript, setTranscript] = useState<Transcript>();
   const [manualText, setManualText] = useState("");
@@ -49,11 +81,11 @@ export default function SpeakingTask({ task, onDone }: TaskProps) {
     setTranscript(t);
     setPhase("grading");
     api.post<Feedback>("/api/feedback/speaking", {
-      task: task.key, item_id: item!.id, transcript: t.text, fluency: t.fluency,
+      task: task.key, item_id: item!.id, transcript: t.text, fluency: t.fluency, choice: choice ?? null,
     }).then((f) => {
       setFeedback(f);
       setPhase("done");
-      onDone(f.ai ? LEVEL_SCORE[f.ai.overall_level] ?? null : null);
+      onDone(feedbackScore(f));
     }, (e) => setError(e.message));
   };
 
@@ -71,23 +103,73 @@ export default function SpeakingTask({ task, onDone }: TaskProps) {
     });
   };
 
+  const finishChoosing = () => {
+    // On the real test you must pick in time; here the first option is kept if you do not.
+    setChoice((c) => c ?? item?.options?.[0]?.key);
+    setPhase("prep");
+  };
+
+  const choose = useCountdown(task.choose_seconds ?? 0, !!item && phase === "choose", finishChoosing);
   const prep = useCountdown(task.prep_seconds, !!item && phase === "prep", startRecording);
   const rec = useCountdown(task.time_seconds, phase === "recording", stopRecording);
 
   if (error) return <div className="notice">{error}</div>;
   if (!item) return <p className="muted">Loading…</p>;
 
-  const question = item.url ? (
-    <img className="photo" src={item.url} alt="Describe this photo" />
-  ) : (
-    <div className="question">
-      <p>{item.prompt}</p>
-      {item.bullets && <ul>{item.bullets.map((b) => <li key={b}>{b}</li>)}</ul>}
-    </div>
+  const chosenOption = item.options?.find((o) => o.key === choice);
+
+  const question = (
+    <>
+      {item.url && <img className="photo" src={item.url} alt="The picture to talk about" />}
+      {item.image_url && <img className="photo drawing" src={item.image_url} alt="An unusual object" />}
+      {(item.prompt || item.scenario || item.bullets) && (
+        <div className="question">
+          {item.scenario && <p>{item.scenario}</p>}
+          {item.prompt && <p>{item.prompt}</p>}
+          {item.bullets && <ul>{item.bullets.map((b) => <li key={b}>{b}</li>)}</ul>}
+        </div>
+      )}
+      {item.choices && (
+        <div className="situation-choices" role="radiogroup" aria-label="Choose one option">
+          {item.choices.map((c) => (
+            <label key={c.key} className={`survey-option ${choice === c.key ? "chosen" : ""}`}>
+              <input type="radio" name="situation" checked={choice === c.key}
+                disabled={phase !== "prep" && phase !== "recording"}
+                onChange={() => setChoice(c.key)} />
+              <strong>Option {c.key}:</strong> {c.text}
+            </label>
+          ))}
+        </div>
+      )}
+      {chosenOption && item.other && (
+        <div className="option-cards">
+          <Card option={chosenOption} label="Your choice" selected />
+          <Card option={item.other} label={`${item.other_person ?? "Their"}'s choice`.replace(/^your /, "Your ")} />
+        </div>
+      )}
+    </>
   );
 
+  if (phase === "choose") {
+    return (
+      <div className="center-stack">
+        <Timer left={choose.left} total={task.choose_seconds ?? 0} label="Choose" />
+        <p className="prompt-label">Choose the option that you prefer.</p>
+        <div className="question"><p>{item.scenario}</p></div>
+        <div className="option-cards">
+          {item.options?.map((o) => (
+            <Card key={o.key} option={o} label={`Option ${o.key}`} selected={choice === o.key}
+              onClick={() => setChoice(o.key)} />
+          ))}
+        </div>
+        <button onClick={finishChoosing} disabled={!choice}>Continue</button>
+      </div>
+    );
+  }
   if (phase === "prep" || phase === "recording") {
     const recording = phase === "recording";
+    const instruction = task.instruction ??
+      (item.url ? "Speak about the photo for as long as you can." : "Speak about the topic below.");
     return (
       <div className="center-stack">
         {recording ? (
@@ -95,9 +177,7 @@ export default function SpeakingTask({ task, onDone }: TaskProps) {
         ) : (
           <Timer left={prep.left} total={task.prep_seconds} label="Preparation" />
         )}
-        <p className="prompt-label">
-          {item.url ? "Speak about the photo for as long as you can." : "Speak about the topic below."}
-        </p>
+        <p className="prompt-label">{instruction}</p>
         {question}
         {recording ? (
           <button className="stop" onClick={stopRecording}>Stop recording</button>

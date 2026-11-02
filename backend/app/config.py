@@ -7,6 +7,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 CONTENT_DIR = Path(os.environ.get("DET_CONTENT_DIR", REPO_ROOT / "content"))
 PHOTOS_DIR = CONTENT_DIR / "photos"
+CELPIP_IMAGES_DIR = CONTENT_DIR / "celpip" / "images"
 FRONTEND_DIST = REPO_ROOT / "frontend" / "dist"
 
 # Local LLM served by Ollama (https://ollama.com). gemma3 models can also read images,

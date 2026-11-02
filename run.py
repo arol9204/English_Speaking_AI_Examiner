@@ -1,4 +1,4 @@
-"""Start DET Practice with one command: python run.py
+"""Start AI English Examiner with one command: python run.py
 
 Builds the web page the first time (needs Node.js), starts the server and opens your browser.
 """
@@ -40,7 +40,7 @@ def main():
     import uvicorn
 
     threading.Timer(1.5, lambda: webbrowser.open(URL)).start()
-    print(f"DET Practice is running at {URL} (press Ctrl+C to stop)")
+    print(f"AI English Examiner is running at {URL} (press Ctrl+C to stop)")
     uvicorn.run("app.main:app", host="127.0.0.1", port=8000, log_level="warning")
 
 

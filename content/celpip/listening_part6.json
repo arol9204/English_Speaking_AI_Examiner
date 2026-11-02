@@ -1,0 +1,77 @@
+{
+  "_comment": "CELPIP Listening Part 6: Listening for Viewpoints. A report presenting different opinions, heard once, then 6 questions.",
+  "items": [
+    {
+      "id": "l6-01",
+      "title": "Electric scooters downtown",
+      "context": "You will hear a report about a proposal to allow rental electric scooters in a city.",
+      "speakers": {"N": {"name": "Reporter", "gender": "female"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "N", "text": "Electric scooters have arrived in cities across Canada, and Riverton is the latest to consider allowing rental scooters on its streets. Under a proposed one-year pilot project, two private companies would place five hundred scooters downtown. Riders would unlock them with a phone app and pay about thirty-five cents a minute."},
+            {"speaker": "N", "text": "Supporters say scooters would fill an important gap in the city's transportation system. Many people live too far from a bus stop to walk, but a five-minute scooter ride could connect them to transit. Supporters also point out that scooters produce no emissions and could replace short car trips, which are among the most polluting. Local business groups have also expressed interest, saying scooters could bring more shoppers downtown without the need for more parking."},
+            {"speaker": "N", "text": "However, not everyone is convinced. Groups representing people with disabilities have raised concerns about scooters being left on sidewalks, where they can block wheelchairs and create tripping hazards for people who are blind. In other cities, emergency room doctors have reported a rise in head injuries, especially among riders who do not wear helmets. Critics also question the environmental benefits, noting that many scooter trips replace walking, not driving, and that the scooters themselves often last only a year or two."},
+            {"speaker": "N", "text": "The city says it has learned from other places. The pilot would require riders to park in marked zones, and companies would be fined for scooters left anywhere else. Scooters would be limited to twenty kilometres an hour, and they would not be allowed on sidewalks. City council will vote on the proposal next month, after a public consultation."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "What is the main purpose of the report?", "options": ["To present arguments for and against a scooter program", "To explain how to rent a scooter", "To announce that scooters are now allowed", "To compare two scooter companies"], "answer": 0, "explanation": "It presents supporters' and critics' views on the proposed pilot."},
+            {"id": "2", "prompt": "According to supporters, how could scooters help people who live far from a bus stop?", "options": ["Scooters are cheaper than buses.", "They could ride a scooter to reach transit.", "Scooters could replace buses.", "Buses would carry the scooters."], "answer": 1, "explanation": "A five-minute scooter ride could connect them to transit."},
+            {"id": "3", "prompt": "Why are local business groups interested?", "options": ["They want to sell scooters.", "They would receive part of the fees.", "Their employees need transportation.", "Scooters could bring shoppers without needing more parking."], "answer": 3, "explanation": "Scooters could bring more shoppers downtown without more parking."},
+            {"id": "4", "prompt": "What concern do groups representing people with disabilities have?", "options": ["Scooters are too fast.", "Scooters are too expensive.", "Scooters left on sidewalks can block the way.", "Scooters are too noisy."], "answer": 2, "explanation": "Scooters left on sidewalks can block wheelchairs and cause trips."},
+            {"id": "5", "prompt": "Why do critics doubt the environmental benefits?", "options": ["Scooters use a lot of electricity.", "Many trips replace walking, and scooters do not last long.", "Scooters are made in other countries.", "The batteries are dangerous."], "answer": 1, "explanation": "Many trips replace walking, and scooters often last only a year or two."},
+            {"id": "6", "prompt": "Which rule is part of the proposed pilot?", "options": ["Scooters must be parked in marked zones.", "Riders must be over 21.", "Scooters may be ridden on sidewalks.", "Helmets are provided free."], "answer": 0, "explanation": "Riders must park in marked zones, and companies are fined otherwise."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l6-02",
+      "title": "Starting high school later",
+      "context": "You will hear a report about the idea of starting high school classes later in the morning.",
+      "speakers": {"N": {"name": "Reporter", "gender": "male"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "N", "text": "Should high school start later in the morning? It's a question many school boards across Canada are now asking. In most schools, classes begin between eight and eight thirty. But sleep researchers say that teenagers' body clocks shift during adolescence, making it hard for them to fall asleep before eleven at night. As a result, many students arrive at school tired."},
+            {"speaker": "N", "text": "Supporters of a later start, including many doctors and parent groups, point to studies from the United States, where some districts moved the start time to around nine. In those schools, students slept about forty-five minutes more each night, attendance improved, and car accidents involving teenage drivers decreased. Supporters argue that a small change in the schedule could have a big effect on students' health and grades."},
+            {"speaker": "N", "text": "But the idea faces practical obstacles. School boards often use the same buses for elementary and high schools, one after the other. If high schools start later, elementary schools might need to start earlier, which many parents of young children oppose. Others worry about after-school activities. Students who play sports or have part-time jobs would finish later, and in winter, that could mean practising or travelling home in the dark. Some parents who work early hours also say they rely on older children to look after younger brothers and sisters after school."},
+            {"speaker": "N", "text": "A school board in Nova Scotia is now running a two-year trial in three high schools, starting classes at nine fifteen. The results, expected next year, could help other boards decide."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "According to sleep researchers, why are many teenagers tired at school?", "options": ["They spend too much time on their phones.", "Their body clocks make it hard to fall asleep early.", "They have too much homework.", "They eat poorly."], "answer": 1, "explanation": "Teenagers' body clocks shift, making it hard to sleep before 11 p.m."},
+            {"id": "2", "prompt": "What happened in the American districts that started later?", "options": ["Students slept more, and attendance improved.", "Grades went down.", "Bus costs increased.", "Teachers left their jobs."], "answer": 0, "explanation": "Students slept about 45 minutes more, attendance improved and accidents decreased."},
+            {"id": "3", "prompt": "Why might elementary schools have to start earlier?", "options": ["Young children wake up earlier.", "Teachers prefer it.", "The same buses serve both kinds of school.", "Parents asked for it."], "answer": 2, "explanation": "Boards often use the same buses for elementary and high schools."},
+            {"id": "4", "prompt": "What concern is mentioned about after-school activities?", "options": ["They would be cancelled.", "They would cost more.", "Fewer students would join them.", "Students would finish later, sometimes in the dark."], "answer": 3, "explanation": "In winter, students might practise or travel home in the dark."},
+            {"id": "5", "prompt": "Why do some parents who work early depend on the current schedule?", "options": ["They drive their teenagers to school.", "Older children look after younger siblings after school.", "They eat dinner early.", "Their children work part-time."], "answer": 1, "explanation": "They rely on older children to look after younger brothers and sisters."},
+            {"id": "6", "prompt": "What is happening in Nova Scotia?", "options": ["All schools now start at nine.", "Parents voted against a later start.", "Three high schools are trying a later start time.", "The trial has already ended."], "answer": 2, "explanation": "A two-year trial in three high schools starting at 9:15."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l6-03",
+      "title": "A new downtown arena",
+      "context": "You will hear a report about a proposal to build a new arena in a city.",
+      "speakers": {"N": {"name": "Reporter", "gender": "female"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "N", "text": "In the city of Westfield, a proposal to build a new downtown arena has divided residents. The arena would seat eighteen thousand people and become the new home of the city's professional hockey team. The total cost is estimated at six hundred million dollars, with the team's owners paying half, and the city and the province paying the rest."},
+            {"speaker": "N", "text": "Supporters say the arena would bring new life to the downtown. The current arena, built in nineteen seventy-two, is outside the city centre and surrounded by parking lots. A downtown location would allow fans to arrive by train and visit restaurants and bars before and after games. The team's owners also say the arena would host about one hundred and fifty concerts and events a year, creating hundreds of permanent jobs. Without a new building, they warn, the team might eventually move to another city."},
+            {"speaker": "N", "text": "Opponents argue that public money should be spent elsewhere. A group of local economists says studies of arenas in other cities show they rarely create as much economic growth as promised, because people simply spend their entertainment money downtown instead of in other neighbourhoods. Some residents point out that the city has a long waiting list for affordable housing, and that several community centres need repairs. Others worry about traffic and noise around the proposed site, which currently includes many small businesses and older homes."},
+            {"speaker": "N", "text": "City council has agreed to hold a series of public meetings before making a decision. A poll last month found that forty-eight percent of residents support the project, forty-three percent oppose it, and the rest are undecided."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "Who would pay for the arena?", "options": ["Only the team's owners", "Only the city", "The owners, the city and the province", "Private investors from other cities"], "answer": 2, "explanation": "The owners pay half; the city and province pay the rest."},
+            {"id": "2", "prompt": "According to supporters, what is one problem with the current arena?", "options": ["It is too large.", "It is outside the city centre.", "It has no parking.", "It is too expensive to visit."], "answer": 1, "explanation": "It is outside the city centre and surrounded by parking lots."},
+            {"id": "3", "prompt": "What do the team's owners warn could happen without a new arena?", "options": ["Ticket prices will rise.", "Concerts will be cancelled.", "The old arena will close next year.", "The team might move to another city."], "answer": 3, "explanation": "The team might eventually move to another city."},
+            {"id": "4", "prompt": "What do the economists say about arenas in other cities?", "options": ["They rarely create the growth that was promised.", "They always pay for themselves.", "They reduce traffic.", "They mainly benefit small businesses."], "answer": 0, "explanation": "People spend entertainment money downtown instead of elsewhere."},
+            {"id": "5", "prompt": "What other needs do some residents mention?", "options": ["New roads", "More parking", "Affordable housing and community centre repairs", "A new train line"], "answer": 2, "explanation": "A long waiting list for affordable housing and community centres needing repairs."},
+            {"id": "6", "prompt": "What did the poll show?", "options": ["Most residents oppose the project.", "Slightly more residents support the project than oppose it.", "Almost everyone supports the project.", "Most residents are undecided."], "answer": 1, "explanation": "48% support it, 43% oppose it."}
+          ]
+        }
+      ]
+    }
+  ]
+}

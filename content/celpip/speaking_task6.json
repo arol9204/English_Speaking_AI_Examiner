@@ -1,0 +1,69 @@
+{
+  "_comment": "CELPIP Speaking Task 6: Dealing with a Difficult Situation. The user chooses one option and speaks to that person.",
+  "items": [
+    {
+      "id": "s6-01",
+      "scenario": "You promised to help your friend move to a new apartment this Saturday. This morning, your manager asked you to work an important extra shift on the same day.",
+      "choices": [
+        {"key": "A", "text": "Talk to your friend. Explain why you cannot help on Saturday, and suggest another way to help."},
+        {"key": "B", "text": "Talk to your manager. Explain why you cannot work the extra shift, and suggest a solution."}
+      ]
+    },
+    {
+      "id": "s6-02",
+      "scenario": "You have invited friends to dinner at your apartment tomorrow. Your roommate often leaves dirty dishes and clothes in the shared living areas, and the apartment is a mess.",
+      "choices": [
+        {"key": "A", "text": "Talk to your roommate. Explain the problem, and ask for help before tomorrow."},
+        {"key": "B", "text": "Talk to one of your friends. Explain the situation, and suggest having the dinner somewhere else."}
+      ]
+    },
+    {
+      "id": "s6-03",
+      "scenario": "In team meetings, a coworker keeps presenting your ideas as if they were their own. Your manager is now planning to give this coworker the lead on a new project based on one of your ideas.",
+      "choices": [
+        {"key": "A", "text": "Talk to your coworker. Explain how you feel, and ask them to give you credit in the future."},
+        {"key": "B", "text": "Talk to your manager. Explain the situation, and ask to be involved in the new project."}
+      ]
+    },
+    {
+      "id": "s6-04",
+      "scenario": "Your sister asked to borrow your car next weekend for a short holiday. Later, your best friend asked to borrow it on the same weekend to help her elderly mother move.",
+      "choices": [
+        {"key": "A", "text": "Talk to your sister. Explain why you will lend the car to your friend instead."},
+        {"key": "B", "text": "Talk to your friend. Explain why you will lend the car to your sister instead."}
+      ]
+    },
+    {
+      "id": "s6-05",
+      "scenario": "You booked a table at a restaurant to celebrate your parents' 30th wedding anniversary. When you arrive with your parents, the restaurant says it gave your table to another group by mistake.",
+      "choices": [
+        {"key": "A", "text": "Talk to the restaurant manager. Explain why this evening is important, and ask for a solution."},
+        {"key": "B", "text": "Talk to your parents. Apologize, and suggest a different plan for the evening."}
+      ]
+    },
+    {
+      "id": "s6-06",
+      "scenario": "Your daughter's soccer coach has moved practices to 4 p.m. on weekdays. You work until 5 p.m., so you cannot drive your daughter to practice anymore.",
+      "choices": [
+        {"key": "A", "text": "Talk to the coach. Explain your situation, and ask if practices could start later."},
+        {"key": "B", "text": "Talk to another parent on the team. Explain your situation, and ask if you could share the driving."}
+      ]
+    },
+    {
+      "id": "s6-07",
+      "scenario": "You ordered a large cake for a surprise party for your friend tonight. The bakery has just called to say the cake will be ready two hours after the party starts.",
+      "choices": [
+        {"key": "A", "text": "Talk to the baker. Explain why the time matters, and ask for a solution."},
+        {"key": "B", "text": "Talk to the friend who is hosting the party. Explain the problem, and suggest a new plan."}
+      ]
+    },
+    {
+      "id": "s6-08",
+      "scenario": "Your neighbour's large tree hangs over your yard. Its branches drop leaves into your swimming pool every day, and one branch looks like it could fall onto your roof.",
+      "choices": [
+        {"key": "A", "text": "Talk to your neighbour. Explain the problem politely, and suggest a solution."},
+        {"key": "B", "text": "Talk to an officer at the city by-law office. Explain the situation, and ask what you can do."}
+      ]
+    }
+  ]
+}

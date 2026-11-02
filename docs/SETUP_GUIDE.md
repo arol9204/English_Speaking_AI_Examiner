@@ -1,4 +1,4 @@
-# Step-by-step guide: run DET Practice on your Windows PC
+# Step-by-step guide: run AI English Examiner on your Windows PC
 
 Everything here is free. Plan about 30–45 minutes the first time, mostly waiting for downloads.
 After that, starting the app takes one command (step 8).
@@ -7,14 +7,17 @@ After that, starting the app takes one command (step 8).
 
 ## Step 1: Install Python
 
-1. Go to https://www.python.org/downloads/ and download **Python 3.12** (or newer).
-2. Run the installer. **On the first screen, tick "Add python.exe to PATH"**, then click
-   **Install Now**.
+The app needs **Python 3.12**. Newer versions (3.13 and up) can be too new for the
+speech-to-text package, so install 3.12 even if you already have a newer Python.
+
+1. Download the installer: https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe
+2. Run it. If you have no other Python, tick **"Add python.exe to PATH"** on the first screen;
+   if you already have a newer one, leave it unticked. Click **Install Now**.
 3. Check it worked: open **PowerShell** (Start menu → type `PowerShell` → Enter) and run:
    ```powershell
-   python --version
+   py -3.12 --version
    ```
-   You should see something like `Python 3.12.x`.
+   You should see `Python 3.12.10`.
 
 ## Step 2: Install Node.js
 
@@ -48,7 +51,7 @@ You should now see the folders `backend`, `frontend`, `content` and the file `ru
 Still in the project folder in PowerShell:
 
 ```powershell
-python -m venv .venv
+py -3.12 -m venv .venv
 .venv\Scripts\python -m pip install -r backend\requirements.txt
 ```
 
@@ -72,16 +75,18 @@ into it (about 1–3 minutes).
 You can skip this step: everything still works except the AI grading. For writing and speaking
 answers you can still use the **Copy for Claude** button.
 
-## Step 6: Add photos (for the two photo tasks)
+## Step 6: Add photos (for the photo tasks)
 
-Put 10 or more `.jpg` or `.png` photos in the folder `content\photos\`. Like the real test,
-use real photos of people, animals or objects in everyday situations: for example, free
-photos from https://unsplash.com or https://www.pexels.com, or your own.
+Put 10 or more `.jpg` or `.png` photos in the folder `content\photos\`. They are used by
+**Write/Speak About the Photo** (Duolingo) and **Speaking Tasks 3 and 4** (CELPIP). Use real
+photos of people in everyday scenes with several things happening, like a park, a street or a
+kitchen; busy scenes work best for CELPIP's "describe" and "predict" tasks. Free photos:
+https://unsplash.com or https://www.pexels.com, or your own.
 
 ## Step 7: Choose your browser
 
 Use **Microsoft Edge** or **Google Chrome**. Edge has the most natural free voices for the
-listening and Interactive Speaking tasks.
+listening tasks, including Canadian English voices for CELPIP.
 
 ## Step 8: Start the app
 
@@ -108,8 +113,7 @@ At the top of the home page there are three status lights:
 
 ## Step 10: Practice
 
-- Click any question type, read the tips, choose a difficulty (for the reading and listening
-  tasks), and click **Start**.
+- Choose a test (Duolingo or CELPIP), then any question type. Read the tips and click **Start**.
 - **Speaking tasks:** the first time, the browser asks to use your microphone. Click **Allow**.
 - **The first recording is slow:** the app downloads the speech-recognition model (about 500 MB)
   once. After that it's much faster.
@@ -120,10 +124,10 @@ At the top of the home page there are three status lights:
 
 ## Every day after that
 
-**Double-click `Start DET Practice.bat`** in the project folder. A black window opens and your
+**Double-click `Start English Examiner.bat`** in the project folder. A black window opens and your
 browser opens the app. Keep the window open while you practice; **close it to stop the app**.
 
-For a desktop shortcut: right-click `Start DET Practice.bat` → **Show more options** →
+For a desktop shortcut: right-click `Start English Examiner.bat` → **Show more options** →
 **Send to** → **Desktop (create shortcut)**.
 
 Or, in PowerShell:

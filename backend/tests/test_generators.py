@@ -37,7 +37,7 @@ def test_c_test_follows_official_rules():
 
 
 def test_c_test_answers_rebuild_the_passage():
-    for item in items("read_and_complete"):
+    for item in items("det/read_and_complete"):
         test = c_test.make_c_test(item["passage"])
         rebuilt = "".join(s["text"] if s["type"] == "text" else s["prefix"] + test["answers"][s["index"]]
                           for s in test["segments"])
@@ -46,7 +46,7 @@ def test_c_test_answers_rebuild_the_passage():
 
 
 def test_every_fill_in_the_blank_item_parses():
-    for item in items("fill_in_the_blanks"):
+    for item in items("det/fill_in_the_blanks"):
         assert c_test.make_blank(item["sentence"])["answer"]
 
 

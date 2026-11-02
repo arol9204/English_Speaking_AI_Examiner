@@ -1,0 +1,41 @@
+{
+  "_comment": "CELPIP Speaking Task 8: Describing an Unusual Situation. 'image' is a drawing in content/celpip/images/; 'description' tells the AI examiner what the drawing shows.",
+  "items": [
+    {
+      "id": "s8-01",
+      "image": "square-wheel-bike.svg",
+      "scenario": "Your friend collects unusual bicycles. At a garage sale, you see this bicycle for sale. Call your friend and describe it so they can decide whether to buy it.",
+      "description": "A red bicycle with square wheels instead of round ones. Each square wheel has a black frame and grey spokes from the centre to the corners and edges. It has a black seat, black curved handlebars with a small yellow bell, black pedals, and a brown woven basket at the front."
+    },
+    {
+      "id": "s8-02",
+      "image": "three-spout-teapot.svg",
+      "scenario": "Your aunt collects teapots. In an antique shop, you see this teapot. Call your aunt and describe it to her.",
+      "description": "A round blue teapot with three spouts: one curving up on the left, one curving up on the right, and a short one pointing down at the bottom. A black handle arches over the top, and the lid has a small yellow knob. A white clock with blue hands is set into the front, and the teapot is decorated with pink dots. It sits on a wooden table."
+    },
+    {
+      "id": "s8-03",
+      "image": "lamp-chair.svg",
+      "scenario": "Your friend is looking for a comfortable chair for reading. In a furniture store, you see this chair. Call your friend and describe it.",
+      "description": "A large green armchair that stands on four small black wheels. A tall grey metal lamp with a yellow shade is attached to the left armrest and bends over the seat. On the right armrest there is a small black cup holder with a red mug in it."
+    },
+    {
+      "id": "s8-04",
+      "image": "spring-shoes.svg",
+      "scenario": "Your cousin loves running and jumping. In a sports store, you see these shoes. Call your cousin and describe them.",
+      "description": "A pair of blue sneakers with white soles, white laces and a yellow stripe on the side. Under each shoe there is a large grey metal spring, about as tall as the shoe is long, which stands on a small dark base."
+    },
+    {
+      "id": "s8-05",
+      "image": "race-car-bed.svg",
+      "scenario": "Your sister is looking for a bed for her five-year-old son. In a furniture store, you see this bed. Call your sister and describe it.",
+      "description": "A child's bed shaped like a red race car. The mattress sits inside the car with a blue blanket and a light-blue pillow. The car has a white stripe along the side, the number 7 in a white circle, a yellow headlight at the front, a black spoiler at the back, and two big black wheels with grey centres."
+    },
+    {
+      "id": "s8-06",
+      "image": "aquarium-table.svg",
+      "scenario": "Your friend wants a new coffee table and loves fish. In a home store, you see this table. Call your friend and describe it.",
+      "description": "A long, low coffee table with a wooden top frame and wooden legs. Under the top, the whole table is a glass fish tank with blue water, sand on the bottom, green plants, bubbles and three orange fish. A blue book and a white mug are on top of the table."
+    }
+  ]
+}

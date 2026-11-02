@@ -1,0 +1,76 @@
+{
+  "_comment": "CELPIP Listening Part 4: Listening to a News Item. A news report, heard once, then 5 questions.",
+  "items": [
+    {
+      "id": "l4-01",
+      "title": "Cooling centres open during a heat wave",
+      "context": "You will hear a news item.",
+      "speakers": {"N": {"name": "News reporter", "gender": "female"}, "M": {"name": "Dr. Sam Ahmed", "gender": "male"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "N", "text": "Good morning. The city has opened six cooling centres today, as temperatures are expected to reach thirty-five degrees by Wednesday. With the humidity, it will feel closer to forty-two."},
+            {"speaker": "N", "text": "The centres, located in community centres and public libraries, will be open from ten a.m. to nine p.m. until the heat warning ends. They offer air conditioning, cold water and a place to rest. Pets on a leash are welcome at two of the locations."},
+            {"speaker": "N", "text": "The city's medical officer of health, Dr. Sam Ahmed, says older adults, young children and people who work outdoors are most at risk."},
+            {"speaker": "M", "text": "Heat illness can come on quickly. If you feel dizzy or confused, or you stop sweating, get to a cool place and call nine one one. And please check on elderly neighbours, especially those who live alone."},
+            {"speaker": "N", "text": "The city is also extending hours at three outdoor pools until ten p.m., and it will hand out free bus tickets to anyone who needs to travel to a cooling centre. Forecasters expect the heat to break on Friday, when thunderstorms are expected."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "What temperature is expected by Wednesday?", "options": ["30 degrees", "35 degrees", "40 degrees", "42 degrees"], "answer": 1, "explanation": "Thirty-five degrees; with humidity it will feel closer to forty-two."},
+            {"id": "2", "prompt": "What do the cooling centres offer?", "options": ["Air conditioning and cold water", "Free meals", "Medical exams", "Swimming pools"], "answer": 0, "explanation": "They offer air conditioning, cold water and a place to rest."},
+            {"id": "3", "prompt": "According to Dr. Ahmed, what should people who feel dizzy do?", "options": ["Drink coffee", "Take a cold shower", "Go to a cool place and call 911", "Visit an outdoor pool"], "answer": 2, "explanation": "'Get to a cool place and call nine one one.'"},
+            {"id": "4", "prompt": "What will the city give people who need to travel to a cooling centre?", "options": ["Free taxi rides", "Bottles of water", "Electric fans", "Free bus tickets"], "answer": 3, "explanation": "The city will hand out free bus tickets."},
+            {"id": "5", "prompt": "When is the heat expected to end?", "options": ["Wednesday", "Thursday", "Friday", "On the weekend"], "answer": 2, "explanation": "The heat should break on Friday with thunderstorms."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l4-02",
+      "title": "A small bakery wins a national award",
+      "context": "You will hear a news item.",
+      "speakers": {"N": {"name": "News reporter", "gender": "male"}, "G": {"name": "Grace Okoye", "gender": "female"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "N", "text": "A small family bakery in Moncton has been named the best bakery in Canada. Sunrise Bakery won the top prize at the National Baking Awards in Toronto on Saturday, competing against more than three hundred bakeries from across the country."},
+            {"speaker": "N", "text": "The judges praised the bakery's sourdough bread, which owner Grace Okoye makes with a starter that her grandmother brought from Nigeria forty years ago."},
+            {"speaker": "G", "text": "I couldn't believe it when they called our name. We're just a small shop with five employees. My grandmother taught me that good bread needs time, and we still let our dough rise for two full days."},
+            {"speaker": "N", "text": "Since the win, the bakery's phone hasn't stopped ringing. Okoye says the shop sold out of bread by nine o'clock on Monday morning, and orders have come from as far away as Vancouver. To keep up with demand, the bakery will hire three new staff members and open on Sundays starting next month."},
+            {"speaker": "N", "text": "The prize includes ten thousand dollars, which Okoye plans to use to buy a second oven."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "Where is Sunrise Bakery?", "options": ["Toronto", "Moncton", "Vancouver", "Nigeria"], "answer": 1, "explanation": "It is a small family bakery in Moncton."},
+            {"id": "2", "prompt": "What did the judges especially praise?", "options": ["The cakes", "The coffee", "The sourdough bread", "The low prices"], "answer": 2, "explanation": "The judges praised the bakery's sourdough bread."},
+            {"id": "3", "prompt": "What does Grace say about her bread?", "options": ["The dough rises for two days.", "It is made with new machines.", "It uses a recipe from Toronto.", "It is baked only on Sundays."], "answer": 0, "explanation": "'We still let our dough rise for two full days.'"},
+            {"id": "4", "prompt": "What will the bakery do because of the higher demand?", "options": ["Move to a bigger city", "Raise its prices", "Sell bread online", "Hire more staff and open on Sundays"], "answer": 3, "explanation": "It will hire three new staff and open on Sundays starting next month."},
+            {"id": "5", "prompt": "How will Grace use the prize money?", "options": ["To visit Nigeria", "To buy a second oven", "To give her employees a bonus", "To open a second shop"], "answer": 1, "explanation": "She plans to buy a second oven."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l4-03",
+      "title": "A rockslide closes a highway",
+      "context": "You will hear a news item.",
+      "speakers": {"N": {"name": "News reporter", "gender": "female"}, "M": {"name": "Mark Delaney", "gender": "male"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "N", "text": "Drivers in the Fraser Valley should expect long delays this week after a rockslide closed part of Highway Seven early Sunday morning. No one was injured, but several large rocks blocked both lanes about ten kilometres east of the town of Hope."},
+            {"speaker": "N", "text": "A spokesperson for the Ministry of Transportation, Mark Delaney, says crews are working around the clock to clear the road."},
+            {"speaker": "M", "text": "Our first priority is safety. Geologists are checking the hillside to make sure no more rocks will fall. Once they give us the all-clear, we expect to open one lane, with traffic control, by Wednesday, and both lanes by the end of next week."},
+            {"speaker": "N", "text": "In the meantime, drivers are being sent on a detour through Highway One, which adds about forty-five minutes to the trip. Trucks over fifteen tonnes must use a different route. The ministry is asking drivers to check its website or call five one one for updates before they leave home."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "What happened on Sunday morning?", "options": ["A truck crashed.", "A rockslide blocked the highway.", "A bridge collapsed.", "A snowstorm closed the road."], "answer": 1, "explanation": "A rockslide closed part of Highway 7."},
+            {"id": "2", "prompt": "What are the geologists doing?", "options": ["Removing the rocks", "Directing traffic", "Making sure no more rocks will fall", "Building a new road"], "answer": 2, "explanation": "They are checking the hillside to make sure no more rocks will fall."},
+            {"id": "3", "prompt": "When is one lane expected to open?", "options": ["Monday", "Wednesday", "Sunday", "The end of next week"], "answer": 1, "explanation": "One lane by Wednesday; both lanes by the end of next week."},
+            {"id": "4", "prompt": "How much time does the detour add?", "options": ["Ten minutes", "Fifteen minutes", "One hour", "Forty-five minutes"], "answer": 3, "explanation": "The detour adds about forty-five minutes."},
+            {"id": "5", "prompt": "What are drivers asked to do?", "options": ["Check for updates before leaving home", "Drive only at night", "Avoid Highway 1", "Take the train instead"], "answer": 0, "explanation": "They should check the website or call 511 before they leave home."}
+          ]
+        }
+      ]
+    }
+  ]
+}

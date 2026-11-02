@@ -1,0 +1,111 @@
+{
+  "_comment": "CELPIP Listening Part 5: Listening to a Discussion. Three people discuss a plan, heard once, then 8 questions. The real test shows a video; 'scene' describes what it would show.",
+  "items": [
+    {
+      "id": "l5-01",
+      "title": "Planning a family reunion",
+      "context": "You will hear three adult siblings discussing where to hold a family reunion.",
+      "scene": "A brother and two sisters sitting around a kitchen table with a laptop.",
+      "speakers": {"A": {"name": "Sophie", "gender": "female"}, "B": {"name": "David", "gender": "male"}, "C": {"name": "Nadia", "gender": "female"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Okay, so we all agree we want the reunion in July, right? The question is where. I think we should rent the big cabin on the lake again. Everyone loved it two years ago."},
+            {"speaker": "B", "text": "I loved it too, Sophie, but it was really expensive. Twelve hundred dollars for the weekend, and some of the cousins couldn't afford their share. I'd rather do something cheaper so that everyone can come."},
+            {"speaker": "C", "text": "What about having it at Mom and Dad's place? They have that big backyard, and Mom keeps saying she'd love to host."},
+            {"speaker": "A", "text": "Their backyard is nice, but where would everyone sleep? There are going to be at least thirty people, including Uncle Ray's family from Calgary."},
+            {"speaker": "B", "text": "There's a hotel ten minutes from their house. People from out of town could stay there, and the rest of us live close enough to drive home."},
+            {"speaker": "C", "text": "And honestly, Mom only had her knee surgery in March. I think she'd be happier staying at home than travelling three hours to a cabin."},
+            {"speaker": "A", "text": "That's a good point. I didn't think about her knee. But I don't want Mom doing all the cooking. Last time she was exhausted."},
+            {"speaker": "B", "text": "We could each bring a dish, like a potluck. And on Saturday night, we could order food from that barbecue place she likes."},
+            {"speaker": "C", "text": "I like that. I can make a schedule so everyone knows what to bring, and I'll set up a group chat to share the hotel information."},
+            {"speaker": "A", "text": "Okay, I'm convinced. But can we at least plan one day trip? Maybe a picnic at the provincial park nearby? The kids would love the beach there."},
+            {"speaker": "B", "text": "Sure. Sunday afternoon could work for that."},
+            {"speaker": "C", "text": "Great. Sophie, could you call the hotel this week and ask about a group rate?"},
+            {"speaker": "A", "text": "Sure, I'll do that tomorrow."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "Why does Sophie want to rent the cabin?", "options": ["It is close to their parents' house.", "Everyone enjoyed it last time.", "It is the cheapest option.", "It has a big kitchen."], "answer": 1, "explanation": "'Everyone loved it two years ago.'"},
+            {"id": "2", "prompt": "What is David's concern about the cabin?", "options": ["It is too far away.", "It is too small.", "It is too expensive for some relatives.", "It is not available in July."], "answer": 2, "explanation": "Some cousins couldn't afford their share of the $1,200."},
+            {"id": "3", "prompt": "What does Nadia suggest?", "options": ["Having the reunion at their parents' home", "Staying at a hotel downtown", "Meeting in Calgary", "Having two smaller reunions"], "answer": 0, "explanation": "She suggests their parents' place, where their mother would love to host."},
+            {"id": "4", "prompt": "What is Sophie's concern about Nadia's idea?", "options": ["Their parents do not want to host.", "The backyard is too small.", "It might rain.", "There is nowhere for everyone to sleep."], "answer": 3, "explanation": "'Where would everyone sleep?'"},
+            {"id": "5", "prompt": "Why does Nadia think their mother would prefer to stay home?", "options": ["She does not like the lake.", "She recently had knee surgery.", "She wants to cook for everyone.", "She is afraid of driving."], "answer": 1, "explanation": "Their mother had knee surgery in March."},
+            {"id": "6", "prompt": "How will they solve the problem of the cooking?", "options": ["Everyone will bring a dish, and they will order food one night.", "Their mother will do all the cooking.", "They will hire a chef.", "They will eat at the hotel."], "answer": 0, "explanation": "A potluck, plus barbecue takeout on Saturday night."},
+            {"id": "7", "prompt": "What does Sophie want to add to the plan?", "options": ["A night at the cabin", "A dinner at the hotel", "A day trip to a park", "A boat trip"], "answer": 2, "explanation": "She suggests a picnic at the provincial park."},
+            {"id": "8", "prompt": "What will Sophie do next?", "options": ["Make a schedule", "Call the hotel about a group rate", "Set up a group chat", "Visit their parents"], "answer": 1, "explanation": "Nadia asks her to call the hotel, and she agrees to do it tomorrow."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l5-02",
+      "title": "Setting up a new office",
+      "context": "You will hear three coworkers at a small company discussing their new office space.",
+      "scene": "Three coworkers in a meeting room looking at an empty floor plan.",
+      "speakers": {"A": {"name": "Karen", "gender": "female"}, "B": {"name": "Leo", "gender": "male"}, "C": {"name": "Mei", "gender": "female"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Thanks for coming, everyone. As you know, we're moving to the new office in September, and I'd like your ideas on how to set it up. The landlord has offered to build walls if we want separate offices."},
+            {"speaker": "B", "text": "Honestly, I'd love a closed office. I write code all day, and the noise in our open space makes it really hard to concentrate. I end up wearing headphones for eight hours."},
+            {"speaker": "C", "text": "I understand, Leo, but I think closed offices would hurt teamwork. Half of my best ideas come from overhearing what someone else is working on. If we all hide in separate rooms, we'll never talk to each other."},
+            {"speaker": "A", "text": "Both good points. The walls would also cost us around fifteen thousand dollars, and that would come out of our equipment budget."},
+            {"speaker": "B", "text": "Fifteen thousand? That's a lot. What about a mix, then? Keep most of the space open, but build two or three small quiet rooms that anyone can book when they need to focus."},
+            {"speaker": "C", "text": "I could live with that. And maybe we could have a rule that the open area is for quiet work in the mornings, and conversations happen in the afternoons."},
+            {"speaker": "A", "text": "I like that. It's a lot cheaper too. The quiet rooms would cost about four thousand."},
+            {"speaker": "B", "text": "Could we use some of the money we save to buy better chairs? My back has been killing me."},
+            {"speaker": "A", "text": "I think that's reasonable. Mei, could you draw a few layout options so we can see how it would look?"},
+            {"speaker": "C", "text": "Sure. I'll have something ready by next Friday."},
+            {"speaker": "A", "text": "Perfect. And Leo, can you ask the rest of the team what kind of chairs they'd prefer?"},
+            {"speaker": "B", "text": "Will do."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "What is the meeting about?", "options": ["Hiring new staff", "Planning the new office", "A project for a client", "Moving to another city"], "answer": 1, "explanation": "Karen wants ideas on how to set up the new office."},
+            {"id": "2", "prompt": "Why does Leo want a closed office?", "options": ["He talks on the phone a lot.", "He needs space for equipment.", "Noise makes it hard for him to concentrate.", "He has a bad back."], "answer": 2, "explanation": "The noise in the open space makes it hard to concentrate."},
+            {"id": "3", "prompt": "Why is Mei against separate offices?", "options": ["They would make it harder to share ideas.", "They would be too dark.", "She prefers working from home.", "They would take too long to build."], "answer": 0, "explanation": "Many of her ideas come from overhearing coworkers."},
+            {"id": "4", "prompt": "What problem does Karen mention about building walls?", "options": ["It would take too long.", "The landlord does not allow it.", "It would make the office dark.", "It would reduce the equipment budget."], "answer": 3, "explanation": "The $15,000 would come out of the equipment budget."},
+            {"id": "5", "prompt": "What does Leo suggest?", "options": ["Working from home", "An open office with a few quiet rooms", "Wearing headphones", "Renting a bigger office"], "answer": 1, "explanation": "Mostly open space with two or three bookable quiet rooms."},
+            {"id": "6", "prompt": "What rule does Mei suggest?", "options": ["Quiet work in the mornings, conversations in the afternoons", "No phones in the office", "Booking rooms a week ahead", "Headphones at all times"], "answer": 0, "explanation": "The open area would be quiet in the mornings."},
+            {"id": "7", "prompt": "How much would the quiet rooms cost?", "options": ["$5,000", "$15,000", "$4,000", "$40,000"], "answer": 2, "explanation": "About four thousand dollars."},
+            {"id": "8", "prompt": "What will Mei do by next Friday?", "options": ["Buy new chairs", "Talk to the landlord", "Survey the team", "Draw some layout options"], "answer": 3, "explanation": "She will draw a few layout options."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l5-03",
+      "title": "Planning a summer festival",
+      "context": "You will hear three members of a neighbourhood association planning their summer festival.",
+      "scene": "Three volunteers at a table in a community centre with papers and a budget sheet.",
+      "speakers": {"A": {"name": "Robert", "gender": "male"}, "B": {"name": "Fatima", "gender": "female"}, "C": {"name": "Jenny", "gender": "female"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Let's get started. The summer festival is eight weeks away, and we need to decide how to spend our budget. This year we have five thousand dollars, which is a thousand less than last year, because one of our sponsors pulled out."},
+            {"speaker": "B", "text": "Right. As treasurer, I have to say we need to be careful. Last year we spent almost two thousand on the live band, and honestly, I'm not sure it was worth it. Most people were at the food trucks."},
+            {"speaker": "C", "text": "I disagree, Fatima. The band is what brought families out in the evening. Without music, people would leave by dinner time. And our volunteers loved it."},
+            {"speaker": "A", "text": "What if we found local musicians instead? The high school has a jazz band, and they might play for free if we make a donation to their music program."},
+            {"speaker": "B", "text": "That could work. A donation of five hundred dollars would still save us a lot."},
+            {"speaker": "C", "text": "I'd be happy with that, as long as there's music. What about the bouncy castle? It cost eight hundred dollars, and kids waited in line for an hour."},
+            {"speaker": "B", "text": "That's exactly the problem. One castle isn't enough, but two would be too expensive."},
+            {"speaker": "A", "text": "Maybe we replace it with activities that don't cost much, like face painting and a sports area. The parks department lends equipment for free."},
+            {"speaker": "C", "text": "Good idea. I can ask some volunteers to do the face painting. Three people have already offered."},
+            {"speaker": "B", "text": "And with the money we save, we could finally buy our own tents. We spend six hundred dollars every year renting them."},
+            {"speaker": "A", "text": "I like that. It's an investment. Fatima, could you get some prices for tents? And Jenny, could you contact the high school about the jazz band?"},
+            {"speaker": "C", "text": "Sure, I know the music teacher. I'll call her tomorrow."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "Why is the budget smaller this year?", "options": ["The festival is shorter.", "A sponsor stopped supporting it.", "Fewer people came last year.", "The city raised its fees."], "answer": 1, "explanation": "One of their sponsors pulled out."},
+            {"id": "2", "prompt": "What does Fatima think about last year's band?", "options": ["It may not have been worth the cost.", "It was the best part of the festival.", "It was too loud.", "It played too late."], "answer": 0, "explanation": "'I'm not sure it was worth it.'"},
+            {"id": "3", "prompt": "Why does Jenny want to keep the music?", "options": ["Her friends are in the band.", "It keeps families at the festival in the evening.", "It brings in money.", "The sponsors require it."], "answer": 1, "explanation": "Without music, people would leave by dinner time."},
+            {"id": "4", "prompt": "What does Robert suggest about the music?", "options": ["Cancelling it", "Hiring a DJ", "Playing recorded music", "Asking the high school jazz band to play"], "answer": 3, "explanation": "The high school jazz band might play in exchange for a donation."},
+            {"id": "5", "prompt": "What was the problem with the bouncy castle?", "options": ["It broke.", "It was too small for older children.", "Children had to wait a long time.", "It was unsafe."], "answer": 2, "explanation": "Kids waited in line for an hour."},
+            {"id": "6", "prompt": "What will replace the bouncy castle?", "options": ["Two smaller castles", "Face painting and a sports area", "A magic show", "Pony rides"], "answer": 1, "explanation": "Low-cost activities: face painting and a sports area."},
+            {"id": "7", "prompt": "What does Fatima want to buy with the money they save?", "options": ["Tents", "Sports equipment", "Food", "A sound system"], "answer": 0, "explanation": "They spend $600 a year renting tents."},
+            {"id": "8", "prompt": "What will Jenny do next?", "options": ["Get prices for tents", "Find volunteers for the castle", "Contact the high school's music teacher", "Call the parks department"], "answer": 2, "explanation": "She knows the music teacher and will call her tomorrow."}
+          ]
+        }
+      ]
+    }
+  ]
+}

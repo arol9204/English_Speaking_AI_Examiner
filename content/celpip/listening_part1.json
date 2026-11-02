@@ -1,0 +1,155 @@
+{
+  "_comment": "CELPIP Listening Part 1: Listening to Problem Solving. A conversation in 3 sections, each heard once, with 3 + 3 + 2 questions. The browser reads the lines aloud with a different voice per speaker.",
+  "items": [
+    {
+      "id": "l1-01",
+      "title": "Car trouble before a trip",
+      "context": "You will hear a conversation between a woman and her husband about a problem.",
+      "speakers": {"A": {"name": "Emma", "gender": "female"}, "B": {"name": "Daniel", "gender": "male"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Daniel, I just tried to start the car, and it won't turn on. The engine just makes a clicking sound."},
+            {"speaker": "B", "text": "Oh no. Today of all days. We're supposed to be at my parents' cottage by dinner time."},
+            {"speaker": "A", "text": "I know. And the kids have already packed everything. Do you think it's the battery? We did leave the lights on the other night."},
+            {"speaker": "B", "text": "Probably. The car's only three years old, so I doubt it's anything serious. I could ask Mr. Patel next door if he has cables to jump-start it."},
+            {"speaker": "A", "text": "He left for work an hour ago. I saw his car pull out."},
+            {"speaker": "B", "text": "Right. Well, our roadside assistance plan covers this kind of thing. I'll give them a call."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "What is the problem?", "options": ["The car will not start.", "The car has a flat tire.", "The children are not ready.", "The cottage is closed."], "answer": 0, "explanation": "The car won't turn on; the engine only makes a clicking sound."},
+            {"id": "2", "prompt": "Why does Emma think the battery is the problem?", "options": ["The car is very old.", "The engine is smoking.", "It is very cold outside.", "They left the lights on."], "answer": 3, "explanation": "'We did leave the lights on the other night.'"},
+            {"id": "3", "prompt": "Why can't they ask their neighbour for help?", "options": ["He does not have cables.", "He is on vacation.", "He has already left for work.", "He is busy with his children."], "answer": 2, "explanation": "'He left for work an hour ago.'"}
+          ]
+        },
+        {
+          "lines": [
+            {"speaker": "B", "text": "Okay, I just called. The bad news is that it's a busy morning. They said it could take up to three hours for someone to get here."},
+            {"speaker": "A", "text": "Three hours? Then we wouldn't leave until after lunch, and with the Friday traffic, we'd get there really late."},
+            {"speaker": "B", "text": "I know. What if we take the train instead? There's one at eleven thirty that goes to Huntsville, and my dad could pick us up at the station."},
+            {"speaker": "A", "text": "That's an idea, but what about all our stuff? We've got the cooler, two suitcases and the kids' bikes."},
+            {"speaker": "B", "text": "We could leave the bikes. There are a few old ones at the cottage. And we don't really need the cooler. We can buy food up there."},
+            {"speaker": "A", "text": "Hmm. But if we leave the car here, who's going to deal with the repair?"}
+          ],
+          "questions": [
+            {"id": "4", "prompt": "How long might they have to wait for roadside assistance?", "options": ["Thirty minutes", "One hour", "Two hours", "Up to three hours"], "answer": 3, "explanation": "'It could take up to three hours for someone to get here.'"},
+            {"id": "5", "prompt": "What does Daniel suggest?", "options": ["Taking the train", "Driving his father's car", "Leaving the next morning", "Renting a car"], "answer": 0, "explanation": "'What if we take the train instead?'"},
+            {"id": "6", "prompt": "What does Daniel say they could leave at home?", "options": ["The bikes and the cooler", "The suitcases and the cooler", "The suitcases and the bikes", "Only the suitcases"], "answer": 0, "explanation": "There are bikes at the cottage, and they can buy food there instead of bringing the cooler."}
+          ]
+        },
+        {
+          "lines": [
+            {"speaker": "A", "text": "You know what? Why don't you and the kids take the train, and I'll stay here and wait for the tow truck. Once the car's fixed, I'll drive up and meet you tonight."},
+            {"speaker": "B", "text": "Are you sure? I don't want you to spend half your holiday waiting around."},
+            {"speaker": "A", "text": "It's fine. I have some work emails to answer anyway. And this way, we'll have the car at the cottage for the week. Remember, there's no bus out there, and we'll need it to get to the lake."},
+            {"speaker": "B", "text": "That's true. Okay, I'll book three train tickets now and tell my dad to meet us at one thirty."}
+          ],
+          "questions": [
+            {"id": "7", "prompt": "What does Emma decide to do?", "options": ["Take the train with the children", "Cancel the trip", "Wait for help and drive up later", "Ask Daniel's father to drive"], "answer": 2, "explanation": "She will wait for the tow truck and drive up once the car is fixed."},
+            {"id": "8", "prompt": "Why is it important to have the car at the cottage?", "options": ["To pick up Daniel's father", "To go back to the train station", "To bring the children's bikes", "To get to the lake, since there is no bus"], "answer": 3, "explanation": "'There's no bus out there, and we'll need it to get to the lake.'"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l1-02",
+      "title": "A cancelled team dinner",
+      "context": "You will hear a conversation between two coworkers about a problem.",
+      "speakers": {"A": {"name": "Marcus", "gender": "male"}, "B": {"name": "Priya", "gender": "female"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Priya, do you have a minute? I've just had some bad news about the team dinner on Thursday."},
+            {"speaker": "B", "text": "Uh oh. What happened?"},
+            {"speaker": "A", "text": "The restaurant called. There was a small fire in their kitchen last night. Nobody was hurt, but they'll be closed for at least two weeks."},
+            {"speaker": "B", "text": "Oh no, that's terrible for them. And for us. We have twenty-five people coming, and it's the dinner to celebrate the end of the project."},
+            {"speaker": "A", "text": "Exactly. And the director is coming too, so we really want it to go well."},
+            {"speaker": "B", "text": "Did they at least give us our deposit back?"},
+            {"speaker": "A", "text": "Yes, they're returning the full two hundred dollars."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "Why can't the team use the restaurant?", "options": ["It had a fire in its kitchen.", "It is fully booked.", "It is too expensive.", "It is too far away."], "answer": 0, "explanation": "A small kitchen fire will close the restaurant for at least two weeks."},
+            {"id": "2", "prompt": "What is the dinner for?", "options": ["A coworker's retirement", "The director's birthday", "The end of a project", "Welcoming new staff"], "answer": 2, "explanation": "'It's the dinner to celebrate the end of the project.'"},
+            {"id": "3", "prompt": "What will happen to the deposit?", "options": ["It will be used for a future dinner.", "Half of it will be returned.", "It will not be returned.", "All of it will be returned."], "answer": 3, "explanation": "'They're returning the full two hundred dollars.'"}
+          ]
+        },
+        {
+          "lines": [
+            {"speaker": "B", "text": "Okay, so we need a new place for twenty-five people, three days from now. That's not easy."},
+            {"speaker": "A", "text": "I called the Italian place on Main Street, but they only have space for fifteen. And the hotel restaurant downtown has a private room, but it costs sixty dollars a person, which is way over our budget."},
+            {"speaker": "B", "text": "What's our budget again?"},
+            {"speaker": "A", "text": "Forty dollars per person."},
+            {"speaker": "B", "text": "What about having it here, in the office? We could order food from a caterer and use the big meeting room on the fifth floor. It has a great view of the river."},
+            {"speaker": "A", "text": "Hmm. It's not as special as going out, though. People might feel like they're still at work."}
+          ],
+          "questions": [
+            {"id": "4", "prompt": "Why can't they use the Italian restaurant?", "options": ["It is closed on Thursdays.", "It does not take reservations.", "It is over the budget.", "It is too small for the group."], "answer": 3, "explanation": "It only has space for fifteen people."},
+            {"id": "5", "prompt": "What is the budget per person?", "options": ["$15", "$25", "$40", "$60"], "answer": 2, "explanation": "'Forty dollars per person.'"},
+            {"id": "6", "prompt": "What is Marcus's concern about Priya's idea?", "options": ["The meeting room is too small.", "Catering is too expensive.", "The director will not come.", "It will feel too much like work."], "answer": 3, "explanation": "'People might feel like they're still at work.'"}
+          ]
+        },
+        {
+          "lines": [
+            {"speaker": "B", "text": "What if we made it feel different? We could bring in some decorations, play some music, and maybe hire that taco truck that parks outside on Fridays. People love it."},
+            {"speaker": "A", "text": "Oh, that's a great idea. The taco truck would be fun, and I bet it would cost less than forty dollars a person."},
+            {"speaker": "B", "text": "Exactly. And with the money we save, we could buy a small gift for everyone on the team."},
+            {"speaker": "A", "text": "I like it. I'll call the taco truck owner this afternoon. Can you book the meeting room and send a message to the team about the change?"},
+            {"speaker": "B", "text": "Sure, I'll do that right now."}
+          ],
+          "questions": [
+            {"id": "7", "prompt": "What does Priya suggest to make the event special?", "options": ["Decorations, music and a taco truck", "Inviting families", "A boat trip on the river", "Dinner at the hotel"], "answer": 0, "explanation": "She suggests decorations, music and hiring the taco truck."},
+            {"id": "8", "prompt": "What will Priya do next?", "options": ["Call the taco truck owner", "Buy gifts for the team", "Book the room and tell the team", "Talk to the director"], "answer": 2, "explanation": "Marcus asks her to book the room and message the team; she says she'll do it right now."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l1-03",
+      "title": "A leak in the bathroom",
+      "context": "You will hear a conversation between two roommates about a problem.",
+      "speakers": {"A": {"name": "Aisha", "gender": "female"}, "B": {"name": "Kevin", "gender": "male"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Kevin, come and look at this. There's water dripping from the bathroom ceiling."},
+            {"speaker": "B", "text": "Whoa. That's not good. It's coming from that brown spot near the light."},
+            {"speaker": "A", "text": "I noticed the spot last week, but it was tiny. I thought it was just old paint. Now it's twice as big."},
+            {"speaker": "B", "text": "It must be coming from the apartment upstairs. Maybe their bathtub is leaking."},
+            {"speaker": "A", "text": "We should put a bucket under it before the floor gets damaged. And we shouldn't turn on that light until someone checks it. Water and electricity don't mix."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "Where is the water coming from?", "options": ["The kitchen sink", "The washing machine", "A window", "The bathroom ceiling"], "answer": 3, "explanation": "Water is dripping from the bathroom ceiling."},
+            {"id": "2", "prompt": "What does Aisha say about the brown spot?", "options": ["It has grown bigger.", "It appeared yesterday.", "Kevin painted it.", "It is behind the bathtub."], "answer": 0, "explanation": "It was tiny last week, and now it's twice as big."},
+            {"id": "3", "prompt": "Why does Aisha not want to use the light?", "options": ["It is broken.", "It uses too much electricity.", "It could be dangerous with the water.", "It is too bright."], "answer": 2, "explanation": "'Water and electricity don't mix.'"}
+          ]
+        },
+        {
+          "lines": [
+            {"speaker": "B", "text": "I went upstairs and knocked, but nobody answered. The neighbour across the hall said they're away on vacation until Sunday."},
+            {"speaker": "A", "text": "Sunday? That's four days. We can't wait that long. Let's call the building manager."},
+            {"speaker": "B", "text": "I tried already. It went straight to voicemail. The message said the office is closed until Monday because of the long weekend."},
+            {"speaker": "A", "text": "Seriously? There must be an emergency number."},
+            {"speaker": "B", "text": "Let me check the lease. Yes, here it is: for emergencies outside office hours, call the maintenance line. I'll call now."}
+          ],
+          "questions": [
+            {"id": "4", "prompt": "Why can't they speak to the upstairs neighbours?", "options": ["They do not speak English.", "They are at work.", "They are on vacation.", "They have moved out."], "answer": 2, "explanation": "They're away on vacation until Sunday."},
+            {"id": "5", "prompt": "Why can't they reach the building manager?", "options": ["The office is closed for the long weekend.", "The phone number is wrong.", "The manager lives upstairs.", "The manager is on vacation."], "answer": 0, "explanation": "The office is closed until Monday because of the long weekend."},
+            {"id": "6", "prompt": "Where does Kevin find the emergency number?", "options": ["On the building door", "On the internet", "From a neighbour", "In the lease"], "answer": 3, "explanation": "'Let me check the lease. Yes, here it is.'"}
+          ]
+        },
+        {
+          "lines": [
+            {"speaker": "B", "text": "Okay, the maintenance person is on the way. He said he can turn off the water to the apartment upstairs from the main valve in the basement, so the leak should stop right away."},
+            {"speaker": "A", "text": "That's a relief. But what about our ceiling? It's going to need repairs."},
+            {"speaker": "B", "text": "He said the building will pay for that, since it isn't our fault. But we should take photos of the damage before anything is fixed, just in case."},
+            {"speaker": "A", "text": "Good idea. I'll take some pictures now, and you move the towels and everything out of the bathroom."}
+          ],
+          "questions": [
+            {"id": "7", "prompt": "How will the maintenance person stop the leak?", "options": ["By fixing the neighbours' bathtub", "By entering the upstairs apartment", "By repairing the ceiling", "By turning off the water from the basement"], "answer": 3, "explanation": "He will turn off the water to the upstairs apartment from the main valve in the basement."},
+            {"id": "8", "prompt": "Why should they take photos?", "options": ["To keep a record of the damage", "To show their friends", "To send to the neighbours", "To post online"], "answer": 0, "explanation": "They should photograph the damage before it is fixed, just in case."}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "_comment": "CELPIP Listening Part 3: Listening for Information. One person explains something to another, heard once, then 6 questions.",
+  "items": [
+    {
+      "id": "l3-01",
+      "title": "A new job orientation",
+      "context": "You will hear a conversation between a human resources coordinator and a new employee.",
+      "speakers": {"A": {"name": "Janet", "gender": "female"}, "B": {"name": "Omar", "gender": "male"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Welcome to Brightwave Foods, Omar. Before you start on the production floor, I just want to go over a few important things."},
+            {"speaker": "B", "text": "Sure, thanks."},
+            {"speaker": "A", "text": "First, your schedule. For the first two weeks, you'll work the day shift, from seven a.m. to three p.m., so you can train with a supervisor. After that, you'll join the rotating schedule, which includes some evening shifts."},
+            {"speaker": "B", "text": "Okay. How will I know my schedule each week?"},
+            {"speaker": "A", "text": "It's posted in the staff app every Thursday for the following week. If you want to switch a shift with a coworker, you can request it in the app, but your supervisor has to approve it at least forty-eight hours in advance."},
+            {"speaker": "B", "text": "Got it. What about breaks?"},
+            {"speaker": "A", "text": "You get a thirty-minute unpaid lunch break and two paid fifteen-minute breaks. The cafeteria on the second floor is open from six a.m. until midnight, and employees get a twenty percent discount."},
+            {"speaker": "B", "text": "Great. And I was told I'd need safety equipment?"},
+            {"speaker": "A", "text": "Yes. We'll give you steel-toed boots, a hairnet and gloves today. The boots are free, but if you lose them, you'll have to pay for a new pair. Also, no jewellery is allowed on the production floor, not even watches."},
+            {"speaker": "B", "text": "Okay. When do I get paid?"},
+            {"speaker": "A", "text": "Every second Friday, by direct deposit. Your first pay will be on the twenty-first. Oh, and one more thing: after three months, you'll be able to join our health benefits plan. I'll send you the form by email."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "What will Omar do during his first two weeks?", "options": ["Work evening shifts", "Choose his own hours", "Work in the cafeteria", "Train on the day shift"], "answer": 3, "explanation": "He will work the day shift so he can train with a supervisor."},
+            {"id": "2", "prompt": "When is the work schedule posted?", "options": ["Every Monday", "Every second Friday", "Every Thursday", "Forty-eight hours before each shift"], "answer": 2, "explanation": "'It's posted in the staff app every Thursday.'"},
+            {"id": "3", "prompt": "What is needed to switch a shift?", "options": ["A form from human resources", "A supervisor's approval at least 48 hours ahead", "A note from a coworker", "Nothing; employees can switch freely"], "answer": 1, "explanation": "The supervisor must approve it at least forty-eight hours in advance."},
+            {"id": "4", "prompt": "What is true about the cafeteria?", "options": ["It is free for employees.", "It is open 24 hours a day.", "Employees get a discount.", "It is on the first floor."], "answer": 2, "explanation": "Employees get a twenty percent discount."},
+            {"id": "5", "prompt": "What is not allowed on the production floor?", "options": ["Gloves", "Hairnets", "Boots", "Watches"], "answer": 3, "explanation": "'No jewellery is allowed on the production floor, not even watches.'"},
+            {"id": "6", "prompt": "When can Omar join the health benefits plan?", "options": ["After three months", "Today", "On the twenty-first", "After one year"], "answer": 0, "explanation": "'After three months, you'll be able to join our health benefits plan.'"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-02",
+      "title": "Getting a library card",
+      "context": "You will hear a conversation between a librarian and a woman who wants a library card.",
+      "speakers": {"A": {"name": "Ana", "gender": "female"}, "B": {"name": "Librarian", "gender": "male"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Hi, I just moved to the city, and I'd like to get a library card."},
+            {"speaker": "B", "text": "Welcome! It's free for anyone who lives in the city. I just need a piece of ID with your current address, like a driver's licence or a utility bill."},
+            {"speaker": "A", "text": "I have my lease. Will that work?"},
+            {"speaker": "B", "text": "Yes, a lease is fine. Okay, you're all set. With this card, you can borrow up to fifty items at a time. Books are loaned for three weeks, and DVDs for one week."},
+            {"speaker": "A", "text": "What happens if I'm late returning something?"},
+            {"speaker": "B", "text": "We actually stopped charging late fees for books last year. But if an item is more than a month late, we'll charge you the full cost of replacing it, and you won't be able to borrow anything until it's returned or paid for."},
+            {"speaker": "A", "text": "Good to know. Can I renew books online?"},
+            {"speaker": "B", "text": "Yes, through our website or app, up to three times, unless someone else has placed a hold on the book."},
+            {"speaker": "A", "text": "I also heard you have language classes."},
+            {"speaker": "B", "text": "That's right. We have free English conversation circles on Tuesday and Thursday evenings at seven. There's no registration; just show up. You also get free access to an online language-learning program with your card."},
+            {"speaker": "A", "text": "Wonderful. And is there somewhere I can print documents?"},
+            {"speaker": "B", "text": "Yes, at the computers on the second floor. Printing costs ten cents a page in black and white, and fifty cents a page for colour."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "What does the woman need to get a library card?", "options": ["A passport", "A letter from her employer", "A credit card", "Proof of her address"], "answer": 3, "explanation": "She needs ID with her current address; her lease is accepted."},
+            {"id": "2", "prompt": "How long can she borrow DVDs?", "options": ["Two weeks", "Three weeks", "One week", "One month"], "answer": 2, "explanation": "'DVDs for one week.'"},
+            {"id": "3", "prompt": "What happens if an item is more than a month late?", "options": ["She pays a daily late fee.", "She must pay the cost of replacing it.", "Her card is cancelled.", "Nothing happens."], "answer": 1, "explanation": "The library charges the full cost of replacing it."},
+            {"id": "4", "prompt": "When can she not renew a book?", "options": ["When it is a DVD", "On weekends", "After one renewal", "When someone has placed a hold on it"], "answer": 3, "explanation": "She can renew up to three times unless someone has placed a hold on it."},
+            {"id": "5", "prompt": "What is true about the conversation circles?", "options": ["They are on weekends.", "They cost ten dollars.", "No registration is needed.", "They are online only."], "answer": 2, "explanation": "'There's no registration; just show up.'"},
+            {"id": "6", "prompt": "How much does colour printing cost?", "options": ["50 cents a page", "10 cents a page", "25 cents a page", "One dollar a page"], "answer": 0, "explanation": "Colour printing costs fifty cents a page."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l3-03",
+      "title": "Swimming lessons",
+      "context": "You will hear a phone conversation between a parent and an employee at a recreation centre.",
+      "speakers": {"A": {"name": "Mr. Lee", "gender": "male"}, "B": {"name": "Recreation centre employee", "gender": "female"}},
+      "sections": [
+        {
+          "lines": [
+            {"speaker": "A", "text": "Hello, I'm calling about swimming lessons for my son. He's six and has never had lessons before."},
+            {"speaker": "B", "text": "Great. For his age and level, he'd start in Level One, Starfish. Classes are thirty minutes long, once a week, for eight weeks."},
+            {"speaker": "A", "text": "What times are available?"},
+            {"speaker": "B", "text": "We have Saturday mornings at nine or ten, and Wednesday afternoons at four thirty. The Saturday classes usually fill up fastest."},
+            {"speaker": "A", "text": "Wednesday would work best for us, actually. How much is it?"},
+            {"speaker": "B", "text": "It's ninety-six dollars for the eight weeks, but if you live in the city, it's seventy-two."},
+            {"speaker": "A", "text": "We live in the city. How do I register?"},
+            {"speaker": "B", "text": "Online registration opens next Monday at seven a.m. You'll need to create a family account first. I'd recommend doing that before Monday, since spots go quickly."},
+            {"speaker": "A", "text": "Okay. Does he need to bring anything?"},
+            {"speaker": "B", "text": "Just a swimsuit, a towel, and goggles if he wants them. Children under seven also need a parent or guardian in the building during the lesson, though not in the water."},
+            {"speaker": "A", "text": "That's fine, I'll wait in the lobby. Is there parking?"},
+            {"speaker": "B", "text": "Yes, there's a free lot behind the building. Just make sure to register your licence plate at the front desk, or you might get a ticket."}
+          ],
+          "questions": [
+            {"id": "1", "prompt": "How long is each lesson?", "options": ["Thirty minutes", "Forty-five minutes", "One hour", "Eight weeks"], "answer": 0, "explanation": "'Classes are thirty minutes long.'"},
+            {"id": "2", "prompt": "Which class time does the father prefer?", "options": ["Saturday at nine", "Wednesday at four thirty", "Saturday at ten", "Monday at seven"], "answer": 1, "explanation": "'Wednesday would work best for us.'"},
+            {"id": "3", "prompt": "How much will the father pay?", "options": ["$96", "$80", "$64", "$72"], "answer": 3, "explanation": "They live in the city, so it costs seventy-two dollars."},
+            {"id": "4", "prompt": "What does the employee recommend doing before Monday?", "options": ["Paying in person", "Visiting the pool", "Creating a family account", "Buying goggles"], "answer": 2, "explanation": "She recommends creating a family account before registration opens."},
+            {"id": "5", "prompt": "Why must the father stay in the building during the lesson?", "options": ["His son is under seven.", "He must help the instructor.", "The lessons are for families.", "It is a rule for all ages."], "answer": 0, "explanation": "Children under seven need a parent or guardian in the building."},
+            {"id": "6", "prompt": "What must he do to avoid a parking ticket?", "options": ["Pay at a machine", "Register his licence plate at the front desk", "Park on the street", "Arrive early"], "answer": 1, "explanation": "He must register his licence plate at the front desk."}
+          ]
+        }
+      ]
+    }
+  ]
+}

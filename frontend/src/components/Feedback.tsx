@@ -1,20 +1,18 @@
 import { useState } from "react";
 import type { Feedback } from "../types";
 
-const CRITERIA_NAMES: Record<string, string> = {
-  content: "Content",
-  coherence: "Discourse coherence",
-  grammar: "Grammar",
-  lexis: "Lexis (vocabulary)",
-  fluency: "Fluency",
-  pronunciation: "Pronunciation",
-};
+/** The overall level as a 0-1 score for the practice history (null when there is no AI grade). */
+export function feedbackScore(feedback: Feedback): number | null {
+  const levels = feedback.scale.levels;
+  const rank = feedback.ai ? levels.indexOf(feedback.ai.overall_level) : -1;
+  return rank < 0 ? null : rank / (levels.length - 1);
+}
 
-const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
-
-function LevelBadge({ level }: { level: string }) {
-  const rank = LEVELS.indexOf(level);
-  return <span className={`level level-${rank}`}>{level}</span>;
+function LevelBadge({ level, levels }: { level: string; levels: string[] }) {
+  const rank = levels.indexOf(level);
+  // Six colour steps from weak (red) to strong (blue), whatever the scale.
+  const step = rank < 0 ? 0 : Math.round((rank / (levels.length - 1)) * 5);
+  return <span className={`level level-${step}`}>{level}</span>;
 }
 
 function CopyForClaude({ prompt }: { prompt: string }) {
@@ -42,21 +40,22 @@ function CopyForClaude({ prompt }: { prompt: string }) {
 
 export function FeedbackView({ feedback }: { feedback: Feedback }) {
   const ai = feedback.ai;
+  const levels = feedback.scale.levels;
   return (
     <div className="feedback">
       {ai ? (
         <>
           <div className="overall">
-            <span>Estimated level</span>
-            <LevelBadge level={ai.overall_level} />
+            <span>Estimated {feedback.scale.name}</span>
+            <LevelBadge level={ai.overall_level} levels={levels} />
           </div>
           <table className="criteria">
             <tbody>
               {Object.entries(ai.criteria).map(([name, c]) => (
                 <tr key={name}>
-                  <th>{CRITERIA_NAMES[name] ?? name}</th>
+                  <th>{feedback.criteria_names[name] ?? name}</th>
                   <td>
-                    <LevelBadge level={c.level} />
+                    <LevelBadge level={c.level} levels={levels} />
                   </td>
                   <td>{c.comment}</td>
                 </tr>
@@ -95,7 +94,7 @@ export function FeedbackView({ feedback }: { feedback: Feedback }) {
         <div className="notice">
           <strong>No AI feedback.</strong> {feedback.ai_error}
           <div className="muted">
-            Install Ollama for free local feedback (see the README), or use the button below.
+            Install Ollama for free local feedback (see the setup guide), or use the button below.
           </div>
         </div>
       )}
@@ -105,7 +104,7 @@ export function FeedbackView({ feedback }: { feedback: Feedback }) {
       </details>
       <CopyForClaude prompt={feedback.claude_prompt} />
       <p className="muted small">
-        Levels are an estimate from a local AI model, not an official DET score.
+        Levels are an estimate from a local AI model, not an official test score.
       </p>
     </div>
   );

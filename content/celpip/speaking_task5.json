@@ -1,0 +1,65 @@
+{
+  "_comment": "CELPIP Speaking Task 5: Comparing and Persuading. The user chooses Option A or B, then persuades the other person, who prefers 'other'.",
+  "items": [
+    {
+      "id": "s5-01",
+      "scenario": "Your family is planning a one-week holiday this summer. You have found two options.",
+      "options": [
+        {"key": "A", "title": "Beach resort in Nova Scotia", "details": ["$2,400 for the whole family", "Hotel with a pool, right by the ocean", "8-hour drive from home"]},
+        {"key": "B", "title": "Cabin in the Rocky Mountains", "details": ["$1,900 for the whole family", "Hiking trails and a lake for canoeing", "4-hour flight, then a rental car"]}
+      ],
+      "other_person": "your family member",
+      "other": {"title": "City trip to Montreal", "details": ["$2,100 for the whole family", "Museums, festivals and restaurants", "5-hour train ride"]}
+    },
+    {
+      "id": "s5-02",
+      "scenario": "Your family needs a new car, and you have found two options.",
+      "options": [
+        {"key": "A", "title": "Small hybrid car", "details": ["$28,000", "Very low fuel costs", "Seats 4 people"]},
+        {"key": "B", "title": "Used SUV", "details": ["$22,000", "All-wheel drive for winter roads", "Seats 7 people, but uses more fuel"]}
+      ],
+      "other_person": "your family member",
+      "other": {"title": "New electric car", "details": ["$41,000, with a $5,000 government rebate", "Charges at home overnight", "Seats 5 people"]}
+    },
+    {
+      "id": "s5-03",
+      "scenario": "You and your partner are looking for a new place to rent. You have found two options.",
+      "options": [
+        {"key": "A", "title": "One-bedroom apartment downtown", "details": ["$1,950 per month", "10-minute walk to work", "No parking space"]},
+        {"key": "B", "title": "Two-bedroom apartment in the suburbs", "details": ["$1,700 per month", "45-minute bus ride to work", "Balcony and free parking"]}
+      ],
+      "other_person": "your partner",
+      "other": {"title": "Townhouse outside the city", "details": ["$2,100 per month", "Small private backyard", "1-hour drive to work"]}
+    },
+    {
+      "id": "s5-04",
+      "scenario": "Your family has decided to get a pet. You have found two options at the local animal shelter.",
+      "options": [
+        {"key": "A", "title": "A young dog", "details": ["$350 adoption fee, plus training classes", "Needs two walks every day", "Very friendly with children"]},
+        {"key": "B", "title": "An adult cat", "details": ["$150 adoption fee", "Happy to stay alone during the day", "Calm and already trained"]}
+      ],
+      "other_person": "your family member",
+      "other": {"title": "A fish tank", "details": ["$300 for the tank and equipment", "Needs very little time", "Nice to look at, but you cannot play with fish"]}
+    },
+    {
+      "id": "s5-05",
+      "scenario": "You are organizing an end-of-year event for your team at work. You have found two options.",
+      "options": [
+        {"key": "A", "title": "Dinner at a restaurant", "details": ["$45 per person", "Private room downtown", "Friday evening, after work"]},
+        {"key": "B", "title": "Bowling afternoon", "details": ["$25 per person, pizza included", "Thursday from 3 to 6 p.m., during work hours", "A fun activity for the whole team"]}
+      ],
+      "other_person": "your coworker",
+      "other": {"title": "Potluck lunch in the office", "details": ["Free; everyone brings a dish", "Wednesday at noon", "No need to leave the building"]}
+    },
+    {
+      "id": "s5-06",
+      "scenario": "You and your sister are buying a birthday present for your father together. You have found two options.",
+      "options": [
+        {"key": "A", "title": "Cooking class for two", "details": ["$180", "Saturday morning, three hours", "He would learn to make Italian dishes"]},
+        {"key": "B", "title": "Smart watch", "details": ["$250", "Tracks steps, sleep and heart rate", "Something he can use every day"]}
+      ],
+      "other_person": "your sister",
+      "other": {"title": "Concert tickets", "details": ["$150 for two tickets", "His favourite band", "The concert is a two-hour drive away"]}
+    }
+  ]
+}

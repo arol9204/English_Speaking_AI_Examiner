@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="t">
+  <title id="t">A teapot with three spouts and a clock</title>
+  <rect width="480" height="320" fill="#f3efe8"/>
+  <rect y="262" width="480" height="58" fill="#b98a5e"/>
+  <path d="M190 122 Q240 30 290 122" fill="none" stroke="#3a3a3a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M158 205 Q112 196 86 140 L100 133 Q124 182 162 186 Z" fill="#3d7cc9"/>
+  <path d="M322 205 Q368 196 394 140 L380 133 Q356 182 318 186 Z" fill="#3d7cc9"/>
+  <ellipse cx="240" cy="190" rx="96" ry="78" fill="#3d7cc9"/>
+  <rect x="226" y="246" width="28" height="22" fill="#3d7cc9"/>
+  <ellipse cx="240" cy="268" rx="16" ry="6" fill="#20406b"/>
+  <ellipse cx="240" cy="120" rx="46" ry="12" fill="#2f63a3"/>
+  <circle cx="240" cy="108" r="9" fill="#f2c14e"/>
+  <g fill="#f3a5b9">
+    <circle cx="180" cy="165" r="7"/><circle cx="300" cy="165" r="7"/>
+    <circle cx="190" cy="225" r="7"/><circle cx="292" cy="228" r="7"/>
+  </g>
+  <circle cx="240" cy="185" r="30" fill="#ffffff" stroke="#20406b" stroke-width="4"/>
+  <g stroke="#20406b" stroke-width="3" stroke-linecap="round">
+    <path d="M240 160 V166 M240 204 V210 M215 185 H221 M259 185 H265"/>
+    <path d="M240 185 V169 M240 185 L252 192"/>
+  </g>
+</svg>

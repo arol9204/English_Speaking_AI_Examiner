@@ -1,0 +1,15 @@
+{
+  "_comment": "CELPIP Speaking Task 2: Talking about a Personal Experience.",
+  "items": [
+    {"id": "s2-01", "prompt": "Talk about a time when you had to learn something new very quickly. What happened, and how did you manage?"},
+    {"id": "s2-02", "prompt": "Talk about a time when you helped a stranger. What was the situation, and what did you do?"},
+    {"id": "s2-03", "prompt": "Talk about a time when you got lost or could not find a place you were looking for. What happened?"},
+    {"id": "s2-04", "prompt": "Talk about a celebration that you remember well. What were you celebrating, and why was it memorable?"},
+    {"id": "s2-05", "prompt": "Talk about a trip when something did not go as planned. What went wrong, and what did you do?"},
+    {"id": "s2-06", "prompt": "Talk about a time when you received some very good news. What was the news, and how did you react?"},
+    {"id": "s2-07", "prompt": "Talk about a time when you solved a difficult problem at work or at school. What was the problem, and how did you solve it?"},
+    {"id": "s2-08", "prompt": "Talk about how you met one of your close friends. Where were you, and how did your friendship start?"},
+    {"id": "s2-09", "prompt": "Talk about the first time you tried a food from another culture. What was it, and what did you think of it?"},
+    {"id": "s2-10", "prompt": "Talk about a time when you changed your mind about something important. What made you change it?"}
+  ]
+}
