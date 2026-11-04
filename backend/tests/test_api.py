@@ -162,3 +162,15 @@ def test_conversation_feedback_asks_for_per_answer_comments(monkeypatch):
     assert result["ai"]["per_answer"] == ["ok", "short"]
     assert "per_answer" in captured["schema"]["required"]
     assert "Answer 2: (no answer)" in captured["prompt"]
+
+
+def test_web_page_is_always_revalidated(tmp_path):
+    from starlette.applications import Starlette
+
+    from app.main import NoCacheStaticFiles
+
+    (tmp_path / "index.html").write_text("<p>new version</p>")
+    page = Starlette()
+    page.mount("/", NoCacheStaticFiles(directory=tmp_path, html=True))
+    response = TestClient(page).get("/")
+    assert response.status_code == 200 and response.headers["cache-control"] == "no-cache"

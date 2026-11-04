@@ -158,5 +158,17 @@ async def conversation_feedback(body: ConversationFeedbackRequest):
                                    metrics)
 
 
+class NoCacheStaticFiles(StaticFiles):
+    """Serves the web page, telling the browser to check for a newer version every time.
+
+    Without this, browsers may keep showing an old copy of the app for hours after an update.
+    """
+
+    async def get_response(self, path, scope):
+        response = await super().get_response(path, scope)
+        response.headers["Cache-Control"] = "no-cache"
+        return response
+
+
 if FRONTEND_DIST.is_dir():
-    app.mount("/", StaticFiles(directory=FRONTEND_DIST, html=True), name="frontend")
+    app.mount("/", NoCacheStaticFiles(directory=FRONTEND_DIST, html=True), name="frontend")
